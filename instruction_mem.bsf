@@ -40,7 +40,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(parameter
 		"ADDRESS"
-		"32"
+		"8"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter

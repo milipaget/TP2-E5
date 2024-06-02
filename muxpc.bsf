@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(parameter
 		"WIDTH"
-		"32"
+		"8"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

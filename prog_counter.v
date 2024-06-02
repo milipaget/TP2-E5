@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module prog_counter #(parameter WIDTH = 32)(
+module prog_counter #(parameter WIDTH = 8)(
     input wire clk, reset, stop, branch_reset, 
     input wire [WIDTH-1:0] current_pc, 
     output reg [WIDTH-1:0] next_pc

@@ -32,6 +32,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
+		(pt 0 48)
+		(input)
+		(text "b[(WIDTH-1)..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "b[(WIDTH-1)..0]" (rect 21 43 87 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
 		(pt 240 32)
 		(output)
 		(text "out[(WIDTH-1)..0]" (rect 0 0 73 12)(font "Arial" ))
@@ -40,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(parameter
 		"WIDTH"
-		"32"
+		"8"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

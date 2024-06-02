@@ -2,7 +2,7 @@
 
 
 module muxpc
-    #(parameter WIDTH = 32)
+    #(parameter WIDTH = 8)
     (input wire [WIDTH-1:0] s0, s1,
      input wire sel,
      output wire [WIDTH-1:0] out);
