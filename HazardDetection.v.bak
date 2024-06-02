@@ -1,0 +1,19 @@
+`timescale 1ns / 1ps
+
+module HazardDetection (
+    input [4:0] IF_ID_RS1,
+    input [4:0] IF_ID_RS2,
+    input [4:0] ID_EX_rd,
+    input ID_EX_MemRead,
+    output reg stall
+    );
+
+    always @(*) begin
+        if (ID_EX_MemRead && ((ID_EX_rd == IF_ID_RS1) || (ID_EX_rd == IF_ID_RS2))) begin
+            stall = 1;
+        end else begin
+            stall = 0;
+        end
+    end
+
+endmodule
