@@ -6,6 +6,6 @@ module add4
      output wire [WIDTH-1:0] out);
 
 
-assign out = a + 4;
+assign out = a + 1;
 
 endmodule
