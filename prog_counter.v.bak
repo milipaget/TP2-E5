@@ -1,0 +1,20 @@
+`timescale 1ns / 1ps
+
+module prog_counter(
+    input wire clk, reset, stop, 
+    input wire [31:0] current_pc, 
+    output reg [31:0] next_pc
+);
+
+    always @(posedge clk or negedge reset or posedge stop)
+    begin
+		if(!stop)
+		begin
+        if(!reset)
+            next_pc <= 'b0; //arranco el programa de nuevo
+        else
+            next_pc <= current_pc; //sigo el flujo, el current pc lo puede 
+		end									//manejar branch
+    end
+
+endmodule

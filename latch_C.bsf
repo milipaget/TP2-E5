@@ -1,0 +1,254 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 320 352)
+	(text "latch_C" (rect 5 0 35 12)(font "Arial" ))
+	(text "inst" (rect 8 320 20 332)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 43 41 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "current_pc[7..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "current_pc[7..0]" (rect 21 59 84 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "current_regwrite" (rect 0 0 64 12)(font "Arial" ))
+		(text "current_regwrite" (rect 21 75 85 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "current_memtoreg" (rect 0 0 75 12)(font "Arial" ))
+		(text "current_memtoreg" (rect 21 91 96 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "current_memread" (rect 0 0 73 12)(font "Arial" ))
+		(text "current_memread" (rect 21 107 94 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "current_memwrite" (rect 0 0 73 12)(font "Arial" ))
+		(text "current_memwrite" (rect 21 123 94 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "current_rwsel[1..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "current_rwsel[1..0]" (rect 21 139 94 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "current_brimm[31..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "current_brimm[31..0]" (rect 21 155 104 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "current_pc_four[7..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "current_pc_four[7..0]" (rect 21 171 107 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "current_immg[31..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "current_immg[31..0]" (rect 21 187 101 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "current_aluresult[31..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "current_aluresult[31..0]" (rect 21 203 110 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "current_bmux_result[31..0]" (rect 0 0 107 12)(font "Arial" ))
+		(text "current_bmux_result[31..0]" (rect 21 219 128 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "current_rd[4..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "current_rd[4..0]" (rect 21 235 84 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "current_f3[2..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "current_f3[2..0]" (rect 21 251 83 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "current_f7[6..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "current_f7[6..0]" (rect 21 267 83 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "current_inst[31..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "current_inst[31..0]" (rect 21 283 91 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "next_pc[7..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "next_pc[7..0]" (rect 232 27 283 39)(font "Arial" ))
+		(line (pt 304 32)(pt 288 32)(line_width 3))
+	)
+	(port
+		(pt 304 48)
+		(output)
+		(text "next_regwrite" (rect 0 0 53 12)(font "Arial" ))
+		(text "next_regwrite" (rect 230 43 283 55)(font "Arial" ))
+		(line (pt 304 48)(pt 288 48)(line_width 1))
+	)
+	(port
+		(pt 304 64)
+		(output)
+		(text "next_memtoreg" (rect 0 0 63 12)(font "Arial" ))
+		(text "next_memtoreg" (rect 220 59 283 71)(font "Arial" ))
+		(line (pt 304 64)(pt 288 64)(line_width 1))
+	)
+	(port
+		(pt 304 80)
+		(output)
+		(text "next_memread" (rect 0 0 61 12)(font "Arial" ))
+		(text "next_memread" (rect 222 75 283 87)(font "Arial" ))
+		(line (pt 304 80)(pt 288 80)(line_width 1))
+	)
+	(port
+		(pt 304 96)
+		(output)
+		(text "next_memwrite" (rect 0 0 61 12)(font "Arial" ))
+		(text "next_memwrite" (rect 222 91 283 103)(font "Arial" ))
+		(line (pt 304 96)(pt 288 96)(line_width 1))
+	)
+	(port
+		(pt 304 112)
+		(output)
+		(text "next_rwsel[1..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "next_rwsel[1..0]" (rect 222 107 283 119)(font "Arial" ))
+		(line (pt 304 112)(pt 288 112)(line_width 3))
+	)
+	(port
+		(pt 304 128)
+		(output)
+		(text "next_brimm[31..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "next_brimm[31..0]" (rect 212 123 283 135)(font "Arial" ))
+		(line (pt 304 128)(pt 288 128)(line_width 3))
+	)
+	(port
+		(pt 304 144)
+		(output)
+		(text "next_pc_four[7..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "next_pc_four[7..0]" (rect 209 139 283 151)(font "Arial" ))
+		(line (pt 304 144)(pt 288 144)(line_width 3))
+	)
+	(port
+		(pt 304 160)
+		(output)
+		(text "next_immg[31..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "next_immg[31..0]" (rect 215 155 283 167)(font "Arial" ))
+		(line (pt 304 160)(pt 288 160)(line_width 3))
+	)
+	(port
+		(pt 304 176)
+		(output)
+		(text "next_aluresult[31..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "next_aluresult[31..0]" (rect 206 171 283 183)(font "Arial" ))
+		(line (pt 304 176)(pt 288 176)(line_width 3))
+	)
+	(port
+		(pt 304 192)
+		(output)
+		(text "next_bmux_result[31..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "next_bmux_result[31..0]" (rect 188 187 283 199)(font "Arial" ))
+		(line (pt 304 192)(pt 288 192)(line_width 3))
+	)
+	(port
+		(pt 304 208)
+		(output)
+		(text "next_rd[4..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "next_rd[4..0]" (rect 232 203 283 215)(font "Arial" ))
+		(line (pt 304 208)(pt 288 208)(line_width 3))
+	)
+	(port
+		(pt 304 224)
+		(output)
+		(text "next_f3[2..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "next_f3[2..0]" (rect 233 219 283 231)(font "Arial" ))
+		(line (pt 304 224)(pt 288 224)(line_width 3))
+	)
+	(port
+		(pt 304 240)
+		(output)
+		(text "next_f7[6..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "next_f7[6..0]" (rect 233 235 283 247)(font "Arial" ))
+		(line (pt 304 240)(pt 288 240)(line_width 3))
+	)
+	(port
+		(pt 304 256)
+		(output)
+		(text "next_inst[31..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "next_inst[31..0]" (rect 224 251 283 263)(font "Arial" ))
+		(line (pt 304 256)(pt 288 256)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 320)(line_width 1))
+	)
+)
