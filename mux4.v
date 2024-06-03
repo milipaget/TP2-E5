@@ -3,7 +3,7 @@
 module mux4
     #(parameter WIDTH = 32)
     (
-     input [WIDTH-1:0] d00, d01, d10, d11,
+     input [WIDTH-1:0] d00, d10, d01, d11,
      input [1:0] s,
      output [WIDTH-1:0] y
     );

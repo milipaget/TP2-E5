@@ -5,16 +5,13 @@ module instruction_mem #(parameter ADDRESS = 8, parameter INST = 32)(
     output wire [INST-1:0] instr
 );
 
-    reg [7:0] rom [0:255]; // Each location holds a byte (8 bits)
-
+    reg [31:0] rom [0:63];
+	
     initial begin
         $readmemh("test_program.mem", rom);
     end
-	 
-	 assign instr[31:24] = rom[addr];
-	 assign instr[23:16] = rom[addr+1];
-    assign instr[15:8]  = rom[addr+2];
-    assign instr[7:0]   = rom[addr+3];
-    
+
+    // Asignar la instrucción combinada a la salida
+    assign instr = rom[addr];
 
 endmodule

@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 312 176)
+	(rect 16 16 304 176)
 	(text "fetch_unit" (rect 5 0 64 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
 	(port
@@ -34,8 +34,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 48)
 		(input)
-		(text "BRANCH_PC[31..0]" (rect 0 0 114 19)(font "Intel Clear" (font_size 8)))
-		(text "BRANCH_PC[31..0]" (rect 21 43 135 62)(font "Intel Clear" (font_size 8)))
+		(text "BRANCH_PC[7..0]" (rect 0 0 106 19)(font "Intel Clear" (font_size 8)))
+		(text "BRANCH_PC[7..0]" (rect 21 43 127 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
@@ -67,20 +67,20 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 112)(pt 16 112))
 	)
 	(port
-		(pt 296 32)
+		(pt 288 32)
 		(output)
 		(text "INSTRUCCION[31..0]" (rect 0 0 125 19)(font "Intel Clear" (font_size 8)))
-		(text "INSTRUCCION[31..0]" (rect 150 27 275 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 296 32)(pt 280 32)(line_width 3))
+		(text "INSTRUCCION[31..0]" (rect 142 27 267 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
 	)
 	(port
-		(pt 296 48)
+		(pt 288 48)
 		(output)
 		(text "CURR_PC[7..0]" (rect 0 0 88 19)(font "Intel Clear" (font_size 8)))
-		(text "CURR_PC[7..0]" (rect 187 43 275 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 296 48)(pt 280 48)(line_width 3))
+		(text "CURR_PC[7..0]" (rect 179 43 267 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 48)(pt 272 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 280 144))
+		(rectangle (rect 16 16 272 144))
 	)
 )
