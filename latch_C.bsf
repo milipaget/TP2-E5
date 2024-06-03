@@ -90,8 +90,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 176)
 		(input)
-		(text "current_pc_four[7..0]" (rect 0 0 86 12)(font "Arial" ))
-		(text "current_pc_four[7..0]" (rect 21 171 107 183)(font "Arial" ))
+		(text "current_pc_four[31..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "current_pc_four[31..0]" (rect 21 171 110 183)(font "Arial" ))
 		(line (pt 0 176)(pt 16 176)(line_width 3))
 	)
 	(port
@@ -195,8 +195,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 304 144)
 		(output)
-		(text "next_pc_four[7..0]" (rect 0 0 74 12)(font "Arial" ))
-		(text "next_pc_four[7..0]" (rect 209 139 283 151)(font "Arial" ))
+		(text "next_pc_four[31..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "next_pc_four[31..0]" (rect 206 139 283 151)(font "Arial" ))
 		(line (pt 304 144)(pt 288 144)(line_width 3))
 	)
 	(port

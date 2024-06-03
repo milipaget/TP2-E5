@@ -14,8 +14,6 @@ module latch2(
         input [7:0] Curr_Pc,
         input [31:0] RD_One,
         input [31:0] RD_Two,
-        input [4:0] RS_One,
-        input [4:0] RS_Two,
         input [4:0] rd,
         input [31:0] ExtImm,
         input [2:0] func3,
@@ -44,7 +42,7 @@ module latch2(
 		  
 always @(posedge clk) 
     begin
-        if ((reset) || (stop) || (branch_reset))   //inicialización o stalleo
+        if ((!reset) || (stop) || (branch_reset))   //inicialización o stalleo
         begin
             ALUSrc_out <= 0;
             MemtoReg_out <= 0;

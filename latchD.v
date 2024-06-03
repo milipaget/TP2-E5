@@ -25,8 +25,8 @@ module LatchD (
     output reg [31:0] Curr_Instr_out
 );
 
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
+    always @(posedge clk or negedge reset) begin
+        if (!reset) begin
             // Initialize outputs to zero when reset is asserted
             RegWrite_out <= 0;
             MemtoReg_out <= 0;

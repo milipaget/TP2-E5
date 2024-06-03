@@ -18,7 +18,7 @@ reg [WIDTH-1:0] registers[NUM_REGISTERS-1:0];
 always @(negedge clk) 
 
 begin
-    if(reset == 1'b1)
+    if(reset != 1'b1)
         for (i = 0; i < NUM_REGISTERS ; i = i + 1)
             registers[i] <= 0;		//Si reset esta prendido, pongo todos los registros en cero
     else if(reset ==1'b0 && write_enable ==1'b1)
