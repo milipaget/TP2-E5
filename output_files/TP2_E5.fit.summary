@@ -1,16 +1,16 @@
-Fitter Status : Failed - Mon Jun  3 12:19:24 2024
+Fitter Status : Successful - Tue Jun  4 12:36:55 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : TP2_E5
 Top-level Entity Name : TP2_E5
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 40,375 / 22,320 ( 181 % )
-    Total combinational functions : 23,926 / 22,320 ( 107 % )
-    Dedicated logic registers : 16,757 / 22,320 ( 75 % )
-Total registers : 16757
+Total logic elements : 1,328 / 22,320 ( 6 % )
+    Total combinational functions : 1,306 / 22,320 ( 6 % )
+    Dedicated logic registers : 381 / 22,320 ( 2 % )
+Total registers : 381
 Total pins : 65 / 154 ( 42 % )
 Total virtual pins : 0
-Total memory bits : 0 / 608,256 ( 0 % )
+Total memory bits : 24,576 / 608,256 ( 4 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )

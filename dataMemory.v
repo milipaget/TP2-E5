@@ -15,7 +15,7 @@ module datamemory (
 
 	 
 	 // // Definición de la memoria como una matriz de 32 bits
-     reg[31:0] mem [(DM_ADDRESS)-1:0];
+     reg[31:0] mem [31:0];
     
 	 // Bloque para leer datos de memoria
     always @* begin
