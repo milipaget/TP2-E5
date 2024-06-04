@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Mon Jun  3 12:25:56 2024
+Mon Jun  3 13:40:38 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -20,11 +20,11 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: latch_A:inst2
  14. Parameter Settings for User Entity Instance: BranchUnit:asjdjsajdjas
- 15. Parameter Settings for User Entity Instance: BlockALU:facebook|alu:inst2
- 16. Parameter Settings for User Entity Instance: BlockALU:facebook|mux4:MUXFA_
- 17. Parameter Settings for User Entity Instance: BlockALU:facebook|mux2:inst5
- 18. Parameter Settings for User Entity Instance: BlockALU:facebook|mux4:MUXFB_
- 19. Parameter Settings for User Entity Instance: datamemory:inst1877
+ 15. Parameter Settings for User Entity Instance: BlockALU:nosequenombre|alu:inst2
+ 16. Parameter Settings for User Entity Instance: BlockALU:nosequenombre|mux4:mux_fa_
+ 17. Parameter Settings for User Entity Instance: BlockALU:nosequenombre|mux2:inst5
+ 18. Parameter Settings for User Entity Instance: BlockALU:nosequenombre|mux4:mux_fb_
+ 19. Parameter Settings for User Entity Instance: datamemory:inst18777
  20. Parameter Settings for User Entity Instance: mux4_v2_wrs:inst13
  21. Parameter Settings for User Entity Instance: mux2:inst564654
  22. Parameter Settings for User Entity Instance: fetch_unit:instagramm|prog_counter:inst3
@@ -62,15 +62,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun  3 12:25:55 2024          ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun  3 13:40:38 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; TP2_E5                                         ;
 ; Top-level Entity Name              ; TP2_E5                                         ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 40,358                                         ;
-;     Total combinational functions  ; 23,910                                         ;
-;     Dedicated logic registers      ; 16,750                                         ;
-; Total registers                    ; 16750                                          ;
+; Total logic elements               ; 2,300                                          ;
+;     Total combinational functions  ; 1,947                                          ;
+;     Dedicated logic registers      ; 654                                            ;
+; Total registers                    ; 654                                            ;
 ; Total pins                         ; 65                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -173,12 +173,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.5%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -220,20 +220,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 40,358    ;
+; Estimated Total logic elements              ; 2,300     ;
 ;                                             ;           ;
-; Total combinational functions               ; 23910     ;
+; Total combinational functions               ; 1947      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 23151     ;
-;     -- 3 input functions                    ; 526       ;
-;     -- <=2 input functions                  ; 233       ;
+;     -- 4 input functions                    ; 1146      ;
+;     -- 3 input functions                    ; 607       ;
+;     -- <=2 input functions                  ; 194       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 23733     ;
+;     -- normal mode                          ; 1770      ;
 ;     -- arithmetic mode                      ; 177       ;
 ;                                             ;           ;
-; Total registers                             ; 16750     ;
-;     -- Dedicated logic registers            ; 16750     ;
+; Total registers                             ; 654       ;
+;     -- Dedicated logic registers            ; 654       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 65        ;
@@ -241,9 +241,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 16750     ;
-; Total fan-out                               ; 144887    ;
-; Average fan-out                             ; 3.55      ;
+; Maximum fan-out                             ; 654       ;
+; Total fan-out                               ; 8744      ;
+; Average fan-out                             ; 3.20      ;
 +---------------------------------------------+-----------+
 
 
@@ -252,27 +252,28 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name     ; Library Name ;
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+-----------------+--------------+
-; |TP2_E5                      ; 23910 (0)           ; 16750 (0)                 ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |TP2_E5                                            ; TP2_E5          ; work         ;
-;    |BlockALU:facebook|       ; 689 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:facebook                          ; BlockALU        ; work         ;
-;       |ALUController:inst|   ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:facebook|ALUController:inst       ; ALUController   ; work         ;
-;       |alu:inst2|            ; 560 (560)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:facebook|alu:inst2                ; alu             ; work         ;
-;       |mux2:inst5|           ; 75 (75)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:facebook|mux2:inst5               ; mux2            ; work         ;
-;       |mux4:MUXFA_|          ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:facebook|mux4:MUXFA_              ; mux4            ; work         ;
+; |TP2_E5                      ; 1947 (0)            ; 654 (0)                   ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |TP2_E5                                            ; TP2_E5          ; work         ;
+;    |BlockALU:nosequenombre|  ; 689 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenombre                     ; BlockALU        ; work         ;
+;       |ALUController:inst|   ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenombre|ALUController:inst  ; ALUController   ; work         ;
+;       |alu:inst2|            ; 558 (558)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenombre|alu:inst2           ; alu             ; work         ;
+;       |mux2:inst5|           ; 54 (54)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenombre|mux2:inst5          ; mux2            ; work         ;
+;       |mux4:mux_fa_|         ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenombre|mux4:mux_fa_        ; mux4            ; work         ;
+;       |mux4:mux_fb_|         ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenombre|mux4:mux_fb_        ; mux4            ; work         ;
 ;    |BranchUnit:asjdjsajdjas| ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BranchUnit:asjdjsajdjas                    ; BranchUnit      ; work         ;
-;    |ForwardingUnit:porfa|    ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ForwardingUnit:porfa                       ; ForwardingUnit  ; work         ;
+;    |ForwardingUnit:porfa|    ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ForwardingUnit:porfa                       ; ForwardingUnit  ; work         ;
 ;    |HazardDetection:inst23|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|HazardDetection:inst23                     ; HazardDetection ; work         ;
 ;    |LatchD:twittter|         ; 0 (0)               ; 117 (117)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|LatchD:twittter                            ; LatchD          ; work         ;
-;    |datamemory:inst1877|     ; 22500 (22500)       ; 16384 (16384)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|datamemory:inst1877                        ; datamemory      ; work         ;
-;    |decode:sjjsjsjsjs|       ; 40 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs                          ; decode          ; work         ;
-;       |Control:inst5|        ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs|Control:inst5            ; Control         ; work         ;
-;       |imm_gen:inst4|        ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs|imm_gen:inst4            ; imm_gen         ; work         ;
-;    |fetch_unit:instagramm|   ; 138 (0)             ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagramm                      ; fetch_unit      ; work         ;
-;       |instruction_mem:inst| ; 120 (120)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagramm|instruction_mem:inst ; instruction_mem ; work         ;
+;    |datamemory:inst18777|    ; 548 (548)           ; 288 (288)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|datamemory:inst18777                       ; datamemory      ; work         ;
+;    |decode:sjjsjsjsjs|       ; 38 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs                          ; decode          ; work         ;
+;       |Control:inst5|        ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs|Control:inst5            ; Control         ; work         ;
+;       |imm_gen:inst4|        ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs|imm_gen:inst4            ; imm_gen         ; work         ;
+;    |fetch_unit:instagramm|   ; 137 (0)             ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagramm                      ; fetch_unit      ; work         ;
+;       |instruction_mem:inst| ; 119 (119)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagramm|instruction_mem:inst ; instruction_mem ; work         ;
 ;       |prog_counter:inst3|   ; 18 (18)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagramm|prog_counter:inst3   ; prog_counter    ; work         ;
-;    |latch2:inst30|           ; 96 (96)             ; 68 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch2:inst30                              ; latch2          ; work         ;
+;    |latch2:inst30|           ; 95 (95)             ; 68 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch2:inst30                              ; latch2          ; work         ;
 ;    |latch_A:inst2|           ; 37 (37)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_A:inst2                              ; latch_A         ; work         ;
-;    |latch_C:afsdhajs|        ; 289 (289)           ; 136 (136)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_C:afsdhajs                           ; latch_C         ; work         ;
-;    |mux4_v2_wrs:inst13|      ; 75 (75)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|mux4_v2_wrs:inst13                         ; mux4_v2_wrs     ; work         ;
+;    |latch_C:afsdhajs|        ; 288 (288)           ; 136 (136)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_C:afsdhajs                           ; latch_C         ; work         ;
+;    |mux4_v2_wrs:inst13|      ; 68 (68)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|mux4_v2_wrs:inst13                         ; mux4_v2_wrs     ; work         ;
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -282,38 +283,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+-------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal           ; Free of Timing Hazards ;
 +-----------------------------------------------------+-------------------------------+------------------------+
-; datamemory:inst1877|rd[0]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[4]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[3]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[2]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[1]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[5]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[6]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[7]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[8]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[9]                           ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[10]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[11]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[12]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[13]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[14]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[15]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[16]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[17]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[18]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[19]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[20]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[21]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[22]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[23]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[24]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[25]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[26]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[27]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[28]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[29]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[30]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
-; datamemory:inst1877|rd[31]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[0]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[4]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[3]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[2]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[1]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[5]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[6]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[7]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[8]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[9]                          ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[10]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[11]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[12]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[13]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[14]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[15]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[16]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[17]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[18]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[19]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[20]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[21]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[22]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[23]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[24]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[25]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[26]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[27]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[28]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[29]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[30]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
+; datamemory:inst18777|rd[31]                         ; latch_C:afsdhajs|next_memread ; yes                    ;
 ; Number of user-specified and inferred latches = 32  ;                               ;                        ;
 +-----------------------------------------------------+-------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -1450,12 +1451,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16750 ;
+; Total registers                              ; 654   ;
 ; Number of registers using Synchronous Clear  ; 40    ;
 ; Number of registers using Synchronous Load   ; 28    ;
 ; Number of registers using Asynchronous Clear ; 117   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16400 ;
+; Number of registers using Clock Enable       ; 304   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1465,60 +1466,60 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[0][13]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[1][23]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[2][11]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[3][14]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[4][10]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[5][8]     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[6][4]     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[7][23]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[8][15]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[9][23]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[10][7]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[11][12]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[12][13]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[13][7]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[14][12]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[15][21]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[16][5]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[17][3]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[18][7]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[19][24]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[20][24]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[21][24]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[22][19]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[0][24]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[1][2]     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[2][3]     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[3][3]     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[4][31]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[5][10]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[6][16]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[7][31]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[8][21]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[9][0]     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[10][3]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[11][18]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[12][16]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[13][26]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[14][18]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[15][29]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[16][18]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[17][16]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[18][9]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[19][16]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[20][31]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[21][17]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[22][29]   ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[23][21]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[24][11]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[25][23]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[26][24]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[27][4]    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[28][29]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[29][29]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[30][29]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[31][6]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |TP2_E5|latch_A:inst2|next_pc[7]                            ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[21]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[24][7]    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[25][30]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[26][30]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[27][30]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[28][30]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[29][30]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[30][30]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[31][30]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |TP2_E5|latch_A:inst2|next_pc[0]                            ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[24]                          ;
 ; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |TP2_E5|fetch_unit:instagramm|prog_counter:inst3|next_pc[7] ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_One_out[23]                        ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_Two_out[0]                         ;
-; 21:1               ; 7 bits    ; 98 LEs        ; 49 LEs               ; 49 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[23]                 ;
-; 20:1               ; 8 bits    ; 104 LEs       ; 48 LEs               ; 56 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[13]                 ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_One_out[24]                        ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_Two_out[21]                        ;
+; 21:1               ; 7 bits    ; 98 LEs        ; 49 LEs               ; 49 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[22]                 ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 48 LEs               ; 56 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[9]                  ;
 ; 22:1               ; 4 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[27]                 ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[1]                           ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[14]                          ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[4]                           ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[17]                          ;
 ; 23:1               ; 2 bits    ; 30 LEs        ; 16 LEs               ; 14 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[29]                 ;
-; 14:1               ; 6 bits    ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[5]                           ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:facebook|mux4:MUXFB_|y[3]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:facebook|mux4:MUXFA_|y[20]                 ;
+; 14:1               ; 6 bits    ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[6]                           ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenombre|mux4:mux_fb_|y[25]           ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenombre|mux4:mux_fa_|y[14]           ;
 ; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |TP2_E5|decode:sjjsjsjsjs|imm_gen:inst4|Selector31          ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |TP2_E5|decode:sjjsjsjsjs|imm_gen:inst4|Selector31          ;
-; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[14]                            ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[3]                             ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TP2_E5|datamemory:inst1877|Mux8                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TP2_E5|datamemory:inst1877|Mux17                           ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:facebook|alu:inst2|Mux27                   ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:facebook|alu:inst2|Mux28                   ;
+; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[16]                            ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[5]                             ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TP2_E5|datamemory:inst18777|Mux14                          ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TP2_E5|datamemory:inst18777|Mux24                          ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenombre|alu:inst2|Mux24              ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenombre|alu:inst2|Mux29              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -1543,55 +1544,55 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BlockALU:facebook|alu:inst2 ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; DATA_WIDTH     ; 32    ; Signed Integer                                  ;
-; OPCODE_LENGTH  ; 4     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BlockALU:nosequenombre|alu:inst2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                       ;
+; OPCODE_LENGTH  ; 4     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BlockALU:facebook|mux4:MUXFA_ ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BlockALU:nosequenombre|mux4:mux_fa_ ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BlockALU:facebook|mux2:inst5 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BlockALU:nosequenombre|mux2:inst5 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BlockALU:facebook|mux4:MUXFB_ ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BlockALU:nosequenombre|mux4:mux_fb_ ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datamemory:inst1877 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; DM_ADDRESS     ; 9     ; Signed Integer                          ;
-; DATA_W         ; 32    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datamemory:inst18777 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; DM_ADDRESS     ; 9     ; Signed Integer                           ;
+; DATA_W         ; 32    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1692,25 +1693,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 65                          ;
-; cycloneiii_ff         ; 16750                       ;
+; cycloneiii_ff         ; 654                         ;
 ;     CLR               ; 117                         ;
-;     ENA               ; 16392                       ;
+;     ENA               ; 296                         ;
 ;     ENA SCLR SLD      ; 8                           ;
 ;     SCLR              ; 12                          ;
 ;     SCLR SLD          ; 20                          ;
 ;     plain             ; 201                         ;
-; cycloneiii_lcell_comb ; 23910                       ;
+; cycloneiii_lcell_comb ; 1947                        ;
 ;     arith             ; 177                         ;
 ;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 162                         ;
-;     normal            ; 23733                       ;
+;     normal            ; 1770                        ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 216                         ;
-;         3 data inputs ; 364                         ;
-;         4 data inputs ; 23151                       ;
+;         2 data inputs ; 177                         ;
+;         3 data inputs ; 445                         ;
+;         4 data inputs ; 1146                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 16.60                       ;
-; Average LUT depth     ; 11.67                       ;
+; Max LUT depth         ; 15.00                       ;
+; Average LUT depth     ; 9.03                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1719,7 +1720,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:03     ;
+; Top            ; 00:00:11     ;
 +----------------+--------------+
 
 
@@ -1729,7 +1730,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Mon Jun  3 12:24:36 2024
+    Info: Processing started: Mon Jun  3 13:40:09 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1787,7 +1788,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file fetch_u
 Info (12021): Found 1 design units, including 1 entities, in source file mux4_v2_wrs.v
     Info (12023): Found entity 1: mux4_v2_wrs File: C:/Users/sebas/Documents/GitHub/TP2-E5/mux4_v2_wrs.v Line: 1
 Info (12127): Elaborating entity "TP2_E5" for the top level hierarchy
-Warning (275011): Block or symbol "datamemory" of instance "inst1877" overlaps another block or symbol
+Warning (275011): Block or symbol "datamemory" of instance "inst18777" overlaps another block or symbol
 Info (12128): Elaborating entity "latch_C" for hierarchy "latch_C:afsdhajs"
 Info (12128): Elaborating entity "latch2" for hierarchy "latch2:inst30"
 Info (12128): Elaborating entity "HazardDetection" for hierarchy "HazardDetection:inst23"
@@ -1795,14 +1796,14 @@ Info (12128): Elaborating entity "latch_A" for hierarchy "latch_A:inst2"
 Info (12128): Elaborating entity "BranchUnit" for hierarchy "BranchUnit:asjdjsajdjas"
 Warning (10230): Verilog HDL assignment warning at BranchUnit.v(22): truncated value with size 32 to match size of target (8) File: C:/Users/sebas/Documents/GitHub/TP2-E5/BranchUnit.v Line: 22
 Warning (10230): Verilog HDL assignment warning at BranchUnit.v(29): truncated value with size 32 to match size of target (8) File: C:/Users/sebas/Documents/GitHub/TP2-E5/BranchUnit.v Line: 29
-Info (12128): Elaborating entity "BlockALU" for hierarchy "BlockALU:facebook"
-Info (12128): Elaborating entity "alu" for hierarchy "BlockALU:facebook|alu:inst2"
-Info (12128): Elaborating entity "ALUController" for hierarchy "BlockALU:facebook|ALUController:inst"
-Info (12128): Elaborating entity "mux4" for hierarchy "BlockALU:facebook|mux4:MUXFA_"
-Info (12128): Elaborating entity "mux2" for hierarchy "BlockALU:facebook|mux2:inst5"
+Info (12128): Elaborating entity "BlockALU" for hierarchy "BlockALU:nosequenombre"
+Info (12128): Elaborating entity "alu" for hierarchy "BlockALU:nosequenombre|alu:inst2"
+Info (12128): Elaborating entity "ALUController" for hierarchy "BlockALU:nosequenombre|ALUController:inst"
+Info (12128): Elaborating entity "mux4" for hierarchy "BlockALU:nosequenombre|mux4:mux_fa_"
+Info (12128): Elaborating entity "mux2" for hierarchy "BlockALU:nosequenombre|mux2:inst5"
 Info (12128): Elaborating entity "ForwardingUnit" for hierarchy "ForwardingUnit:porfa"
 Info (12128): Elaborating entity "LatchD" for hierarchy "LatchD:twittter"
-Info (12128): Elaborating entity "datamemory" for hierarchy "datamemory:inst1877"
+Info (12128): Elaborating entity "datamemory" for hierarchy "datamemory:inst18777"
 Warning (10240): Verilog HDL Always Construct warning at dataMemory.v(22): inferring latch(es) for variable "rd", which holds its previous value in one or more paths through the always construct File: C:/Users/sebas/Documents/GitHub/TP2-E5/dataMemory.v Line: 22
 Info (10041): Inferred latch for "rd[0]" at dataMemory.v(22) File: C:/Users/sebas/Documents/GitHub/TP2-E5/dataMemory.v Line: 22
 Info (10041): Inferred latch for "rd[1]" at dataMemory.v(22) File: C:/Users/sebas/Documents/GitHub/TP2-E5/dataMemory.v Line: 22
@@ -1851,18 +1852,18 @@ Info (12128): Elaborating entity "Control" for hierarchy "decode:sjjsjsjsjs|Cont
 Info (12128): Elaborating entity "imm_gen" for hierarchy "decode:sjjsjsjsjs|imm_gen:inst4"
 Info (12128): Elaborating entity "reg_file" for hierarchy "decode:sjjsjsjsjs|reg_file:inst"
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "datamemory:inst1877|mem" is uninferred due to asynchronous read logic File: C:/Users/sebas/Documents/GitHub/TP2-E5/dataMemory.v Line: 18
+    Info (276007): RAM logic "datamemory:inst18777|mem" is uninferred due to asynchronous read logic File: C:/Users/sebas/Documents/GitHub/TP2-E5/dataMemory.v Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 40481 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2424 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 63 output pins
-    Info (21061): Implemented 40416 logic cells
+    Info (21061): Implemented 2359 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4930 megabytes
-    Info: Processing ended: Mon Jun  3 12:25:56 2024
-    Info: Elapsed time: 00:01:20
-    Info: Total CPU time (on all processors): 00:01:34
+    Info: Peak virtual memory: 4771 megabytes
+    Info: Processing ended: Mon Jun  3 13:40:38 2024
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:36
 
 
