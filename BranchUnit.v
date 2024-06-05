@@ -26,7 +26,7 @@ module BranchUnit
         Branch_Sel = Branch && AluResult[0]; // 0:Branch is taken; 1:Branch is not taken
     end
     
-    assign BrPC = (JalrSel) ? AluResult :     // Jalr -> AluResult
+    assign BrPC = (JalrSel) ? AluResult[7:0] :     // Jalr -> AluResult
                   (Branch_Sel) ? PC_Imm : 8'b0;  // Branch/Jal -> PC+Imm   // Otherwise, BrPC value is not important
     assign PcSel = JalrSel || Branch_Sel;  // 1:branch (b/jal/jalr) is taken; 0:branch is not taken(choose pc+4)
 

@@ -6,10 +6,11 @@ module prog_counter #(parameter WIDTH = 8)(
     output reg [WIDTH-1:0] next_pc
 );
 
-    always @(posedge clk)// or negedge reset)
+ 
+	 always @(posedge clk)// or negedge reset)
     begin
-        if(!reset || branch_reset)
-            next_pc <= 'b0; //arranco el programa de nuevo
+        if(!reset)
+            next_pc <= 8'b0; //arranco el programa de nuevo
         else
 			begin
 				if(!stop)

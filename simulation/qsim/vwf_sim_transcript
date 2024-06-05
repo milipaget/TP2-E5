@@ -7,7 +7,7 @@ Note: if both Questa Intel FPGA Edition and ModelSim executables are available, 
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source="C:/Users/sebas/Documents/GitHub/TP2-E5/Waveform9.vwf" --testbench_file="C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/Waveform9.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source="C:/Users/sebas/Documents/GitHub/TP2-E5/Waveform20.vwf" --testbench_file="C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/Waveform20.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,25 +26,22 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Jun  4 12:53:32 2024
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=C:/Users/sebas/Documents/GitHub/TP2-E5/Waveform9.vwf --testbench_file=C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/Waveform9.vwf.vt
+    Info: Processing started: Wed Jun  5 19:21:56 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=C:/Users/sebas/Documents/GitHub/TP2-E5/Waveform20.vwf --testbench_file=C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/Waveform20.vwf.vt
+Info (119006): Selected device EP4CE22F17C6 for design "TP2_E5"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-gnoring output pin "inst_debug[27]" in vector source file when writing test bench files
+01005): Ignoring output pin "alu_Res_debug[11]" in vector source file when writing test bench files
 
-d port "ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[24]" in design
+s
 
-syncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg7" in design
+"alures[6]" in vector source file when writing test bench files
 
-ign
+in "rd1_deb[15]" in vector source file when writing test bench files
 
- "altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg4" in design
+t bench files
 
-|altsyncram_44g1:auto_generated|ram_block1a4~porta_memory_reg0" in design
-
-_generated|ram_block1a8~porta_datain_reg16" in design
-
-a29~porta_memory_reg0" in design
+r source file when writing test bench files
 
 Completed successfully. 
 
@@ -71,13 +68,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Jun  4 12:53:33 2024
+    Info: Processing started: Wed Jun  5 19:21:57 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/ TP2_E5 -c TP2_E5
+Info (119006): Selected device EP4CE22F17C6 for design "TP2_E5"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file TP2_E5.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4640 megabytes
-    Info: Processing ended: Tue Jun  4 12:53:34 2024
+    Info: Peak virtual memory: 4654 megabytes
+    Info: Processing ended: Wed Jun  5 19:21:58 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -105,27 +103,24 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 12:53:36 on Jun 04,2024
+# Start time: 19:21:59 on Jun 05,2024
 # vlog -work work TP2_E5.vo 
 
 # -- Compiling module TP2_E5
-
-# -- Compiling module hard_block
 
 # 
 
 # Top level modules:
 # 	TP2_E5
 
-# End time: 12:53:36 on Jun 04,2024, Elapsed time: 0:00:00
-
+# End time: 19:22:00 on Jun 05,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 12:53:36 on Jun 04,2024
+# Start time: 19:22:00 on Jun 05,2024
 
-# vlog -work work Waveform9.vwf.vt 
+# vlog -work work Waveform20.vwf.vt 
 
 # -- Compiling module TP2_E5_vlg_vec_tst
 
@@ -134,20 +129,16 @@ Reading pref.tcl
 # Top level modules:
 # 	TP2_E5_vlg_vec_tst
 
-# End time: 12:53:36 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 19:22:00 on Jun 05,2024, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.TP2_E5_vlg_vec_tst 
-# Start time: 12:53:36 on Jun 04,2024
+# Start time: 19:22:00 on Jun 05,2024
 # Loading work.TP2_E5_vlg_vec_tst
 # Loading work.TP2_E5
-# Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_clkctrl
-# Loading cycloneive_ver.cycloneive_mux41
-# Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_ram_block
@@ -155,465 +146,25 @@ Reading pref.tcl
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading altera_ver.PRIM_GDFF_LOW
 
-# after#26
+# after#25
 
-# ** Note: $finish    : Waveform9.vwf.vt(55)
+# ** Note: $finish    : Waveform20.vwf.vt(85)
 #    Time: 1 us  Iteration: 0  Instance: /TP2_E5_vlg_vec_tst
 
-# End time: 12:53:37 on Jun 04,2024, Elapsed time: 0:00:01
+# End time: 19:22:01 on Jun 05,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/sebas/Documents/GitHub/TP2-E5/Waveform9.vwf...
+Reading C:/Users/sebas/Documents/GitHub/TP2-E5/Waveform20.vwf...
 
 Reading C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/TP2_E5.msim.vcd...
 
 Processing channel transitions... 
 
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg1 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg2 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg3 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg4 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg5 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg6 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg7 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg8 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg1 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg2 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg3 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg4 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg5 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg6 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg7 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg8 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg9 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg10 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg11 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg12 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg13 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg14 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg15 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg16 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg17 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_re_reg - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_we_reg - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a1~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a2~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a3~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a4~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a5~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a6~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a7~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg1 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg2 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg3 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg4 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg5 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg6 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg7 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg8 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg1 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg2 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg3 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg4 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg5 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg6 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg7 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg8 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg9 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg10 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg11 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg12 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg13 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg14 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg15 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg16 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg17 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg14 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg15 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg16 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg17 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_re_reg - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_we_reg - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a9~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a10~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a11~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a12~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a13~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a14~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a15~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a16~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a17~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a18~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a19~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a20~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a21~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a22~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a23~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a24~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a25~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a26~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a27~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a28~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a29~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a30~porta_memory_reg0 - signal not found in VCD.
-
-Warning: ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a31~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[0] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[1] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[2] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[3] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[4] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[5] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[6] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[7] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[8] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[9] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[10] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[11] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[12] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[13] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[14] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[15] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[16] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[17] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[18] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[19] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[20] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[21] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[22] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[23] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[24] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[25] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[26] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[27] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[28] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[29] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[30] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|q_a[31] - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg1 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg2 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg3 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg4 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg5 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg6 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg7 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_address_reg8 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg1 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg2 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg3 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg4 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg5 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg6 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg7 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg8 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg9 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg10 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg11 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg12 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg13 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg14 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg15 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg16 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_datain_reg17 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_re_reg - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a0~porta_we_reg - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a1~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a2~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a3~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a4~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a5~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a6~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a7~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg1 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg2 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg3 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg4 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg5 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg6 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg7 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_address_reg8 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg1 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg2 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg3 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg4 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg5 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg6 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg7 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg8 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg9 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg10 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg11 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg12 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg13 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg14 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg15 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg16 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_datain_reg17 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg14 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg15 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg16 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_memory_reg17 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_re_reg - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a8~porta_we_reg - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a9~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a10~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a11~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a12~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a13~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a14~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a15~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a16~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a17~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a18~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a19~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a20~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a21~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a22~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a23~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a24~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a25~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a26~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a27~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a28~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a29~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a30~porta_memory_reg0 - signal not found in VCD.
-
-Warning: altsyncram:altsyncram_component|altsyncram_44g1:auto_generated|ram_block1a31~porta_memory_reg0 - signal not found in VCD.
-
-Writing the resulting VWF to C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/TP2_E5_20240604125337.sim.vwf
+Writing the resulting VWF to C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/TP2_E5_20240605192201.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -7,6 +7,6 @@ module muxpc
      input wire sel,
      output wire [WIDTH-1:0] out);
 
-assign out = sel? s1 : s0;
+assign out = (sel==1) ? s1 : s0;
 
 endmodule
