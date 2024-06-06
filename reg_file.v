@@ -52,7 +52,7 @@ begin
 			registers[30] <= 32'b0;
 			registers[31] <= 32'b0;
 		end
-	 else if(reset ==1'b0 && write_enable ==1'b1)
+	 else if(reset ==1'b1 && write_enable ==1'b1)
         registers[write_Reg] <= write_data;		//Escribo en el registro indicado 
 end
 

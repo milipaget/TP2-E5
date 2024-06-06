@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Wed Jun  5 19:20:40 2024
+Thu Jun  6 17:30:25 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -16,30 +16,29 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_o1h1:auto_generated
- 15. Source assignments for fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component|altsyncram_3s91:auto_generated
- 16. Parameter Settings for User Entity Instance: latch_A:inst2
- 17. Parameter Settings for User Entity Instance: BranchUnit:instasdadsdas
- 18. Parameter Settings for User Entity Instance: BlockALU:nosequenommbre|alu:inst2
- 19. Parameter Settings for User Entity Instance: BlockALU:nosequenommbre|mux4:mux_fa_
- 20. Parameter Settings for User Entity Instance: BlockALU:nosequenommbre|mux2:inst5
- 21. Parameter Settings for User Entity Instance: BlockALU:nosequenommbre|mux4:mux_fb_
- 22. Parameter Settings for User Entity Instance: ramA:jasjdasdjadsja|altsyncram:altsyncram_component
- 23. Parameter Settings for User Entity Instance: mux4_v2_wrs:inst13
- 24. Parameter Settings for User Entity Instance: mux2:inst564654
- 25. Parameter Settings for User Entity Instance: fetch_unit:instagg|prog_counter:inst1
- 26. Parameter Settings for User Entity Instance: fetch_unit:instagg|muxpc:asdhsadjasd
- 27. Parameter Settings for User Entity Instance: fetch_unit:instagg|add4:inst
- 28. Parameter Settings for User Entity Instance: fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component
- 29. Parameter Settings for User Entity Instance: decode:sjjsjsjsjs|Control:inst5
- 30. Parameter Settings for User Entity Instance: decode:sjjsjsjsjs|reg_file:inst
- 31. altsyncram Parameter Settings by Entity Instance
- 32. Post-Synthesis Netlist Statistics for Top Partition
- 33. Elapsed Time Per Partition
- 34. Analysis & Synthesis Messages
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_o1h1:auto_generated
+ 14. Source assignments for fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component|altsyncram_3s91:auto_generated
+ 15. Parameter Settings for User Entity Instance: latch_A:inst2
+ 16. Parameter Settings for User Entity Instance: BranchUnit:instasdadsdas
+ 17. Parameter Settings for User Entity Instance: BlockALU:nosequenommbre|alu:inst2
+ 18. Parameter Settings for User Entity Instance: BlockALU:nosequenommbre|mux4:mux_fa_
+ 19. Parameter Settings for User Entity Instance: BlockALU:nosequenommbre|mux2:inst5
+ 20. Parameter Settings for User Entity Instance: BlockALU:nosequenommbre|mux4:mux_fb_
+ 21. Parameter Settings for User Entity Instance: ramA:jasjdasdjadsja|altsyncram:altsyncram_component
+ 22. Parameter Settings for User Entity Instance: mux4_v2_wrs:inst13
+ 23. Parameter Settings for User Entity Instance: mux2:inst564654
+ 24. Parameter Settings for User Entity Instance: fetch_unit:instagg|prog_counter:inst1
+ 25. Parameter Settings for User Entity Instance: fetch_unit:instagg|muxpc:asdhsadjasd
+ 26. Parameter Settings for User Entity Instance: fetch_unit:instagg|add4:inst
+ 27. Parameter Settings for User Entity Instance: fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component
+ 28. Parameter Settings for User Entity Instance: decode:asjjgjfdskfajdsJA|Control:inst5
+ 29. Parameter Settings for User Entity Instance: decode:asjjgjfdskfajdsJA|reg_file:inst
+ 30. altsyncram Parameter Settings by Entity Instance
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
 
 
 
@@ -66,15 +65,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun  5 19:20:40 2024          ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun  6 17:30:25 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; TP2_E5                                         ;
 ; Top-level Entity Name              ; TP2_E5                                         ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 1,460                                          ;
-;     Total combinational functions  ; 1,339                                          ;
-;     Dedicated logic registers      ; 374                                            ;
-; Total registers                    ; 374                                            ;
+; Total logic elements               ; 3,941                                          ;
+;     Total combinational functions  ; 2,828                                          ;
+;     Dedicated logic registers      ; 1,462                                          ;
+; Total registers                    ; 1462                                           ;
 ; Total pins                         ; 339                                            ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 24,576                                         ;
@@ -182,7 +181,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -235,20 +234,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 1,460     ;
+; Estimated Total logic elements              ; 3,941     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1339      ;
+; Total combinational functions               ; 2828      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 678       ;
-;     -- 3 input functions                    ; 450       ;
-;     -- <=2 input functions                  ; 211       ;
+;     -- 4 input functions                    ; 2059      ;
+;     -- 3 input functions                    ; 590       ;
+;     -- <=2 input functions                  ; 179       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1162      ;
+;     -- normal mode                          ; 2651      ;
 ;     -- arithmetic mode                      ; 177       ;
 ;                                             ;           ;
-; Total registers                             ; 374       ;
-;     -- Dedicated logic registers            ; 374       ;
+; Total registers                             ; 1462      ;
+;     -- Dedicated logic registers            ; 1462      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 339       ;
@@ -257,9 +256,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 438       ;
-; Total fan-out                               ; 6736      ;
-; Average fan-out                             ; 2.74      ;
+; Maximum fan-out                             ; 1526      ;
+; Total fan-out                               ; 15944     ;
+; Average fan-out                             ; 3.17      ;
 +---------------------------------------------+-----------+
 
 
@@ -268,29 +267,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |TP2_E5                                      ; 1339 (0)            ; 374 (0)                   ; 24576       ; 0            ; 0       ; 0         ; 339  ; 0            ; |TP2_E5                                                                                              ; TP2_E5          ; work         ;
-;    |BlockALU:nosequenommbre|                 ; 862 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre                                                                      ; BlockALU        ; work         ;
-;       |ALUController:inst|                   ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|ALUController:inst                                                   ; ALUController   ; work         ;
-;       |alu:inst2|                            ; 737 (737)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2                                                            ; alu             ; work         ;
-;       |mux2:inst5|                           ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux2:inst5                                                           ; mux2            ; work         ;
-;       |mux4:mux_fa_|                         ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fa_                                                         ; mux4            ; work         ;
-;       |mux4:mux_fb_|                         ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fb_                                                         ; mux4            ; work         ;
+; |TP2_E5                                      ; 2828 (0)            ; 1462 (0)                  ; 24576       ; 0            ; 0       ; 0         ; 339  ; 0            ; |TP2_E5                                                                                              ; TP2_E5          ; work         ;
+;    |BlockALU:nosequenommbre|                 ; 930 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre                                                                      ; BlockALU        ; work         ;
+;       |ALUController:inst|                   ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|ALUController:inst                                                   ; ALUController   ; work         ;
+;       |alu:inst2|                            ; 739 (739)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2                                                            ; alu             ; work         ;
+;       |mux2:inst5|                           ; 42 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux2:inst5                                                           ; mux2            ; work         ;
+;       |mux4:mux_fa_|                         ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fa_                                                         ; mux4            ; work         ;
+;       |mux4:mux_fb_|                         ; 68 (68)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fb_                                                         ; mux4            ; work         ;
 ;    |BranchUnit:instasdadsdas|                ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BranchUnit:instasdadsdas                                                                     ; BranchUnit      ; work         ;
-;    |ForwardingUnit:porfa|                    ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ForwardingUnit:porfa                                                                         ; ForwardingUnit  ; work         ;
+;    |ForwardingUnit:porfa|                    ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ForwardingUnit:porfa                                                                         ; ForwardingUnit  ; work         ;
 ;    |HazardDetection:inst23|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|HazardDetection:inst23                                                                       ; HazardDetection ; work         ;
 ;    |LatchD:twittter|                         ; 0 (0)               ; 121 (121)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|LatchD:twittter                                                                              ; LatchD          ; work         ;
-;    |decode:sjjsjsjsjs|                       ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs                                                                            ; decode          ; work         ;
-;       |Control:inst5|                        ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs|Control:inst5                                                              ; Control         ; work         ;
-;       |imm_gen:inst4|                        ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:sjjsjsjsjs|imm_gen:inst4                                                              ; imm_gen         ; work         ;
+;    |decode:asjjgjfdskfajdsJA|                ; 117 (0)             ; 1024 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA                                                                     ; decode          ; work         ;
+;       |Control:inst5|                        ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA|Control:inst5                                                       ; Control         ; work         ;
+;       |imm_gen:inst4|                        ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA|imm_gen:inst4                                                       ; imm_gen         ; work         ;
+;       |reg_file:inst|                        ; 74 (74)             ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst                                                       ; reg_file        ; work         ;
 ;    |fetch_unit:instagg|                      ; 25 (0)              ; 8 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg                                                                           ; fetch_unit      ; work         ;
 ;       |add4:inst|                            ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|add4:inst                                                                 ; add4            ; work         ;
 ;       |prog_counter:inst1|                   ; 17 (17)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|prog_counter:inst1                                                        ; prog_counter    ; work         ;
 ;       |romA:inst2|                           ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|romA:inst2                                                                ; romA            ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
 ;             |altsyncram_3s91:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component|altsyncram_3s91:auto_generated ; altsyncram_3s91 ; work         ;
-;    |latch2:inst30|                           ; 108 (108)           ; 75 (75)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch2:inst30                                                                                ; latch2          ; work         ;
-;    |latch_A:inst2|                           ; 42 (42)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_A:inst2                                                                                ; latch_A         ; work         ;
-;    |latch_C:afsdhajs|                        ; 131 (131)           ; 130 (130)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_C:afsdhajs                                                                             ; latch_C         ; work         ;
+;    |latch2:inst30|                           ; 1450 (1450)         ; 139 (139)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch2:inst30                                                                                ; latch2          ; work         ;
+;    |latch_A:inst2|                           ; 41 (41)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_A:inst2                                                                                ; latch_A         ; work         ;
+;    |latch_C:afsdhajs|                        ; 133 (133)           ; 130 (130)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_C:afsdhajs                                                                             ; latch_C         ; work         ;
 ;    |mux4_v2_wrs:inst13|                      ; 75 (75)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|mux4_v2_wrs:inst13                                                                           ; mux4_v2_wrs     ; work         ;
 ;    |ramA:jasjdasdjadsja|                     ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ramA:jasjdasdjadsja                                                                          ; ramA            ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ramA:jasjdasdjadsja|altsyncram:altsyncram_component                                          ; altsyncram      ; work         ;
@@ -319,1114 +319,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+---------------------------------------+-----------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                            ;
-+---------------------------------------------------+-------------------------------------------+
-; Register name                                     ; Reason for Removal                        ;
-+---------------------------------------------------+-------------------------------------------+
-; latch2:inst30|MemtoReg_out                        ; Merged with latch2:inst30|MemRead_out     ;
-; latch_C:afsdhajs|next_memtoreg                    ; Merged with latch_C:afsdhajs|next_memread ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][0]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][0]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][1]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][1]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][2]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][2]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][3]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][3]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][4]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][4]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][5]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][5]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][6]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][6]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][7]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][7]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][8]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][8]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][9]   ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][9]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][10]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][10] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][11]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][11] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][12]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][12] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][13]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][13] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][14]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][14] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][15]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][15] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][16]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][16] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][17]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][17] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][18]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][18] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][19]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][19] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][20]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][20] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][21]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][21] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][22]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][22] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][23]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][23] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][24]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][24] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][25]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][25] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][26]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][26] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][27]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][27] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][28]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][28] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][29]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][29] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][30]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][30] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[1][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[2][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[3][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[4][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[5][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[6][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[7][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[8][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[9][31]  ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[10][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[11][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[12][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[13][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[14][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[15][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[16][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[17][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[18][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[19][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[20][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[21][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[22][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[23][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[24][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[25][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[26][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[27][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[28][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[29][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[30][31] ; Stuck at GND due to stuck port data_in    ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[31][31] ; Stuck at GND due to stuck port data_in    ;
-; latch2:inst30|RD_Two_out[0]                       ; Stuck at GND due to stuck port data_in    ;
-; latch2:inst30|RD_One_out[0..31]                   ; Stuck at GND due to stuck port data_in    ;
-; latch2:inst30|RD_Two_out[1..31]                   ; Stuck at GND due to stuck port data_in    ;
-; Total Number of Removed Registers = 1090          ;                                           ;
-+---------------------------------------------------+-------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                               ;
-+--------------------------------------------------+---------------------------+------------------------------------------------------------+
-; Register name                                    ; Reason for Removal        ; Registers Removed due to This Register                     ;
-+--------------------------------------------------+---------------------------+------------------------------------------------------------+
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][0]  ; Stuck at GND              ; latch2:inst30|RD_Two_out[0], latch2:inst30|RD_One_out[0]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][1]  ; Stuck at GND              ; latch2:inst30|RD_One_out[1], latch2:inst30|RD_Two_out[1]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][2]  ; Stuck at GND              ; latch2:inst30|RD_One_out[2], latch2:inst30|RD_Two_out[2]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][3]  ; Stuck at GND              ; latch2:inst30|RD_One_out[3], latch2:inst30|RD_Two_out[3]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][4]  ; Stuck at GND              ; latch2:inst30|RD_One_out[4], latch2:inst30|RD_Two_out[4]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][5]  ; Stuck at GND              ; latch2:inst30|RD_One_out[5], latch2:inst30|RD_Two_out[5]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][6]  ; Stuck at GND              ; latch2:inst30|RD_One_out[6], latch2:inst30|RD_Two_out[6]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][7]  ; Stuck at GND              ; latch2:inst30|RD_One_out[7], latch2:inst30|RD_Two_out[7]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][8]  ; Stuck at GND              ; latch2:inst30|RD_One_out[8], latch2:inst30|RD_Two_out[8]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][9]  ; Stuck at GND              ; latch2:inst30|RD_One_out[9], latch2:inst30|RD_Two_out[9]   ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][10] ; Stuck at GND              ; latch2:inst30|RD_One_out[10], latch2:inst30|RD_Two_out[10] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][11] ; Stuck at GND              ; latch2:inst30|RD_One_out[11], latch2:inst30|RD_Two_out[11] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][12] ; Stuck at GND              ; latch2:inst30|RD_One_out[12], latch2:inst30|RD_Two_out[12] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][13] ; Stuck at GND              ; latch2:inst30|RD_One_out[13], latch2:inst30|RD_Two_out[13] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][14] ; Stuck at GND              ; latch2:inst30|RD_One_out[14], latch2:inst30|RD_Two_out[14] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][15] ; Stuck at GND              ; latch2:inst30|RD_One_out[15], latch2:inst30|RD_Two_out[15] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][16] ; Stuck at GND              ; latch2:inst30|RD_One_out[16], latch2:inst30|RD_Two_out[16] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][17] ; Stuck at GND              ; latch2:inst30|RD_One_out[17], latch2:inst30|RD_Two_out[17] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][18] ; Stuck at GND              ; latch2:inst30|RD_One_out[18], latch2:inst30|RD_Two_out[18] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][19] ; Stuck at GND              ; latch2:inst30|RD_One_out[19], latch2:inst30|RD_Two_out[19] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][20] ; Stuck at GND              ; latch2:inst30|RD_One_out[20], latch2:inst30|RD_Two_out[20] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][21] ; Stuck at GND              ; latch2:inst30|RD_One_out[21], latch2:inst30|RD_Two_out[21] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][22] ; Stuck at GND              ; latch2:inst30|RD_One_out[22], latch2:inst30|RD_Two_out[22] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][23] ; Stuck at GND              ; latch2:inst30|RD_One_out[23], latch2:inst30|RD_Two_out[23] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][24] ; Stuck at GND              ; latch2:inst30|RD_One_out[24], latch2:inst30|RD_Two_out[24] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][25] ; Stuck at GND              ; latch2:inst30|RD_One_out[25], latch2:inst30|RD_Two_out[25] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][26] ; Stuck at GND              ; latch2:inst30|RD_One_out[26], latch2:inst30|RD_Two_out[26] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][27] ; Stuck at GND              ; latch2:inst30|RD_One_out[27], latch2:inst30|RD_Two_out[27] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][28] ; Stuck at GND              ; latch2:inst30|RD_One_out[28], latch2:inst30|RD_Two_out[28] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][29] ; Stuck at GND              ; latch2:inst30|RD_One_out[29], latch2:inst30|RD_Two_out[29] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][30] ; Stuck at GND              ; latch2:inst30|RD_One_out[30], latch2:inst30|RD_Two_out[30] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-; decode:sjjsjsjsjs|reg_file:inst|registers[0][31] ; Stuck at GND              ; latch2:inst30|RD_One_out[31], latch2:inst30|RD_Two_out[31] ;
-;                                                  ; due to stuck port data_in ;                                                            ;
-+--------------------------------------------------+---------------------------+------------------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                ;
++---------------------------------------+-------------------------------------------+
+; Register name                         ; Reason for Removal                        ;
++---------------------------------------+-------------------------------------------+
+; latch2:inst30|MemtoReg_out            ; Merged with latch2:inst30|MemRead_out     ;
+; latch_C:afsdhajs|next_memtoreg        ; Merged with latch_C:afsdhajs|next_memread ;
+; Total Number of Removed Registers = 2 ;                                           ;
++---------------------------------------+-------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1434,75 +335,75 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 374   ;
-; Number of registers using Synchronous Clear  ; 29    ;
+; Total registers                              ; 1462  ;
+; Number of registers using Synchronous Clear  ; 93    ;
 ; Number of registers using Synchronous Load   ; 12    ;
 ; Number of registers using Asynchronous Clear ; 121   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 1040  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[0][28]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[1][28]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[2][2]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[3][6]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[4][27]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[5][24]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[6][13]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[7][14]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[8][26]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[9][16]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[10][31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[11][31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[12][23] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[13][31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[14][18] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[15][9]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[16][13] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[17][10] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[18][12] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[19][11] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[20][13] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[21][30] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[22][5]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[23][11] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[24][27] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[25][20] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[26][31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[27][28] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[28][23] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[29][20] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[30][19] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:sjjsjsjsjs|reg_file:inst|registers[31][0]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |TP2_E5|latch_A:inst2|next_pc[1]                          ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|fetch_unit:instagg|prog_counter:inst1|next_pc[0]  ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[22]                        ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_One_out[21]                      ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_Two_out[10]                      ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[1]                         ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[14]                        ;
-; 14:1               ; 6 bits    ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[5]                         ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fb_|y[20]        ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fa_|y[2]         ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BranchUnit:instasdadsdas|BrPC[3]                  ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |TP2_E5|decode:sjjsjsjsjs|imm_gen:inst4|Selector31        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |TP2_E5|decode:sjjsjsjsjs|imm_gen:inst4|Selector31        ;
-; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[19]                          ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[2]                           ;
-; 20:1               ; 7 bits    ; 91 LEs        ; 49 LEs               ; 42 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux9            ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux19           ;
-; 21:1               ; 4 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux4            ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux27           ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux2            ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux29           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[0][28]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[1][28]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[2][2]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[3][6]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[4][27]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[5][24]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[6][13]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[7][14]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[8][26]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[9][16]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[10][31] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[11][31] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[12][23] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[13][31] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[14][18] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[15][9]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[16][13] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[17][10] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[18][12] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[19][11] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[20][13] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[21][30] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[22][5]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[23][11] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[24][27] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[25][20] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[26][31] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[27][28] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[28][23] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[29][20] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[30][19] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[31][0]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |TP2_E5|latch_A:inst2|next_pc[1]                                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|fetch_unit:instagg|prog_counter:inst1|next_pc[0]         ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[22]                               ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_One_out[21]                             ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_Two_out[10]                             ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[1]                                ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[14]                               ;
+; 14:1               ; 6 bits    ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[5]                                ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fb_|y[20]               ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fa_|y[2]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BranchUnit:instasdadsdas|BrPC[3]                         ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |TP2_E5|decode:asjjgjfdskfajdsJA|imm_gen:inst4|Selector31        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |TP2_E5|decode:asjjgjfdskfajdsJA|imm_gen:inst4|Selector31        ;
+; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[19]                                 ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[2]                                  ;
+; 20:1               ; 7 bits    ; 91 LEs        ; 49 LEs               ; 42 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux9                   ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux19                  ;
+; 21:1               ; 4 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux4                   ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux27                  ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux2                   ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux29                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------+
@@ -1757,33 +658,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:sjjsjsjsjs|Control:inst5 ;
-+----------------+---------+---------------------------------------------------+
-; Parameter Name ; Value   ; Type                                              ;
-+----------------+---------+---------------------------------------------------+
-; R_TYPE         ; 0110011 ; Unsigned Binary                                   ;
-; LW             ; 0000011 ; Unsigned Binary                                   ;
-; SW             ; 0100011 ; Unsigned Binary                                   ;
-; RTypeI         ; 0010011 ; Unsigned Binary                                   ;
-; BR             ; 1100011 ; Unsigned Binary                                   ;
-; JAL            ; 1101111 ; Unsigned Binary                                   ;
-; JALR           ; 1100111 ; Unsigned Binary                                   ;
-; LUI            ; 0110111 ; Unsigned Binary                                   ;
-; AUIPC          ; 0010111 ; Unsigned Binary                                   ;
-+----------------+---------+---------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decode:asjjgjfdskfajdsJA|Control:inst5 ;
++----------------+---------+----------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                     ;
++----------------+---------+----------------------------------------------------------+
+; R_TYPE         ; 0110011 ; Unsigned Binary                                          ;
+; LW             ; 0000011 ; Unsigned Binary                                          ;
+; SW             ; 0100011 ; Unsigned Binary                                          ;
+; RTypeI         ; 0010011 ; Unsigned Binary                                          ;
+; BR             ; 1100011 ; Unsigned Binary                                          ;
+; JAL            ; 1101111 ; Unsigned Binary                                          ;
+; JALR           ; 1100111 ; Unsigned Binary                                          ;
+; LUI            ; 0110111 ; Unsigned Binary                                          ;
+; AUIPC          ; 0010111 ; Unsigned Binary                                          ;
++----------------+---------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:sjjsjsjsjs|reg_file:inst ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                      ;
-; WIDTH_ADD      ; 5     ; Signed Integer                                      ;
-; NUM_REGISTERS  ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decode:asjjgjfdskfajdsJA|reg_file:inst ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                             ;
+; WIDTH_ADD      ; 5     ; Signed Integer                                             ;
+; NUM_REGISTERS  ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1824,27 +725,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 339                         ;
-; cycloneiii_ff         ; 374                         ;
+; cycloneiii_ff         ; 1462                        ;
 ;     CLR               ; 121                         ;
-;     ENA               ; 8                           ;
+;     ENA               ; 1032                        ;
 ;     ENA SCLR          ; 8                           ;
-;     SCLR              ; 9                           ;
+;     SCLR              ; 73                          ;
 ;     SCLR SLD          ; 12                          ;
 ;     plain             ; 216                         ;
-; cycloneiii_lcell_comb ; 1346                        ;
+; cycloneiii_lcell_comb ; 2834                        ;
 ;     arith             ; 177                         ;
 ;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 162                         ;
-;     normal            ; 1169                        ;
-;         0 data inputs ; 1                           ;
+;     normal            ; 2657                        ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 194                         ;
-;         3 data inputs ; 288                         ;
-;         4 data inputs ; 678                         ;
+;         2 data inputs ; 162                         ;
+;         3 data inputs ; 428                         ;
+;         4 data inputs ; 2059                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 15.50                       ;
-; Average LUT depth     ; 10.43                       ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 7.11                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1853,7 +753,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -1863,7 +763,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Jun  5 19:20:22 2024
+    Info: Processing started: Thu Jun  6 17:30:04 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1990,87 +890,22 @@ Warning (113016): Width of data items in "Fibo10.mif" is smaller than the memory
 Warning (113028): 492 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 1
     Warning (113027): Addresses ranging from 20 to 511 are not initialized File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 1
 Critical Warning (127004): Memory depth (256) in the design file differs from memory depth (512) in the Memory Initialization File "C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif" -- truncated remaining initial content value to fit RAM File: C:/Users/sebas/Documents/GitHub/TP2-E5/romA.v Line: 82
-Info (12128): Elaborating entity "decode" for hierarchy "decode:sjjsjsjsjs"
-Info (12128): Elaborating entity "Control" for hierarchy "decode:sjjsjsjsjs|Control:inst5"
-Info (12128): Elaborating entity "imm_gen" for hierarchy "decode:sjjsjsjsjs|imm_gen:inst4"
-Info (12128): Elaborating entity "reg_file" for hierarchy "decode:sjjsjsjsjs|reg_file:inst"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "rd1_deb[31]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[30]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[29]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[28]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[27]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[26]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[25]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[24]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[23]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[22]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[21]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[20]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[19]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[18]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[17]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[16]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[15]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[14]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[13]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[12]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[11]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[10]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[9]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[8]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[7]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[6]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[5]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[4]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[3]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[2]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[1]" is stuck at GND
-    Warning (13410): Pin "rd1_deb[0]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[31]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[30]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[29]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[28]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[27]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[26]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[25]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[24]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[23]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[22]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[21]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[20]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[19]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[18]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[17]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[16]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[15]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[14]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[13]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[12]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[11]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[10]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[9]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[8]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[7]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[6]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[5]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[4]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[3]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[2]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[1]" is stuck at GND
-    Warning (13410): Pin "rd2_deb[0]" is stuck at GND
+Info (12128): Elaborating entity "decode" for hierarchy "decode:asjjgjfdskfajdsJA"
+Info (12128): Elaborating entity "Control" for hierarchy "decode:asjjgjfdskfajdsJA|Control:inst5"
+Info (12128): Elaborating entity "imm_gen" for hierarchy "decode:asjjgjfdskfajdsJA|imm_gen:inst4"
+Info (12128): Elaborating entity "reg_file" for hierarchy "decode:asjjgjfdskfajdsJA|reg_file:inst"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1863 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4376 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 337 output pins
-    Info (21061): Implemented 1460 logic cells
+    Info (21061): Implemented 3973 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 72 warnings
-    Info: Peak virtual memory: 4759 megabytes
-    Info: Processing ended: Wed Jun  5 19:20:40 2024
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:33
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Thu Jun  6 17:30:25 2024
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:35
 
 
