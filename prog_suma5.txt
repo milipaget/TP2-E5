@@ -1,0 +1,89 @@
+DEPTH = 256;            -- The size of memory in words
+WIDTH = 32;             -- The size of data in bits
+ADDRESS_RADIX = DEC;    -- The radix for address values
+DATA_RADIX = BIN;       -- The radix for data values
+CONTENT                 -- Start of (address: data pairs)
+BEGIN
+
+-- Instruction 0
+0: 00000000000000000000000000110011; -- addi x0, x0, 0
+
+-- Instruction 1
+1: 00000000000100000000000000110011; -- addi x1, x0, 8
+
+-- Instruction 2
+2: 00000000001000000000000000110011; -- addi x2, x0, 4
+
+-- Instruction 3
+3: 00000000001100010000000000100111; -- or x3, x1, x2
+
+-- Instruction 4
+4: 00000000010000000001000000100111; -- or x4, x2, x0
+
+-- Instruction 5
+5: 00000000001100100001000000110011; -- add x6, x4, x2
+
+-- Instruction 6
+6: 00000000010000000000000000010011; -- addi x4, x0, 2
+
+-- Instruction 7
+7: 11111111111000000000000000100011; -- addi x5, x0, -2
+
+-- Instruction 8
+8: 00000010001000001000001000110011; -- sll x18, x1, x4
+
+-- Instruction 9
+9: 00000010001000101000001000110011; -- srl x19, x5, x4
+
+-- Instruction 10
+10: 01000010001000101000001000110011; -- sra x20, x5, x4
+
+-- Instruction 11
+11: 00000010001000010001000000100011; -- slt x21, x1, x2
+
+-- Instruction 12
+12: 00000010001000100001000000100011; -- slt x22, x2, x1
+
+-- Instruction 13
+13: 01000010010000101001000000100011; -- sltu x23, x5, x1
+
+-- Instruction 14
+14: 01000010001000101001000000100011; -- sltu x24, x1, x5
+
+-- Instruction 15
+15: 00000010001000001000100000100011; -- slti x25, x1, 8
+
+-- Instruction 16
+16: 00000010001000001001000000100011; -- slti x26, x1, 16
+
+-- Instruction 17
+17: 11111111111000000000000000110011; -- addi x5, x0, -4
+
+-- Instruction 18
+18: 01000010001000001001100000100011; -- sltiu x27, x1, -2
+
+-- Instruction 19
+19: 11111111111000001001100000100011; -- sltiu x28, x5, -2
+
+-- Instruction 20
+20: 00000010101000001001100000100011; -- slli x29, x5, 1
+
+-- Instruction 21
+21: 01000010101000001001100000100011; -- srli x30, x5, 1
+
+-- Instruction 22
+22: 01000010110000001001100000100011; -- srai x31, x5, 1
+
+-- Instruction 23
+23: 00000010101000001000001000010011; -- xori x6, x1, 10
+
+-- Instruction 24
+24: 00000011001000001000001000010011; -- ori x7, x1, 2
+
+-- Instruction 25
+25: 00000011101000001000001000010011; -- andi x8, x1, 10
+
+-- Instruction 26
+26: 00000001101000100001000000110011; -- xor x9, x1, x2
+
+END;

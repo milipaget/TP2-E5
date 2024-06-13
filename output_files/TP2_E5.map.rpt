@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Mon Jun 10 14:19:06 2024
+Thu Jun 13 19:05:16 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -65,16 +65,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 10 14:19:06 2024          ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 13 19:05:16 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; TP2_E5                                         ;
 ; Top-level Entity Name              ; TP2_E5                                         ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 3,941                                          ;
-;     Total combinational functions  ; 2,828                                          ;
+; Total logic elements               ; 3,885                                          ;
+;     Total combinational functions  ; 2,772                                          ;
 ;     Dedicated logic registers      ; 1,462                                          ;
 ; Total registers                    ; 1462                                           ;
-; Total pins                         ; 339                                            ;
+; Total pins                         ; 135                                            ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 24,576                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
@@ -225,7 +225,7 @@ https://fpgasoftware.intel.com/eula.
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_o1h1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/sebas/Documents/GitHub/TP2-E5/db/altsyncram_o1h1.tdf                   ;         ;
 ; db/altsyncram_3s91.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/sebas/Documents/GitHub/TP2-E5/db/altsyncram_3s91.tdf                   ;         ;
-; Fibo10.mif                       ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif                               ;         ;
+; fibo10.mif                       ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/sebas/Documents/GitHub/TP2-E5/fibo10.mif                               ;         ;
 +----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
@@ -234,31 +234,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,941     ;
+; Estimated Total logic elements              ; 3,885     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2828      ;
+; Total combinational functions               ; 2772      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2059      ;
-;     -- 3 input functions                    ; 590       ;
-;     -- <=2 input functions                  ; 179       ;
+;     -- 4 input functions                    ; 1984      ;
+;     -- 3 input functions                    ; 612       ;
+;     -- <=2 input functions                  ; 176       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2651      ;
+;     -- normal mode                          ; 2595      ;
 ;     -- arithmetic mode                      ; 177       ;
 ;                                             ;           ;
 ; Total registers                             ; 1462      ;
 ;     -- Dedicated logic registers            ; 1462      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 339       ;
+; I/O pins                                    ; 135       ;
 ; Total memory bits                           ; 24576     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 1526      ;
-; Total fan-out                               ; 15944     ;
-; Average fan-out                             ; 3.17      ;
+; Total fan-out                               ; 15339     ;
+; Average fan-out                             ; 3.36      ;
 +---------------------------------------------+-----------+
 
 
@@ -267,31 +267,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |TP2_E5                                      ; 2828 (0)            ; 1462 (0)                  ; 24576       ; 0            ; 0       ; 0         ; 339  ; 0            ; |TP2_E5                                                                                              ; TP2_E5          ; work         ;
-;    |BlockALU:nosequenommbre|                 ; 930 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre                                                                      ; BlockALU        ; work         ;
-;       |ALUController:inst|                   ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|ALUController:inst                                                   ; ALUController   ; work         ;
-;       |alu:inst2|                            ; 739 (739)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2                                                            ; alu             ; work         ;
-;       |mux2:inst5|                           ; 42 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux2:inst5                                                           ; mux2            ; work         ;
-;       |mux4:mux_fa_|                         ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fa_                                                         ; mux4            ; work         ;
-;       |mux4:mux_fb_|                         ; 68 (68)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fb_                                                         ; mux4            ; work         ;
-;    |BranchUnit:instasdadsdas|                ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BranchUnit:instasdadsdas                                                                     ; BranchUnit      ; work         ;
-;    |ForwardingUnit:porfa|                    ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ForwardingUnit:porfa                                                                         ; ForwardingUnit  ; work         ;
+; |TP2_E5                                      ; 2772 (0)            ; 1462 (0)                  ; 24576       ; 0            ; 0       ; 0         ; 135  ; 0            ; |TP2_E5                                                                                              ; TP2_E5          ; work         ;
+;    |BlockALU:nosequenommbre|                 ; 745 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre                                                                      ; BlockALU        ; work         ;
+;       |ALUController:inst|                   ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|ALUController:inst                                                   ; ALUController   ; work         ;
+;       |alu:inst2|                            ; 556 (556)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2                                                            ; alu             ; work         ;
+;       |mux2:inst5|                           ; 45 (45)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux2:inst5                                                           ; mux2            ; work         ;
+;       |mux4:mux_fa_|                         ; 66 (66)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fa_                                                         ; mux4            ; work         ;
+;       |mux4:mux_fb_|                         ; 59 (59)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fb_                                                         ; mux4            ; work         ;
+;    |BranchUnit:instasdadsdas|                ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|BranchUnit:instasdadsdas                                                                     ; BranchUnit      ; work         ;
+;    |ForwardingUnit:porfa|                    ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ForwardingUnit:porfa                                                                         ; ForwardingUnit  ; work         ;
 ;    |HazardDetection:inst23|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|HazardDetection:inst23                                                                       ; HazardDetection ; work         ;
 ;    |LatchD:twittter|                         ; 0 (0)               ; 121 (121)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|LatchD:twittter                                                                              ; LatchD          ; work         ;
 ;    |decode:asjjgjfdskfajdsJA|                ; 117 (0)             ; 1024 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA                                                                     ; decode          ; work         ;
-;       |Control:inst5|                        ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA|Control:inst5                                                       ; Control         ; work         ;
-;       |imm_gen:inst4|                        ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA|imm_gen:inst4                                                       ; imm_gen         ; work         ;
+;       |Control:inst5|                        ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA|Control:inst5                                                       ; Control         ; work         ;
+;       |imm_gen:inst4|                        ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA|imm_gen:inst4                                                       ; imm_gen         ; work         ;
 ;       |reg_file:inst|                        ; 74 (74)             ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst                                                       ; reg_file        ; work         ;
-;    |fetch_unit:instagg|                      ; 25 (0)              ; 8 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg                                                                           ; fetch_unit      ; work         ;
-;       |add4:inst|                            ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|add4:inst                                                                 ; add4            ; work         ;
-;       |prog_counter:inst1|                   ; 17 (17)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|prog_counter:inst1                                                        ; prog_counter    ; work         ;
+;    |fetch_unit:instagg|                      ; 19 (0)              ; 8 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg                                                                           ; fetch_unit      ; work         ;
+;       |prog_counter:inst1|                   ; 19 (19)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|prog_counter:inst1                                                        ; prog_counter    ; work         ;
 ;       |romA:inst2|                           ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|romA:inst2                                                                ; romA            ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
 ;             |altsyncram_3s91:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component|altsyncram_3s91:auto_generated ; altsyncram_3s91 ; work         ;
-;    |latch2:inst30|                           ; 1450 (1450)         ; 139 (139)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch2:inst30                                                                                ; latch2          ; work         ;
-;    |latch_A:inst2|                           ; 41 (41)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_A:inst2                                                                                ; latch_A         ; work         ;
-;    |latch_C:afsdhajs|                        ; 133 (133)           ; 130 (130)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_C:afsdhajs                                                                             ; latch_C         ; work         ;
-;    |mux4_v2_wrs:inst13|                      ; 75 (75)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|mux4_v2_wrs:inst13                                                                           ; mux4_v2_wrs     ; work         ;
+;    |latch2:inst30|                           ; 1452 (1452)         ; 139 (139)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch2:inst30                                                                                ; latch2          ; work         ;
+;    |latch_A:inst2|                           ; 57 (57)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_A:inst2                                                                                ; latch_A         ; work         ;
+;    |latch_C:afsdhajs|                        ; 263 (263)           ; 130 (130)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|latch_C:afsdhajs                                                                             ; latch_C         ; work         ;
+;    |mux4_v2_wrs:inst13|                      ; 74 (74)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|mux4_v2_wrs:inst13                                                                           ; mux4_v2_wrs     ; work         ;
 ;    |ramA:jasjdasdjadsja|                     ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ramA:jasjdasdjadsja                                                                          ; ramA            ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ramA:jasjdasdjadsja|altsyncram:altsyncram_component                                          ; altsyncram      ; work         ;
 ;          |altsyncram_o1h1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TP2_E5|ramA:jasjdasdjadsja|altsyncram:altsyncram_component|altsyncram_o1h1:auto_generated           ; altsyncram_o1h1 ; work         ;
@@ -336,8 +335,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 1462  ;
-; Number of registers using Synchronous Clear  ; 93    ;
-; Number of registers using Synchronous Load   ; 12    ;
+; Number of registers using Synchronous Clear  ; 104   ;
+; Number of registers using Synchronous Load   ; 28    ;
 ; Number of registers using Asynchronous Clear ; 121   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1040  ;
@@ -350,59 +349,58 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[0][28]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[1][28]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[2][2]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[3][6]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[4][27]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[0][8]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[1][27]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[2][10]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[3][24]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[4][16]  ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[5][24]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[6][13]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[7][14]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[8][26]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[9][16]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[10][31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[11][31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[12][23] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[13][31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[14][18] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[15][9]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[16][13] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[17][10] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[18][12] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[19][11] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[20][13] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[21][30] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[22][5]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[23][11] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[24][27] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[25][20] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[26][31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[27][28] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[28][23] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[29][20] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[30][19] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[31][0]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |TP2_E5|latch_A:inst2|next_pc[1]                                 ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|fetch_unit:instagg|prog_counter:inst1|next_pc[0]         ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[22]                               ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_One_out[21]                             ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_Two_out[10]                             ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[1]                                ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[14]                               ;
-; 14:1               ; 6 bits    ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[5]                                ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fb_|y[20]               ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fa_|y[2]                ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BranchUnit:instasdadsdas|BrPC[3]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[6][17]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[7][19]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[8][1]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[9][23]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[10][29] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[11][11] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[12][11] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[13][11] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[14][6]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[15][17] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[16][30] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[17][6]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[18][7]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[19][19] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[20][28] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[21][12] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[22][12] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[23][12] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[24][12] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[25][27] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[26][14] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[27][20] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[28][7]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[29][14] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[30][9]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|decode:asjjgjfdskfajdsJA|reg_file:inst|registers[31][27] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |TP2_E5|latch_A:inst2|next_pc[5]                                 ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[21]                               ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |TP2_E5|fetch_unit:instagg|prog_counter:inst1|next_pc[1]         ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_One_out[12]                             ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |TP2_E5|latch2:inst30|RD_Two_out[3]                              ;
+; 21:1               ; 7 bits    ; 98 LEs        ; 49 LEs               ; 49 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[20]                      ;
+; 20:1               ; 8 bits    ; 104 LEs       ; 48 LEs               ; 56 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[11]                      ;
+; 22:1               ; 4 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[27]                      ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[4]                                ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[16]                               ;
+; 23:1               ; 2 bits    ; 30 LEs        ; 16 LEs               ; 14 LEs                 ; Yes        ; |TP2_E5|latch_C:afsdhajs|next_aluresult[28]                      ;
+; 14:1               ; 6 bits    ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |TP2_E5|latch2:inst30|ImmG_out[10]                               ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fb_|y[8]                ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TP2_E5|BlockALU:nosequenommbre|mux4:mux_fa_|y[27]               ;
 ; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |TP2_E5|decode:asjjgjfdskfajdsJA|imm_gen:inst4|Selector31        ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |TP2_E5|decode:asjjgjfdskfajdsJA|imm_gen:inst4|Selector31        ;
-; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[19]                                 ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[2]                                  ;
-; 20:1               ; 7 bits    ; 91 LEs        ; 49 LEs               ; 42 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux9                   ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux19                  ;
-; 21:1               ; 4 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux4                   ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux27                  ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux2                   ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux29                  ;
+; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[30]                                 ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |TP2_E5|mux4_v2_wrs:inst13|y[0]                                  ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux25                  ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |TP2_E5|BlockALU:nosequenommbre|alu:inst2|Mux28                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
 
 
@@ -724,27 +722,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 339                         ;
+; boundary_port         ; 135                         ;
 ; cycloneiii_ff         ; 1462                        ;
 ;     CLR               ; 121                         ;
 ;     ENA               ; 1032                        ;
-;     ENA SCLR          ; 8                           ;
-;     SCLR              ; 73                          ;
-;     SCLR SLD          ; 12                          ;
-;     plain             ; 216                         ;
-; cycloneiii_lcell_comb ; 2834                        ;
+;     ENA SCLR SLD      ; 8                           ;
+;     SCLR              ; 76                          ;
+;     SCLR SLD          ; 20                          ;
+;     plain             ; 205                         ;
+; cycloneiii_lcell_comb ; 2772                        ;
 ;     arith             ; 177                         ;
 ;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 162                         ;
-;     normal            ; 2657                        ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 162                         ;
-;         3 data inputs ; 428                         ;
-;         4 data inputs ; 2059                        ;
+;     normal            ; 2595                        ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 159                         ;
+;         3 data inputs ; 450                         ;
+;         4 data inputs ; 1984                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 16.00                       ;
-; Average LUT depth     ; 7.11                        ;
+; Max LUT depth         ; 15.10                       ;
+; Average LUT depth     ; 6.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -753,7 +751,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:11     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -763,7 +761,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Mon Jun 10 14:18:32 2024
+    Info: Processing started: Thu Jun 13 19:04:55 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -886,8 +884,6 @@ Info (12133): Instantiated megafunction "fetch_unit:instagg|romA:inst2|altsyncra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3s91.tdf
     Info (12023): Found entity 1: altsyncram_3s91 File: C:/Users/sebas/Documents/GitHub/TP2-E5/db/altsyncram_3s91.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_3s91" for hierarchy "fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component|altsyncram_3s91:auto_generated" File: c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113028): 252 out of 256 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 1
-    Warning (113027): Addresses ranging from 4 to 255 are not initialized File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 1
 Info (12128): Elaborating entity "decode" for hierarchy "decode:asjjgjfdskfajdsJA"
 Info (12128): Elaborating entity "Control" for hierarchy "decode:asjjgjfdskfajdsJA|Control:inst5"
 Info (12128): Elaborating entity "imm_gen" for hierarchy "decode:asjjgjfdskfajdsJA|imm_gen:inst4"
@@ -895,15 +891,15 @@ Info (12128): Elaborating entity "reg_file" for hierarchy "decode:asjjgjfdskfajd
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4376 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4116 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 337 output pins
-    Info (21061): Implemented 3973 logic cells
+    Info (21059): Implemented 133 output pins
+    Info (21061): Implemented 3917 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Mon Jun 10 14:19:06 2024
-    Info: Elapsed time: 00:00:34
-    Info: Total CPU time (on all processors): 00:00:35
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4766 megabytes
+    Info: Processing ended: Thu Jun 13 19:05:16 2024
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:40
 
 

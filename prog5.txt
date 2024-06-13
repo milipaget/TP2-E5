@@ -1,0 +1,41 @@
+DEPTH = 256;			-- The size of memory in words
+WIDTH = 32;				-- The size of data in bits
+ADDRESS_RADIX = DEC;	-- The radix for address values
+DATA_RADIX = BIN;		-- The radix for data values
+CONTENT					-- Start of (address: data pairs)
+BEGIN
+
+000: 00000000000100000000001110010011;
+001: 00000000010000000000000100010011;
+002: 00000000100000000000010101101111;
+003: 00000000000000010110001000110011;
+004: 00000000001000100000001100110011;
+005: 00000000000100000000001110010011;
+006: 00000000001000000000010000010011;
+007: 11111110011100111000110011100011;
+008: 00000000000000010110001000110011;
+
+END;
+
+SALIDA:
+45: Register [ 7] written with value: [00000001] | [         1]
+55: Register [ 2] written with value: [00000004] | [         4]
+65: Register [10] written with value: [0000000c] | [        12]
+95: Register [ 6] written with value: [00000004] | [         4]
+105: Register [ 7] written with value: [00000001] | [         1]
+115: Register [ 8] written with value: [00000002] | [         2]
+155: Register [ 7] written with value: [00000001] | [         1]
+165: Register [ 8] written with value: [00000002] | [         2]
+205: Register [ 7] written with value: [00000001] | [         1]
+215: Register [ 8] written with value: [00000002] | [         2]
+255: Register [ 7] written with value: [00000001] | [         1]
+265: Register [ 8] written with value: [00000002] | [         2]
+305: Register [ 7] written with value: [00000001] | [         1]
+315: Register [ 8] written with value: [00000002] | [         2]
+355: Register [ 7] written with value: [00000001] | [         1]
+365: Register [ 8] written with value: [00000002] | [         2]
+405: Register [ 7] written with value: [00000001] | [         1]
+415: Register [ 8] written with value: [00000002] | [         2]
+455: Register [ 7] written with value: [00000001] | [         1]
+465: Register [ 8] written with value: [00000002] | [         2]
+505: Register [ 7] written with value: [00000001] | [         1]

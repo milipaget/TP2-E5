@@ -1,5 +1,5 @@
 EDA Netlist Writer report for TP2_E5
-Mon Jun 10 14:24:44 2024
+Thu Jun 13 19:11:30 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jun 10 14:24:44 2024 ;
+; EDA Netlist Writer Status ; Successful - Thu Jun 13 19:11:30 2024 ;
 ; Revision Name             ; TP2_E5                                ;
 ; Top-level Entity Name     ; TP2_E5                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -51,7 +51,8 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                                            ; Setting                     ;
 +---------------------------------------------------------------------------------------------------+-----------------------------+
 ; Tool Name                                                                                         ; Questa Intel FPGA (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                          ;
+; Generate functional simulation netlist                                                            ; Off                         ;
+; Time scale                                                                                        ; 1 ps                        ;
 ; Truncate long hierarchy paths                                                                     ; Off                         ;
 ; Map illegal HDL characters                                                                        ; Off                         ;
 ; Flatten buses into individual nodes                                                               ; Off                         ;
@@ -66,13 +67,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+-----------------------------+
 
 
-+-------------------------------------------------------------------+
-; Simulation Generated Files                                        ;
-+-------------------------------------------------------------------+
-; Generated Files                                                   ;
-+-------------------------------------------------------------------+
-; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5.vo ;
-+-------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                              ;
++-----------------------------------------------------------------------------------------+
+; Generated Files                                                                         ;
++-----------------------------------------------------------------------------------------+
+; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5_6_1200mv_85c_slow.vo     ;
+; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5_6_1200mv_0c_slow.vo      ;
+; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5_min_1200mv_0c_fast.vo    ;
+; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5.vo                       ;
+; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5_6_1200mv_85c_v_slow.sdo  ;
+; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5_6_1200mv_0c_v_slow.sdo   ;
+; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//TP2_E5_v.sdo                    ;
++-----------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,14 +103,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Jun 10 14:24:43 2024
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/ TP2_E5 -c TP2_E5
+    Info: Processing started: Thu Jun 13 19:11:26 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/ TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file TP2_E5_6_1200mv_85c_slow.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_6_1200mv_0c_slow.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_min_1200mv_0c_fast.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file TP2_E5.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_6_1200mv_85c_v_slow.sdo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_6_1200mv_0c_v_slow.sdo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_min_1200mv_0c_v_fast.sdo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_v.sdo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4659 megabytes
-    Info: Processing ended: Mon Jun 10 14:24:44 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4679 megabytes
+    Info: Processing ended: Thu Jun 13 19:11:30 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

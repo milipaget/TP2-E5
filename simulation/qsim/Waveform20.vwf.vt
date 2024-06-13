@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/10/2024 14:24:42"
+// Generated on "06/13/2024 19:11:25"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          TP2_E5
 // 
@@ -33,22 +33,13 @@ module TP2_E5_vlg_vec_tst();
 reg CLK;
 reg RST;
 // wires                                               
-wire [31:0] a_mux_res;
-wire [31:0] alu_Res_debug;
-wire [31:0] alures;
-wire [31:0] b_mux_res;
-wire [7:0] br_pcc;
 wire [31:0] data_write_debug;
 wire [7:0] DEBUG_NEXTPC_C;
-wire [1:0] fw_A;
-wire [1:0] fw_b;
 wire [31:0] inst_debug;
 wire [7:0] pc_debugg;
 wire [7:0] pc_four_debug;
 wire pc_Sel_debu;
 wire [8:0] ram_add;
-wire [31:0] rd1_deb;
-wire [31:0] rd2_deb;
 wire rd_en_debug;
 wire stop_debu;
 wire [31:0] wbdata_deb;
@@ -57,23 +48,14 @@ wire wr_en_debug;
 // assign statements (if any)                          
 TP2_E5 i1 (
 // port map - connection between master ports and signals/registers   
-	.a_mux_res(a_mux_res),
-	.alu_Res_debug(alu_Res_debug),
-	.alures(alures),
-	.b_mux_res(b_mux_res),
-	.br_pcc(br_pcc),
 	.CLK(CLK),
 	.data_write_debug(data_write_debug),
 	.DEBUG_NEXTPC_C(DEBUG_NEXTPC_C),
-	.fw_A(fw_A),
-	.fw_b(fw_b),
 	.inst_debug(inst_debug),
 	.pc_debugg(pc_debugg),
 	.pc_four_debug(pc_four_debug),
 	.pc_Sel_debu(pc_Sel_debu),
 	.ram_add(ram_add),
-	.rd1_deb(rd1_deb),
-	.rd2_deb(rd2_deb),
 	.rd_en_debug(rd_en_debug),
 	.RST(RST),
 	.stop_debu(stop_debu),
@@ -89,8 +71,8 @@ end
 always
 begin
 	CLK = 1'b0;
-	CLK = #1000 1'b1;
-	#1000;
+	CLK = #50000 1'b1;
+	#50000;
 end 
 
 // RST

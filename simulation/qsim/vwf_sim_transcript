@@ -26,26 +26,23 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Jun 10 14:24:41 2024
+    Info: Processing started: Thu Jun 13 19:11:25 2024
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off TP2_E5 -c TP2_E5 --vector_source=C:/Users/sebas/Documents/GitHub/TP2-E5/Waveform20.vwf --testbench_file=C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/Waveform20.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
- file when writing test bench files
+1005): Ignoring output pin "data_write_debug[11]" in vector source file when writing test bench files
 
-or source file when writing test bench files
+tput pin "br_pc[5]" in vector source file when writing test bench files
 
-
-iles
-
-noring output pin "wbdata_deb[2]" in vector source file when writing test bench files
+urce file when writing test bench files
 
 Completed successfully. 
 
 Completed successfully. 
 
-**** Generating the functional simulation netlist ****
+**** Generating the timing simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/" TP2_E5 -c TP2_E5
+quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/" TP2_E5 -c TP2_E5
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -64,15 +61,22 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Jun 10 14:24:43 2024
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/ TP2_E5 -c TP2_E5
+    Info: Processing started: Thu Jun 13 19:11:26 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/ TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file TP2_E5_6_1200mv_85c_slow.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_6_1200mv_0c_slow.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_min_1200mv_0c_fast.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file TP2_E5.vo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_6_1200mv_85c_v_slow.sdo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_6_1200mv_0c_v_slow.sdo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_min_1200mv_0c_v_fast.sdo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file TP2_E5_v.sdo in folder "C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4659 megabytes
-    Info: Processing ended: Mon Jun 10 14:24:44 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4679 megabytes
+    Info: Processing ended: Thu Jun 13 19:11:30 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 Completed successfully. 
 
@@ -98,24 +102,25 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 14:24:49 on Jun 10,2024
-
+# Start time: 19:11:31 on Jun 13,2024
 # vlog -work work TP2_E5.vo 
 
 # -- Compiling module TP2_E5
+
+# -- Compiling module hard_block
 
 # 
 
 # Top level modules:
 # 	TP2_E5
 
-# End time: 14:24:50 on Jun 10,2024, Elapsed time: 0:00:01
+# End time: 19:11:32 on Jun 13,2024, Elapsed time: 0:00:01
 
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 14:24:51 on Jun 10,2024
+# Start time: 19:11:32 on Jun 13,2024
 
 # vlog -work work Waveform20.vwf.vt 
 
@@ -126,41 +131,41 @@ Reading pref.tcl
 # Top level modules:
 # 	TP2_E5_vlg_vec_tst
 
-# End time: 14:24:51 on Jun 10,2024, Elapsed time: 0:00:00
+# End time: 19:11:32 on Jun 13,2024, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.TP2_E5_vlg_vec_tst 
-# Start time: 14:24:51 on Jun 10,2024
+# Start time: 19:11:32 on Jun 13,2024
 # Loading work.TP2_E5_vlg_vec_tst
 # Loading work.TP2_E5
+# Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_ram_block
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading altera_ver.dffeas
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from TP2_E5_v.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
-# ** Warning: Design size of 13192 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 12222 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
+# Loading timing data from TP2_E5_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /TP2_E5_vlg_vec_tst File: Waveform20.vwf.vt
 
-# after#25
+# after#26
 
-# Simulation time: 0 ps
-
-# Simulation time: 0 ps
-
-# Simulation time: 0 ps
-
-# Simulation time: 0 ps
-
-# Simulation time: 0 ps
-
-# ** Note: $finish    : Waveform20.vwf.vt(85)
+# ** Note: $finish    : Waveform20.vwf.vt(67)
 #    Time: 1 us  Iteration: 0  Instance: /TP2_E5_vlg_vec_tst
 
-# End time: 14:25:07 on Jun 10,2024, Elapsed time: 0:00:16
+# End time: 19:11:36 on Jun 13,2024, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -173,7 +178,87 @@ Reading C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/TP2_E5.msim.vcd..
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/TP2_E5_20240610142508.sim.vwf
+Warning: alures_debb[31] - signal not found in VCD.
+
+Warning: alures_debb[30] - signal not found in VCD.
+
+Warning: alures_debb[29] - signal not found in VCD.
+
+Warning: alures_debb[28] - signal not found in VCD.
+
+Warning: alures_debb[27] - signal not found in VCD.
+
+Warning: alures_debb[26] - signal not found in VCD.
+
+Warning: alures_debb[25] - signal not found in VCD.
+
+Warning: alures_debb[24] - signal not found in VCD.
+
+Warning: alures_debb[23] - signal not found in VCD.
+
+Warning: alures_debb[22] - signal not found in VCD.
+
+Warning: alures_debb[21] - signal not found in VCD.
+
+Warning: alures_debb[20] - signal not found in VCD.
+
+Warning: alures_debb[19] - signal not found in VCD.
+
+Warning: alures_debb[18] - signal not found in VCD.
+
+Warning: alures_debb[17] - signal not found in VCD.
+
+Warning: alures_debb[16] - signal not found in VCD.
+
+Warning: alures_debb[15] - signal not found in VCD.
+
+Warning: alures_debb[14] - signal not found in VCD.
+
+Warning: alures_debb[13] - signal not found in VCD.
+
+Warning: alures_debb[12] - signal not found in VCD.
+
+Warning: alures_debb[11] - signal not found in VCD.
+
+Warning: alures_debb[10] - signal not found in VCD.
+
+Warning: alures_debb[9] - signal not found in VCD.
+
+Warning: alures_debb[8] - signal not found in VCD.
+
+Warning: alures_debb[7] - signal not found in VCD.
+
+Warning: alures_debb[6] - signal not found in VCD.
+
+Warning: alures_debb[5] - signal not found in VCD.
+
+Warning: alures_debb[4] - signal not found in VCD.
+
+Warning: alures_debb[3] - signal not found in VCD.
+
+Warning: alures_debb[2] - signal not found in VCD.
+
+Warning: alures_debb[1] - signal not found in VCD.
+
+Warning: alures_debb[0] - signal not found in VCD.
+
+Warning: br_pc[7] - signal not found in VCD.
+
+Warning: br_pc[6] - signal not found in VCD.
+
+Warning: br_pc[5] - signal not found in VCD.
+
+Warning: br_pc[4] - signal not found in VCD.
+
+Warning: br_pc[3] - signal not found in VCD.
+
+Warning: br_pc[2] - signal not found in VCD.
+
+Warning: br_pc[1] - signal not found in VCD.
+
+Warning: br_pc[0] - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/sebas/Documents/GitHub/TP2-E5/simulation/qsim/TP2_E5_20240613191136.sim.vwf
 
 Finished VCD to VWF conversion.
 
