@@ -1,5 +1,5 @@
 MIF/HEX Update report for TP2_E5
-Wed Jun  5 19:19:21 2024
+Mon Jun 10 14:18:21 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -33,22 +33,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------+
-; MIF/HEX Update Summary                                    ;
-+-----------------------+-----------------------------------+
-; MIF/HEX Update Status ; Failed - Wed Jun  5 19:19:21 2024 ;
-; Revision Name         ; TP2_E5                            ;
-; Top-level Entity Name ; TP2_E5                            ;
-; Family                ; Cyclone IV E                      ;
-; Device                ; EP4CE22F17C6                      ;
-+-----------------------+-----------------------------------+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Mon Jun 10 14:18:21 2024 ;
+; Revision Name         ; TP2_E5                                ;
+; Top-level Entity Name ; TP2_E5                                ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE22F17C6                          ;
++-----------------------+---------------------------------------+
 
 
-+--------------------------------+
-; MIF/HEX Update Processed Files ;
-+--------------------------------+
-; File Name                      ;
-+--------------------------------+
++---------------------------------------------------+
+; MIF/HEX Update Processed Files                    ;
++---------------------------------------------------+
+; File Name                                         ;
++---------------------------------------------------+
+; C:/Users/sebas/Documents/GitHub/TP2-E5/fibo10.mif ;
++---------------------------------------------------+
 
 
 +-------------------------+
@@ -57,15 +59,17 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime MIF/HEX Update
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Jun  5 19:19:20 2024
+    Info: Processing started: Mon Jun 10 14:18:16 2024
 Info: Command: quartus_cdb TP2_E5 -c TP2_E5 --update_mif
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (39023): Can't find Memory Initialization File fibo10.hex -- skipped updates for this file
-Error (39022): Found no valid Memory Initialization File to process
-Error: Quartus Prime MIF/HEX Update was unsuccessful. 1 error, 2 warnings
-    Error: Peak virtual memory: 4712 megabytes
-    Error: Processing ended: Wed Jun  5 19:19:21 2024
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Warning (113028): 252 out of 256 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/sebas/Documents/GitHub/TP2-E5/fibo10.mif Line: 1
+    Warning (113027): Addresses ranging from 4 to 255 are not initialized File: C:/Users/sebas/Documents/GitHub/TP2-E5/fibo10.mif Line: 1
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/Users/sebas/Documents/GitHub/TP2-E5/fibo10.mif File: C:/Users/sebas/Documents/GitHub/TP2-E5/fibo10.mif Line: 0
+Info: Quartus Prime MIF/HEX Update was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Mon Jun 10 14:18:21 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:01
 
 

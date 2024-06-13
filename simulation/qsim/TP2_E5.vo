@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition"
 
-// DATE "06/06/2024 17:32:55"
+// DATE "06/10/2024 14:24:43"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -75,6 +75,9 @@ output 	[31:0] rd1_deb;
 output 	[31:0] rd2_deb;
 output 	[31:0] wbdata_deb;
 
+// Design Ports Information
+// wr_en_debug	// pc_Sel_debu	// stop_debu	// rd_en_debug	// a_mux_res[31]	// a_mux_res[30]	// a_mux_res[29]	// a_mux_res[28]	// a_mux_res[27]	// a_mux_res[26]	// a_mux_res[25]	// a_mux_res[24]	// a_mux_res[23]	// a_mux_res[22]	// a_mux_res[21]	// a_mux_res[20]	// a_mux_res[19]	// a_mux_res[18]	// a_mux_res[17]	// a_mux_res[16]	// a_mux_res[15]	// a_mux_res[14]	// a_mux_res[13]	// a_mux_res[12]	// a_mux_res[11]	// a_mux_res[10]	// a_mux_res[9]	// a_mux_res[8]	// a_mux_res[7]	// a_mux_res[6]	// a_mux_res[5]	// a_mux_res[4]	// a_mux_res[3]	// a_mux_res[2]	// a_mux_res[1]	// a_mux_res[0]	// alu_Res_debug[31]	// alu_Res_debug[30]	// alu_Res_debug[29]	// alu_Res_debug[28]	// alu_Res_debug[27]	// alu_Res_debug[26]	// alu_Res_debug[25]	// alu_Res_debug[24]	// alu_Res_debug[23]	// alu_Res_debug[22]	// alu_Res_debug[21]	// alu_Res_debug[20]	// alu_Res_debug[19]	// alu_Res_debug[18]	// alu_Res_debug[17]	// alu_Res_debug[16]	// alu_Res_debug[15]	// alu_Res_debug[14]	// alu_Res_debug[13]	// alu_Res_debug[12]	// alu_Res_debug[11]	// alu_Res_debug[10]	// alu_Res_debug[9]	// alu_Res_debug[8]	// alu_Res_debug[7]	// alu_Res_debug[6]	// alu_Res_debug[5]	// alu_Res_debug[4]	// alu_Res_debug[3]	// alu_Res_debug[2]	// alu_Res_debug[1]	// alu_Res_debug[0]	// alures[31]	// alures[30]	// alures[29]	// alures[28]	// alures[27]	// alures[26]	// alures[25]	// alures[24]	// alures[23]	// alures[22]	// alures[21]	// alures[20]	// alures[19]	// alures[18]	// alures[17]	// alures[16]	// alures[15]	// alures[14]	// alures[13]	// alures[12]	// alures[11]	// alures[10]	// alures[9]	// alures[8]	// alures[7]	// alures[6]	// alures[5]	// alures[4]	// alures[3]	// alures[2]	// alures[1]	// alures[0]	// b_mux_res[31]	// b_mux_res[30]	// b_mux_res[29]	// b_mux_res[28]	// b_mux_res[27]	// b_mux_res[26]	// b_mux_res[25]	// b_mux_res[24]	// b_mux_res[23]	// b_mux_res[22]	// b_mux_res[21]	// b_mux_res[20]	// b_mux_res[19]	// b_mux_res[18]	// b_mux_res[17]	// b_mux_res[16]	// b_mux_res[15]	// b_mux_res[14]	// b_mux_res[13]	// b_mux_res[12]	// b_mux_res[11]	// b_mux_res[10]	// b_mux_res[9]	// b_mux_res[8]	// b_mux_res[7]	// b_mux_res[6]	// b_mux_res[5]	// b_mux_res[4]	// b_mux_res[3]	// b_mux_res[2]	// b_mux_res[1]	// b_mux_res[0]	// br_pcc[7]	// br_pcc[6]	// br_pcc[5]	// br_pcc[4]	// br_pcc[3]	// br_pcc[2]	// br_pcc[1]	// br_pcc[0]	// data_write_debug[31]	// data_write_debug[30]	// data_write_debug[29]	// data_write_debug[28]	// data_write_debug[27]	// data_write_debug[26]	// data_write_debug[25]	// data_write_debug[24]	// data_write_debug[23]	// data_write_debug[22]	// data_write_debug[21]	// data_write_debug[20]	// data_write_debug[19]	// data_write_debug[18]	// data_write_debug[17]	// data_write_debug[16]	// data_write_debug[15]	// data_write_debug[14]	// data_write_debug[13]	// data_write_debug[12]	// data_write_debug[11]	// data_write_debug[10]	// data_write_debug[9]	// data_write_debug[8]	// data_write_debug[7]	// data_write_debug[6]	// data_write_debug[5]	// data_write_debug[4]	// data_write_debug[3]	// data_write_debug[2]	// data_write_debug[1]	// data_write_debug[0]	// DEBUG_NEXTPC_C[7]	// DEBUG_NEXTPC_C[6]	// DEBUG_NEXTPC_C[5]	// DEBUG_NEXTPC_C[4]	// DEBUG_NEXTPC_C[3]	// DEBUG_NEXTPC_C[2]	// DEBUG_NEXTPC_C[1]	// DEBUG_NEXTPC_C[0]	// fw_A[1]	// fw_A[0]	// fw_b[1]	// fw_b[0]	// inst_debug[31]	// inst_debug[30]	// inst_debug[29]	// inst_debug[28]	// inst_debug[27]	// inst_debug[26]	// inst_debug[25]	// inst_debug[24]	// inst_debug[23]	// inst_debug[22]	// inst_debug[21]	// inst_debug[20]	// inst_debug[19]	// inst_debug[18]	// inst_debug[17]	// inst_debug[16]	// inst_debug[15]	// inst_debug[14]	// inst_debug[13]	// inst_debug[12]	// inst_debug[11]	// inst_debug[10]	// inst_debug[9]	// inst_debug[8]	// inst_debug[7]	// inst_debug[6]	// inst_debug[5]	// inst_debug[4]	// inst_debug[3]	// inst_debug[2]	// inst_debug[1]	// inst_debug[0]	// pc_debugg[7]	// pc_debugg[6]	// pc_debugg[5]	// pc_debugg[4]	// pc_debugg[3]	// pc_debugg[2]	// pc_debugg[1]	// pc_debugg[0]	// pc_four_debug[7]	// pc_four_debug[6]	// pc_four_debug[5]	// pc_four_debug[4]	// pc_four_debug[3]	// pc_four_debug[2]	// pc_four_debug[1]	// pc_four_debug[0]	// ram_add[8]	// ram_add[7]	// ram_add[6]	// ram_add[5]	// ram_add[4]	// ram_add[3]	// ram_add[2]	// ram_add[1]	// ram_add[0]	// rd1_deb[31]	// rd1_deb[30]	// rd1_deb[29]	// rd1_deb[28]	// rd1_deb[27]	// rd1_deb[26]	// rd1_deb[25]	// rd1_deb[24]	// rd1_deb[23]	// rd1_deb[22]	// rd1_deb[21]	// rd1_deb[20]	// rd1_deb[19]	// rd1_deb[18]	// rd1_deb[17]	// rd1_deb[16]	// rd1_deb[15]	// rd1_deb[14]	// rd1_deb[13]	// rd1_deb[12]	// rd1_deb[11]	// rd1_deb[10]	// rd1_deb[9]	// rd1_deb[8]	// rd1_deb[7]	// rd1_deb[6]	// rd1_deb[5]	// rd1_deb[4]	// rd1_deb[3]	// rd1_deb[2]	// rd1_deb[1]	// rd1_deb[0]	// rd2_deb[31]	// rd2_deb[30]	// rd2_deb[29]	// rd2_deb[28]	// rd2_deb[27]	// rd2_deb[26]	// rd2_deb[25]	// rd2_deb[24]	// rd2_deb[23]	// rd2_deb[22]	// rd2_deb[21]	// rd2_deb[20]	// rd2_deb[19]	// rd2_deb[18]	// rd2_deb[17]	// rd2_deb[16]	// rd2_deb[15]	// rd2_deb[14]	// rd2_deb[13]	// rd2_deb[12]	// rd2_deb[11]	// rd2_deb[10]	// rd2_deb[9]	// rd2_deb[8]	// rd2_deb[7]	// rd2_deb[6]	// rd2_deb[5]	// rd2_deb[4]	// rd2_deb[3]	// rd2_deb[2]	// rd2_deb[1]	// rd2_deb[0]	// wbdata_deb[31]	// wbdata_deb[30]	// wbdata_deb[29]	// wbdata_deb[28]	// wbdata_deb[27]	// wbdata_deb[26]	// wbdata_deb[25]	// wbdata_deb[24]	// wbdata_deb[23]	// wbdata_deb[22]	// wbdata_deb[21]	// wbdata_deb[20]	// wbdata_deb[19]	// wbdata_deb[18]	// wbdata_deb[17]	// wbdata_deb[16]	// wbdata_deb[15]	// wbdata_deb[14]	// wbdata_deb[13]	// wbdata_deb[12]	// wbdata_deb[11]	// wbdata_deb[10]	// wbdata_deb[9]	// wbdata_deb[8]	// wbdata_deb[7]	// wbdata_deb[6]	// wbdata_deb[5]	// wbdata_deb[4]	// wbdata_deb[3]	// wbdata_deb[2]	// wbdata_deb[1]	// wbdata_deb[0]	// RST	// CLK	
+
 wire gnd;
 wire vcc;
 wire unknown;
@@ -86,343 +89,17 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \wr_en_debug~output_o ;
-wire \pc_Sel_debu~output_o ;
-wire \stop_debu~output_o ;
-wire \rd_en_debug~output_o ;
-wire \a_mux_res[31]~output_o ;
-wire \a_mux_res[30]~output_o ;
-wire \a_mux_res[29]~output_o ;
-wire \a_mux_res[28]~output_o ;
-wire \a_mux_res[27]~output_o ;
-wire \a_mux_res[26]~output_o ;
-wire \a_mux_res[25]~output_o ;
-wire \a_mux_res[24]~output_o ;
-wire \a_mux_res[23]~output_o ;
-wire \a_mux_res[22]~output_o ;
-wire \a_mux_res[21]~output_o ;
-wire \a_mux_res[20]~output_o ;
-wire \a_mux_res[19]~output_o ;
-wire \a_mux_res[18]~output_o ;
-wire \a_mux_res[17]~output_o ;
-wire \a_mux_res[16]~output_o ;
-wire \a_mux_res[15]~output_o ;
-wire \a_mux_res[14]~output_o ;
-wire \a_mux_res[13]~output_o ;
-wire \a_mux_res[12]~output_o ;
-wire \a_mux_res[11]~output_o ;
-wire \a_mux_res[10]~output_o ;
-wire \a_mux_res[9]~output_o ;
-wire \a_mux_res[8]~output_o ;
-wire \a_mux_res[7]~output_o ;
-wire \a_mux_res[6]~output_o ;
-wire \a_mux_res[5]~output_o ;
-wire \a_mux_res[4]~output_o ;
-wire \a_mux_res[3]~output_o ;
-wire \a_mux_res[2]~output_o ;
-wire \a_mux_res[1]~output_o ;
-wire \a_mux_res[0]~output_o ;
-wire \alu_Res_debug[31]~output_o ;
-wire \alu_Res_debug[30]~output_o ;
-wire \alu_Res_debug[29]~output_o ;
-wire \alu_Res_debug[28]~output_o ;
-wire \alu_Res_debug[27]~output_o ;
-wire \alu_Res_debug[26]~output_o ;
-wire \alu_Res_debug[25]~output_o ;
-wire \alu_Res_debug[24]~output_o ;
-wire \alu_Res_debug[23]~output_o ;
-wire \alu_Res_debug[22]~output_o ;
-wire \alu_Res_debug[21]~output_o ;
-wire \alu_Res_debug[20]~output_o ;
-wire \alu_Res_debug[19]~output_o ;
-wire \alu_Res_debug[18]~output_o ;
-wire \alu_Res_debug[17]~output_o ;
-wire \alu_Res_debug[16]~output_o ;
-wire \alu_Res_debug[15]~output_o ;
-wire \alu_Res_debug[14]~output_o ;
-wire \alu_Res_debug[13]~output_o ;
-wire \alu_Res_debug[12]~output_o ;
-wire \alu_Res_debug[11]~output_o ;
-wire \alu_Res_debug[10]~output_o ;
-wire \alu_Res_debug[9]~output_o ;
-wire \alu_Res_debug[8]~output_o ;
-wire \alu_Res_debug[7]~output_o ;
-wire \alu_Res_debug[6]~output_o ;
-wire \alu_Res_debug[5]~output_o ;
-wire \alu_Res_debug[4]~output_o ;
-wire \alu_Res_debug[3]~output_o ;
-wire \alu_Res_debug[2]~output_o ;
-wire \alu_Res_debug[1]~output_o ;
-wire \alu_Res_debug[0]~output_o ;
-wire \alures[31]~output_o ;
-wire \alures[30]~output_o ;
-wire \alures[29]~output_o ;
-wire \alures[28]~output_o ;
-wire \alures[27]~output_o ;
-wire \alures[26]~output_o ;
-wire \alures[25]~output_o ;
-wire \alures[24]~output_o ;
-wire \alures[23]~output_o ;
-wire \alures[22]~output_o ;
-wire \alures[21]~output_o ;
-wire \alures[20]~output_o ;
-wire \alures[19]~output_o ;
-wire \alures[18]~output_o ;
-wire \alures[17]~output_o ;
-wire \alures[16]~output_o ;
-wire \alures[15]~output_o ;
-wire \alures[14]~output_o ;
-wire \alures[13]~output_o ;
-wire \alures[12]~output_o ;
-wire \alures[11]~output_o ;
-wire \alures[10]~output_o ;
-wire \alures[9]~output_o ;
-wire \alures[8]~output_o ;
-wire \alures[7]~output_o ;
-wire \alures[6]~output_o ;
-wire \alures[5]~output_o ;
-wire \alures[4]~output_o ;
-wire \alures[3]~output_o ;
-wire \alures[2]~output_o ;
-wire \alures[1]~output_o ;
-wire \alures[0]~output_o ;
-wire \b_mux_res[31]~output_o ;
-wire \b_mux_res[30]~output_o ;
-wire \b_mux_res[29]~output_o ;
-wire \b_mux_res[28]~output_o ;
-wire \b_mux_res[27]~output_o ;
-wire \b_mux_res[26]~output_o ;
-wire \b_mux_res[25]~output_o ;
-wire \b_mux_res[24]~output_o ;
-wire \b_mux_res[23]~output_o ;
-wire \b_mux_res[22]~output_o ;
-wire \b_mux_res[21]~output_o ;
-wire \b_mux_res[20]~output_o ;
-wire \b_mux_res[19]~output_o ;
-wire \b_mux_res[18]~output_o ;
-wire \b_mux_res[17]~output_o ;
-wire \b_mux_res[16]~output_o ;
-wire \b_mux_res[15]~output_o ;
-wire \b_mux_res[14]~output_o ;
-wire \b_mux_res[13]~output_o ;
-wire \b_mux_res[12]~output_o ;
-wire \b_mux_res[11]~output_o ;
-wire \b_mux_res[10]~output_o ;
-wire \b_mux_res[9]~output_o ;
-wire \b_mux_res[8]~output_o ;
-wire \b_mux_res[7]~output_o ;
-wire \b_mux_res[6]~output_o ;
-wire \b_mux_res[5]~output_o ;
-wire \b_mux_res[4]~output_o ;
-wire \b_mux_res[3]~output_o ;
-wire \b_mux_res[2]~output_o ;
-wire \b_mux_res[1]~output_o ;
-wire \b_mux_res[0]~output_o ;
-wire \br_pcc[7]~output_o ;
-wire \br_pcc[6]~output_o ;
-wire \br_pcc[5]~output_o ;
-wire \br_pcc[4]~output_o ;
-wire \br_pcc[3]~output_o ;
-wire \br_pcc[2]~output_o ;
-wire \br_pcc[1]~output_o ;
-wire \br_pcc[0]~output_o ;
-wire \data_write_debug[31]~output_o ;
-wire \data_write_debug[30]~output_o ;
-wire \data_write_debug[29]~output_o ;
-wire \data_write_debug[28]~output_o ;
-wire \data_write_debug[27]~output_o ;
-wire \data_write_debug[26]~output_o ;
-wire \data_write_debug[25]~output_o ;
-wire \data_write_debug[24]~output_o ;
-wire \data_write_debug[23]~output_o ;
-wire \data_write_debug[22]~output_o ;
-wire \data_write_debug[21]~output_o ;
-wire \data_write_debug[20]~output_o ;
-wire \data_write_debug[19]~output_o ;
-wire \data_write_debug[18]~output_o ;
-wire \data_write_debug[17]~output_o ;
-wire \data_write_debug[16]~output_o ;
-wire \data_write_debug[15]~output_o ;
-wire \data_write_debug[14]~output_o ;
-wire \data_write_debug[13]~output_o ;
-wire \data_write_debug[12]~output_o ;
-wire \data_write_debug[11]~output_o ;
-wire \data_write_debug[10]~output_o ;
-wire \data_write_debug[9]~output_o ;
-wire \data_write_debug[8]~output_o ;
-wire \data_write_debug[7]~output_o ;
-wire \data_write_debug[6]~output_o ;
-wire \data_write_debug[5]~output_o ;
-wire \data_write_debug[4]~output_o ;
-wire \data_write_debug[3]~output_o ;
-wire \data_write_debug[2]~output_o ;
-wire \data_write_debug[1]~output_o ;
-wire \data_write_debug[0]~output_o ;
-wire \DEBUG_NEXTPC_C[7]~output_o ;
-wire \DEBUG_NEXTPC_C[6]~output_o ;
-wire \DEBUG_NEXTPC_C[5]~output_o ;
-wire \DEBUG_NEXTPC_C[4]~output_o ;
-wire \DEBUG_NEXTPC_C[3]~output_o ;
-wire \DEBUG_NEXTPC_C[2]~output_o ;
-wire \DEBUG_NEXTPC_C[1]~output_o ;
-wire \DEBUG_NEXTPC_C[0]~output_o ;
-wire \fw_A[1]~output_o ;
-wire \fw_A[0]~output_o ;
-wire \fw_b[1]~output_o ;
-wire \fw_b[0]~output_o ;
-wire \inst_debug[31]~output_o ;
-wire \inst_debug[30]~output_o ;
-wire \inst_debug[29]~output_o ;
-wire \inst_debug[28]~output_o ;
-wire \inst_debug[27]~output_o ;
-wire \inst_debug[26]~output_o ;
-wire \inst_debug[25]~output_o ;
-wire \inst_debug[24]~output_o ;
-wire \inst_debug[23]~output_o ;
-wire \inst_debug[22]~output_o ;
-wire \inst_debug[21]~output_o ;
-wire \inst_debug[20]~output_o ;
-wire \inst_debug[19]~output_o ;
-wire \inst_debug[18]~output_o ;
-wire \inst_debug[17]~output_o ;
-wire \inst_debug[16]~output_o ;
-wire \inst_debug[15]~output_o ;
-wire \inst_debug[14]~output_o ;
-wire \inst_debug[13]~output_o ;
-wire \inst_debug[12]~output_o ;
-wire \inst_debug[11]~output_o ;
-wire \inst_debug[10]~output_o ;
-wire \inst_debug[9]~output_o ;
-wire \inst_debug[8]~output_o ;
-wire \inst_debug[7]~output_o ;
-wire \inst_debug[6]~output_o ;
-wire \inst_debug[5]~output_o ;
-wire \inst_debug[4]~output_o ;
-wire \inst_debug[3]~output_o ;
-wire \inst_debug[2]~output_o ;
-wire \inst_debug[1]~output_o ;
-wire \inst_debug[0]~output_o ;
-wire \pc_debugg[7]~output_o ;
-wire \pc_debugg[6]~output_o ;
-wire \pc_debugg[5]~output_o ;
-wire \pc_debugg[4]~output_o ;
-wire \pc_debugg[3]~output_o ;
-wire \pc_debugg[2]~output_o ;
-wire \pc_debugg[1]~output_o ;
-wire \pc_debugg[0]~output_o ;
-wire \pc_four_debug[7]~output_o ;
-wire \pc_four_debug[6]~output_o ;
-wire \pc_four_debug[5]~output_o ;
-wire \pc_four_debug[4]~output_o ;
-wire \pc_four_debug[3]~output_o ;
-wire \pc_four_debug[2]~output_o ;
-wire \pc_four_debug[1]~output_o ;
-wire \pc_four_debug[0]~output_o ;
-wire \ram_add[8]~output_o ;
-wire \ram_add[7]~output_o ;
-wire \ram_add[6]~output_o ;
-wire \ram_add[5]~output_o ;
-wire \ram_add[4]~output_o ;
-wire \ram_add[3]~output_o ;
-wire \ram_add[2]~output_o ;
-wire \ram_add[1]~output_o ;
-wire \ram_add[0]~output_o ;
-wire \rd1_deb[31]~output_o ;
-wire \rd1_deb[30]~output_o ;
-wire \rd1_deb[29]~output_o ;
-wire \rd1_deb[28]~output_o ;
-wire \rd1_deb[27]~output_o ;
-wire \rd1_deb[26]~output_o ;
-wire \rd1_deb[25]~output_o ;
-wire \rd1_deb[24]~output_o ;
-wire \rd1_deb[23]~output_o ;
-wire \rd1_deb[22]~output_o ;
-wire \rd1_deb[21]~output_o ;
-wire \rd1_deb[20]~output_o ;
-wire \rd1_deb[19]~output_o ;
-wire \rd1_deb[18]~output_o ;
-wire \rd1_deb[17]~output_o ;
-wire \rd1_deb[16]~output_o ;
-wire \rd1_deb[15]~output_o ;
-wire \rd1_deb[14]~output_o ;
-wire \rd1_deb[13]~output_o ;
-wire \rd1_deb[12]~output_o ;
-wire \rd1_deb[11]~output_o ;
-wire \rd1_deb[10]~output_o ;
-wire \rd1_deb[9]~output_o ;
-wire \rd1_deb[8]~output_o ;
-wire \rd1_deb[7]~output_o ;
-wire \rd1_deb[6]~output_o ;
-wire \rd1_deb[5]~output_o ;
-wire \rd1_deb[4]~output_o ;
-wire \rd1_deb[3]~output_o ;
-wire \rd1_deb[2]~output_o ;
-wire \rd1_deb[1]~output_o ;
-wire \rd1_deb[0]~output_o ;
-wire \rd2_deb[31]~output_o ;
-wire \rd2_deb[30]~output_o ;
-wire \rd2_deb[29]~output_o ;
-wire \rd2_deb[28]~output_o ;
-wire \rd2_deb[27]~output_o ;
-wire \rd2_deb[26]~output_o ;
-wire \rd2_deb[25]~output_o ;
-wire \rd2_deb[24]~output_o ;
-wire \rd2_deb[23]~output_o ;
-wire \rd2_deb[22]~output_o ;
-wire \rd2_deb[21]~output_o ;
-wire \rd2_deb[20]~output_o ;
-wire \rd2_deb[19]~output_o ;
-wire \rd2_deb[18]~output_o ;
-wire \rd2_deb[17]~output_o ;
-wire \rd2_deb[16]~output_o ;
-wire \rd2_deb[15]~output_o ;
-wire \rd2_deb[14]~output_o ;
-wire \rd2_deb[13]~output_o ;
-wire \rd2_deb[12]~output_o ;
-wire \rd2_deb[11]~output_o ;
-wire \rd2_deb[10]~output_o ;
-wire \rd2_deb[9]~output_o ;
-wire \rd2_deb[8]~output_o ;
-wire \rd2_deb[7]~output_o ;
-wire \rd2_deb[6]~output_o ;
-wire \rd2_deb[5]~output_o ;
-wire \rd2_deb[4]~output_o ;
-wire \rd2_deb[3]~output_o ;
-wire \rd2_deb[2]~output_o ;
-wire \rd2_deb[1]~output_o ;
-wire \rd2_deb[0]~output_o ;
-wire \wbdata_deb[31]~output_o ;
-wire \wbdata_deb[30]~output_o ;
-wire \wbdata_deb[29]~output_o ;
-wire \wbdata_deb[28]~output_o ;
-wire \wbdata_deb[27]~output_o ;
-wire \wbdata_deb[26]~output_o ;
-wire \wbdata_deb[25]~output_o ;
-wire \wbdata_deb[24]~output_o ;
-wire \wbdata_deb[23]~output_o ;
-wire \wbdata_deb[22]~output_o ;
-wire \wbdata_deb[21]~output_o ;
-wire \wbdata_deb[20]~output_o ;
-wire \wbdata_deb[19]~output_o ;
-wire \wbdata_deb[18]~output_o ;
-wire \wbdata_deb[17]~output_o ;
-wire \wbdata_deb[16]~output_o ;
-wire \wbdata_deb[15]~output_o ;
-wire \wbdata_deb[14]~output_o ;
-wire \wbdata_deb[13]~output_o ;
-wire \wbdata_deb[12]~output_o ;
-wire \wbdata_deb[11]~output_o ;
-wire \wbdata_deb[10]~output_o ;
-wire \wbdata_deb[9]~output_o ;
-wire \wbdata_deb[8]~output_o ;
-wire \wbdata_deb[7]~output_o ;
-wire \wbdata_deb[6]~output_o ;
-wire \wbdata_deb[5]~output_o ;
-wire \wbdata_deb[4]~output_o ;
-wire \wbdata_deb[3]~output_o ;
-wire \wbdata_deb[2]~output_o ;
-wire \wbdata_deb[1]~output_o ;
-wire \wbdata_deb[0]~output_o ;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DCLK~~padout ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_nCEO~~padout ;
+wire \~ALTERA_DCLK~~obuf_o ;
+wire \~ALTERA_nCEO~~obuf_o ;
 wire \CLK~input_o ;
 wire \RST~input_o ;
 wire \instagg|inst|out[0]~0_combout ;
@@ -4570,7 +4247,7 @@ cycloneive_io_obuf \wr_en_debug~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wr_en_debug~output_o ),
+	.o(wr_en_debug),
 	.obar());
 // synopsys translate_off
 defparam \wr_en_debug~output .bus_hold = "false";
@@ -4582,7 +4259,7 @@ cycloneive_io_obuf \pc_Sel_debu~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_Sel_debu~output_o ),
+	.o(pc_Sel_debu),
 	.obar());
 // synopsys translate_off
 defparam \pc_Sel_debu~output .bus_hold = "false";
@@ -4594,7 +4271,7 @@ cycloneive_io_obuf \stop_debu~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\stop_debu~output_o ),
+	.o(stop_debu),
 	.obar());
 // synopsys translate_off
 defparam \stop_debu~output .bus_hold = "false";
@@ -4606,7 +4283,7 @@ cycloneive_io_obuf \rd_en_debug~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd_en_debug~output_o ),
+	.o(rd_en_debug),
 	.obar());
 // synopsys translate_off
 defparam \rd_en_debug~output .bus_hold = "false";
@@ -4618,7 +4295,7 @@ cycloneive_io_obuf \a_mux_res[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[31]~output_o ),
+	.o(a_mux_res[31]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[31]~output .bus_hold = "false";
@@ -4630,7 +4307,7 @@ cycloneive_io_obuf \a_mux_res[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[30]~output_o ),
+	.o(a_mux_res[30]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[30]~output .bus_hold = "false";
@@ -4642,7 +4319,7 @@ cycloneive_io_obuf \a_mux_res[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[29]~output_o ),
+	.o(a_mux_res[29]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[29]~output .bus_hold = "false";
@@ -4654,7 +4331,7 @@ cycloneive_io_obuf \a_mux_res[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[28]~output_o ),
+	.o(a_mux_res[28]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[28]~output .bus_hold = "false";
@@ -4666,7 +4343,7 @@ cycloneive_io_obuf \a_mux_res[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[27]~output_o ),
+	.o(a_mux_res[27]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[27]~output .bus_hold = "false";
@@ -4678,7 +4355,7 @@ cycloneive_io_obuf \a_mux_res[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[26]~output_o ),
+	.o(a_mux_res[26]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[26]~output .bus_hold = "false";
@@ -4690,7 +4367,7 @@ cycloneive_io_obuf \a_mux_res[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[25]~output_o ),
+	.o(a_mux_res[25]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[25]~output .bus_hold = "false";
@@ -4702,7 +4379,7 @@ cycloneive_io_obuf \a_mux_res[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[24]~output_o ),
+	.o(a_mux_res[24]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[24]~output .bus_hold = "false";
@@ -4714,7 +4391,7 @@ cycloneive_io_obuf \a_mux_res[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[23]~output_o ),
+	.o(a_mux_res[23]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[23]~output .bus_hold = "false";
@@ -4726,7 +4403,7 @@ cycloneive_io_obuf \a_mux_res[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[22]~output_o ),
+	.o(a_mux_res[22]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[22]~output .bus_hold = "false";
@@ -4738,7 +4415,7 @@ cycloneive_io_obuf \a_mux_res[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[21]~output_o ),
+	.o(a_mux_res[21]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[21]~output .bus_hold = "false";
@@ -4750,7 +4427,7 @@ cycloneive_io_obuf \a_mux_res[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[20]~output_o ),
+	.o(a_mux_res[20]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[20]~output .bus_hold = "false";
@@ -4762,7 +4439,7 @@ cycloneive_io_obuf \a_mux_res[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[19]~output_o ),
+	.o(a_mux_res[19]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[19]~output .bus_hold = "false";
@@ -4774,7 +4451,7 @@ cycloneive_io_obuf \a_mux_res[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[18]~output_o ),
+	.o(a_mux_res[18]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[18]~output .bus_hold = "false";
@@ -4786,7 +4463,7 @@ cycloneive_io_obuf \a_mux_res[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[17]~output_o ),
+	.o(a_mux_res[17]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[17]~output .bus_hold = "false";
@@ -4798,7 +4475,7 @@ cycloneive_io_obuf \a_mux_res[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[16]~output_o ),
+	.o(a_mux_res[16]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[16]~output .bus_hold = "false";
@@ -4810,7 +4487,7 @@ cycloneive_io_obuf \a_mux_res[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[15]~output_o ),
+	.o(a_mux_res[15]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[15]~output .bus_hold = "false";
@@ -4822,7 +4499,7 @@ cycloneive_io_obuf \a_mux_res[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[14]~output_o ),
+	.o(a_mux_res[14]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[14]~output .bus_hold = "false";
@@ -4834,7 +4511,7 @@ cycloneive_io_obuf \a_mux_res[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[13]~output_o ),
+	.o(a_mux_res[13]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[13]~output .bus_hold = "false";
@@ -4846,7 +4523,7 @@ cycloneive_io_obuf \a_mux_res[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[12]~output_o ),
+	.o(a_mux_res[12]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[12]~output .bus_hold = "false";
@@ -4858,7 +4535,7 @@ cycloneive_io_obuf \a_mux_res[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[11]~output_o ),
+	.o(a_mux_res[11]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[11]~output .bus_hold = "false";
@@ -4870,7 +4547,7 @@ cycloneive_io_obuf \a_mux_res[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[10]~output_o ),
+	.o(a_mux_res[10]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[10]~output .bus_hold = "false";
@@ -4882,7 +4559,7 @@ cycloneive_io_obuf \a_mux_res[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[9]~output_o ),
+	.o(a_mux_res[9]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[9]~output .bus_hold = "false";
@@ -4894,7 +4571,7 @@ cycloneive_io_obuf \a_mux_res[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[8]~output_o ),
+	.o(a_mux_res[8]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[8]~output .bus_hold = "false";
@@ -4906,7 +4583,7 @@ cycloneive_io_obuf \a_mux_res[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[7]~output_o ),
+	.o(a_mux_res[7]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[7]~output .bus_hold = "false";
@@ -4918,7 +4595,7 @@ cycloneive_io_obuf \a_mux_res[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[6]~output_o ),
+	.o(a_mux_res[6]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[6]~output .bus_hold = "false";
@@ -4930,7 +4607,7 @@ cycloneive_io_obuf \a_mux_res[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[5]~output_o ),
+	.o(a_mux_res[5]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[5]~output .bus_hold = "false";
@@ -4942,7 +4619,7 @@ cycloneive_io_obuf \a_mux_res[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[4]~output_o ),
+	.o(a_mux_res[4]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[4]~output .bus_hold = "false";
@@ -4954,7 +4631,7 @@ cycloneive_io_obuf \a_mux_res[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[3]~output_o ),
+	.o(a_mux_res[3]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[3]~output .bus_hold = "false";
@@ -4966,7 +4643,7 @@ cycloneive_io_obuf \a_mux_res[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[2]~output_o ),
+	.o(a_mux_res[2]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[2]~output .bus_hold = "false";
@@ -4978,7 +4655,7 @@ cycloneive_io_obuf \a_mux_res[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[1]~output_o ),
+	.o(a_mux_res[1]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[1]~output .bus_hold = "false";
@@ -4990,7 +4667,7 @@ cycloneive_io_obuf \a_mux_res[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\a_mux_res[0]~output_o ),
+	.o(a_mux_res[0]),
 	.obar());
 // synopsys translate_off
 defparam \a_mux_res[0]~output .bus_hold = "false";
@@ -5002,7 +4679,7 @@ cycloneive_io_obuf \alu_Res_debug[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[31]~output_o ),
+	.o(alu_Res_debug[31]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[31]~output .bus_hold = "false";
@@ -5014,7 +4691,7 @@ cycloneive_io_obuf \alu_Res_debug[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[30]~output_o ),
+	.o(alu_Res_debug[30]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[30]~output .bus_hold = "false";
@@ -5026,7 +4703,7 @@ cycloneive_io_obuf \alu_Res_debug[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[29]~output_o ),
+	.o(alu_Res_debug[29]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[29]~output .bus_hold = "false";
@@ -5038,7 +4715,7 @@ cycloneive_io_obuf \alu_Res_debug[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[28]~output_o ),
+	.o(alu_Res_debug[28]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[28]~output .bus_hold = "false";
@@ -5050,7 +4727,7 @@ cycloneive_io_obuf \alu_Res_debug[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[27]~output_o ),
+	.o(alu_Res_debug[27]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[27]~output .bus_hold = "false";
@@ -5062,7 +4739,7 @@ cycloneive_io_obuf \alu_Res_debug[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[26]~output_o ),
+	.o(alu_Res_debug[26]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[26]~output .bus_hold = "false";
@@ -5074,7 +4751,7 @@ cycloneive_io_obuf \alu_Res_debug[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[25]~output_o ),
+	.o(alu_Res_debug[25]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[25]~output .bus_hold = "false";
@@ -5086,7 +4763,7 @@ cycloneive_io_obuf \alu_Res_debug[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[24]~output_o ),
+	.o(alu_Res_debug[24]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[24]~output .bus_hold = "false";
@@ -5098,7 +4775,7 @@ cycloneive_io_obuf \alu_Res_debug[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[23]~output_o ),
+	.o(alu_Res_debug[23]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[23]~output .bus_hold = "false";
@@ -5110,7 +4787,7 @@ cycloneive_io_obuf \alu_Res_debug[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[22]~output_o ),
+	.o(alu_Res_debug[22]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[22]~output .bus_hold = "false";
@@ -5122,7 +4799,7 @@ cycloneive_io_obuf \alu_Res_debug[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[21]~output_o ),
+	.o(alu_Res_debug[21]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[21]~output .bus_hold = "false";
@@ -5134,7 +4811,7 @@ cycloneive_io_obuf \alu_Res_debug[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[20]~output_o ),
+	.o(alu_Res_debug[20]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[20]~output .bus_hold = "false";
@@ -5146,7 +4823,7 @@ cycloneive_io_obuf \alu_Res_debug[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[19]~output_o ),
+	.o(alu_Res_debug[19]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[19]~output .bus_hold = "false";
@@ -5158,7 +4835,7 @@ cycloneive_io_obuf \alu_Res_debug[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[18]~output_o ),
+	.o(alu_Res_debug[18]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[18]~output .bus_hold = "false";
@@ -5170,7 +4847,7 @@ cycloneive_io_obuf \alu_Res_debug[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[17]~output_o ),
+	.o(alu_Res_debug[17]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[17]~output .bus_hold = "false";
@@ -5182,7 +4859,7 @@ cycloneive_io_obuf \alu_Res_debug[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[16]~output_o ),
+	.o(alu_Res_debug[16]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[16]~output .bus_hold = "false";
@@ -5194,7 +4871,7 @@ cycloneive_io_obuf \alu_Res_debug[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[15]~output_o ),
+	.o(alu_Res_debug[15]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[15]~output .bus_hold = "false";
@@ -5206,7 +4883,7 @@ cycloneive_io_obuf \alu_Res_debug[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[14]~output_o ),
+	.o(alu_Res_debug[14]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[14]~output .bus_hold = "false";
@@ -5218,7 +4895,7 @@ cycloneive_io_obuf \alu_Res_debug[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[13]~output_o ),
+	.o(alu_Res_debug[13]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[13]~output .bus_hold = "false";
@@ -5230,7 +4907,7 @@ cycloneive_io_obuf \alu_Res_debug[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[12]~output_o ),
+	.o(alu_Res_debug[12]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[12]~output .bus_hold = "false";
@@ -5242,7 +4919,7 @@ cycloneive_io_obuf \alu_Res_debug[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[11]~output_o ),
+	.o(alu_Res_debug[11]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[11]~output .bus_hold = "false";
@@ -5254,7 +4931,7 @@ cycloneive_io_obuf \alu_Res_debug[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[10]~output_o ),
+	.o(alu_Res_debug[10]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[10]~output .bus_hold = "false";
@@ -5266,7 +4943,7 @@ cycloneive_io_obuf \alu_Res_debug[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[9]~output_o ),
+	.o(alu_Res_debug[9]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[9]~output .bus_hold = "false";
@@ -5278,7 +4955,7 @@ cycloneive_io_obuf \alu_Res_debug[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[8]~output_o ),
+	.o(alu_Res_debug[8]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[8]~output .bus_hold = "false";
@@ -5290,7 +4967,7 @@ cycloneive_io_obuf \alu_Res_debug[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[7]~output_o ),
+	.o(alu_Res_debug[7]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[7]~output .bus_hold = "false";
@@ -5302,7 +4979,7 @@ cycloneive_io_obuf \alu_Res_debug[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[6]~output_o ),
+	.o(alu_Res_debug[6]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[6]~output .bus_hold = "false";
@@ -5314,7 +4991,7 @@ cycloneive_io_obuf \alu_Res_debug[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[5]~output_o ),
+	.o(alu_Res_debug[5]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[5]~output .bus_hold = "false";
@@ -5326,7 +5003,7 @@ cycloneive_io_obuf \alu_Res_debug[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[4]~output_o ),
+	.o(alu_Res_debug[4]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[4]~output .bus_hold = "false";
@@ -5338,7 +5015,7 @@ cycloneive_io_obuf \alu_Res_debug[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[3]~output_o ),
+	.o(alu_Res_debug[3]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[3]~output .bus_hold = "false";
@@ -5350,7 +5027,7 @@ cycloneive_io_obuf \alu_Res_debug[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[2]~output_o ),
+	.o(alu_Res_debug[2]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[2]~output .bus_hold = "false";
@@ -5362,7 +5039,7 @@ cycloneive_io_obuf \alu_Res_debug[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[1]~output_o ),
+	.o(alu_Res_debug[1]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[1]~output .bus_hold = "false";
@@ -5374,7 +5051,7 @@ cycloneive_io_obuf \alu_Res_debug[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alu_Res_debug[0]~output_o ),
+	.o(alu_Res_debug[0]),
 	.obar());
 // synopsys translate_off
 defparam \alu_Res_debug[0]~output .bus_hold = "false";
@@ -5386,7 +5063,7 @@ cycloneive_io_obuf \alures[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[31]~output_o ),
+	.o(alures[31]),
 	.obar());
 // synopsys translate_off
 defparam \alures[31]~output .bus_hold = "false";
@@ -5398,7 +5075,7 @@ cycloneive_io_obuf \alures[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[30]~output_o ),
+	.o(alures[30]),
 	.obar());
 // synopsys translate_off
 defparam \alures[30]~output .bus_hold = "false";
@@ -5410,7 +5087,7 @@ cycloneive_io_obuf \alures[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[29]~output_o ),
+	.o(alures[29]),
 	.obar());
 // synopsys translate_off
 defparam \alures[29]~output .bus_hold = "false";
@@ -5422,7 +5099,7 @@ cycloneive_io_obuf \alures[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[28]~output_o ),
+	.o(alures[28]),
 	.obar());
 // synopsys translate_off
 defparam \alures[28]~output .bus_hold = "false";
@@ -5434,7 +5111,7 @@ cycloneive_io_obuf \alures[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[27]~output_o ),
+	.o(alures[27]),
 	.obar());
 // synopsys translate_off
 defparam \alures[27]~output .bus_hold = "false";
@@ -5446,7 +5123,7 @@ cycloneive_io_obuf \alures[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[26]~output_o ),
+	.o(alures[26]),
 	.obar());
 // synopsys translate_off
 defparam \alures[26]~output .bus_hold = "false";
@@ -5458,7 +5135,7 @@ cycloneive_io_obuf \alures[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[25]~output_o ),
+	.o(alures[25]),
 	.obar());
 // synopsys translate_off
 defparam \alures[25]~output .bus_hold = "false";
@@ -5470,7 +5147,7 @@ cycloneive_io_obuf \alures[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[24]~output_o ),
+	.o(alures[24]),
 	.obar());
 // synopsys translate_off
 defparam \alures[24]~output .bus_hold = "false";
@@ -5482,7 +5159,7 @@ cycloneive_io_obuf \alures[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[23]~output_o ),
+	.o(alures[23]),
 	.obar());
 // synopsys translate_off
 defparam \alures[23]~output .bus_hold = "false";
@@ -5494,7 +5171,7 @@ cycloneive_io_obuf \alures[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[22]~output_o ),
+	.o(alures[22]),
 	.obar());
 // synopsys translate_off
 defparam \alures[22]~output .bus_hold = "false";
@@ -5506,7 +5183,7 @@ cycloneive_io_obuf \alures[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[21]~output_o ),
+	.o(alures[21]),
 	.obar());
 // synopsys translate_off
 defparam \alures[21]~output .bus_hold = "false";
@@ -5518,7 +5195,7 @@ cycloneive_io_obuf \alures[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[20]~output_o ),
+	.o(alures[20]),
 	.obar());
 // synopsys translate_off
 defparam \alures[20]~output .bus_hold = "false";
@@ -5530,7 +5207,7 @@ cycloneive_io_obuf \alures[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[19]~output_o ),
+	.o(alures[19]),
 	.obar());
 // synopsys translate_off
 defparam \alures[19]~output .bus_hold = "false";
@@ -5542,7 +5219,7 @@ cycloneive_io_obuf \alures[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[18]~output_o ),
+	.o(alures[18]),
 	.obar());
 // synopsys translate_off
 defparam \alures[18]~output .bus_hold = "false";
@@ -5554,7 +5231,7 @@ cycloneive_io_obuf \alures[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[17]~output_o ),
+	.o(alures[17]),
 	.obar());
 // synopsys translate_off
 defparam \alures[17]~output .bus_hold = "false";
@@ -5566,7 +5243,7 @@ cycloneive_io_obuf \alures[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[16]~output_o ),
+	.o(alures[16]),
 	.obar());
 // synopsys translate_off
 defparam \alures[16]~output .bus_hold = "false";
@@ -5578,7 +5255,7 @@ cycloneive_io_obuf \alures[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[15]~output_o ),
+	.o(alures[15]),
 	.obar());
 // synopsys translate_off
 defparam \alures[15]~output .bus_hold = "false";
@@ -5590,7 +5267,7 @@ cycloneive_io_obuf \alures[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[14]~output_o ),
+	.o(alures[14]),
 	.obar());
 // synopsys translate_off
 defparam \alures[14]~output .bus_hold = "false";
@@ -5602,7 +5279,7 @@ cycloneive_io_obuf \alures[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[13]~output_o ),
+	.o(alures[13]),
 	.obar());
 // synopsys translate_off
 defparam \alures[13]~output .bus_hold = "false";
@@ -5614,7 +5291,7 @@ cycloneive_io_obuf \alures[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[12]~output_o ),
+	.o(alures[12]),
 	.obar());
 // synopsys translate_off
 defparam \alures[12]~output .bus_hold = "false";
@@ -5626,7 +5303,7 @@ cycloneive_io_obuf \alures[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[11]~output_o ),
+	.o(alures[11]),
 	.obar());
 // synopsys translate_off
 defparam \alures[11]~output .bus_hold = "false";
@@ -5638,7 +5315,7 @@ cycloneive_io_obuf \alures[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[10]~output_o ),
+	.o(alures[10]),
 	.obar());
 // synopsys translate_off
 defparam \alures[10]~output .bus_hold = "false";
@@ -5650,7 +5327,7 @@ cycloneive_io_obuf \alures[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[9]~output_o ),
+	.o(alures[9]),
 	.obar());
 // synopsys translate_off
 defparam \alures[9]~output .bus_hold = "false";
@@ -5662,7 +5339,7 @@ cycloneive_io_obuf \alures[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[8]~output_o ),
+	.o(alures[8]),
 	.obar());
 // synopsys translate_off
 defparam \alures[8]~output .bus_hold = "false";
@@ -5674,7 +5351,7 @@ cycloneive_io_obuf \alures[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[7]~output_o ),
+	.o(alures[7]),
 	.obar());
 // synopsys translate_off
 defparam \alures[7]~output .bus_hold = "false";
@@ -5686,7 +5363,7 @@ cycloneive_io_obuf \alures[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[6]~output_o ),
+	.o(alures[6]),
 	.obar());
 // synopsys translate_off
 defparam \alures[6]~output .bus_hold = "false";
@@ -5698,7 +5375,7 @@ cycloneive_io_obuf \alures[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[5]~output_o ),
+	.o(alures[5]),
 	.obar());
 // synopsys translate_off
 defparam \alures[5]~output .bus_hold = "false";
@@ -5710,7 +5387,7 @@ cycloneive_io_obuf \alures[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[4]~output_o ),
+	.o(alures[4]),
 	.obar());
 // synopsys translate_off
 defparam \alures[4]~output .bus_hold = "false";
@@ -5722,7 +5399,7 @@ cycloneive_io_obuf \alures[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[3]~output_o ),
+	.o(alures[3]),
 	.obar());
 // synopsys translate_off
 defparam \alures[3]~output .bus_hold = "false";
@@ -5734,7 +5411,7 @@ cycloneive_io_obuf \alures[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[2]~output_o ),
+	.o(alures[2]),
 	.obar());
 // synopsys translate_off
 defparam \alures[2]~output .bus_hold = "false";
@@ -5746,7 +5423,7 @@ cycloneive_io_obuf \alures[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[1]~output_o ),
+	.o(alures[1]),
 	.obar());
 // synopsys translate_off
 defparam \alures[1]~output .bus_hold = "false";
@@ -5758,7 +5435,7 @@ cycloneive_io_obuf \alures[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\alures[0]~output_o ),
+	.o(alures[0]),
 	.obar());
 // synopsys translate_off
 defparam \alures[0]~output .bus_hold = "false";
@@ -5770,7 +5447,7 @@ cycloneive_io_obuf \b_mux_res[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[31]~output_o ),
+	.o(b_mux_res[31]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[31]~output .bus_hold = "false";
@@ -5782,7 +5459,7 @@ cycloneive_io_obuf \b_mux_res[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[30]~output_o ),
+	.o(b_mux_res[30]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[30]~output .bus_hold = "false";
@@ -5794,7 +5471,7 @@ cycloneive_io_obuf \b_mux_res[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[29]~output_o ),
+	.o(b_mux_res[29]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[29]~output .bus_hold = "false";
@@ -5806,7 +5483,7 @@ cycloneive_io_obuf \b_mux_res[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[28]~output_o ),
+	.o(b_mux_res[28]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[28]~output .bus_hold = "false";
@@ -5818,7 +5495,7 @@ cycloneive_io_obuf \b_mux_res[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[27]~output_o ),
+	.o(b_mux_res[27]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[27]~output .bus_hold = "false";
@@ -5830,7 +5507,7 @@ cycloneive_io_obuf \b_mux_res[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[26]~output_o ),
+	.o(b_mux_res[26]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[26]~output .bus_hold = "false";
@@ -5842,7 +5519,7 @@ cycloneive_io_obuf \b_mux_res[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[25]~output_o ),
+	.o(b_mux_res[25]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[25]~output .bus_hold = "false";
@@ -5854,7 +5531,7 @@ cycloneive_io_obuf \b_mux_res[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[24]~output_o ),
+	.o(b_mux_res[24]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[24]~output .bus_hold = "false";
@@ -5866,7 +5543,7 @@ cycloneive_io_obuf \b_mux_res[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[23]~output_o ),
+	.o(b_mux_res[23]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[23]~output .bus_hold = "false";
@@ -5878,7 +5555,7 @@ cycloneive_io_obuf \b_mux_res[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[22]~output_o ),
+	.o(b_mux_res[22]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[22]~output .bus_hold = "false";
@@ -5890,7 +5567,7 @@ cycloneive_io_obuf \b_mux_res[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[21]~output_o ),
+	.o(b_mux_res[21]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[21]~output .bus_hold = "false";
@@ -5902,7 +5579,7 @@ cycloneive_io_obuf \b_mux_res[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[20]~output_o ),
+	.o(b_mux_res[20]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[20]~output .bus_hold = "false";
@@ -5914,7 +5591,7 @@ cycloneive_io_obuf \b_mux_res[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[19]~output_o ),
+	.o(b_mux_res[19]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[19]~output .bus_hold = "false";
@@ -5926,7 +5603,7 @@ cycloneive_io_obuf \b_mux_res[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[18]~output_o ),
+	.o(b_mux_res[18]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[18]~output .bus_hold = "false";
@@ -5938,7 +5615,7 @@ cycloneive_io_obuf \b_mux_res[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[17]~output_o ),
+	.o(b_mux_res[17]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[17]~output .bus_hold = "false";
@@ -5950,7 +5627,7 @@ cycloneive_io_obuf \b_mux_res[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[16]~output_o ),
+	.o(b_mux_res[16]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[16]~output .bus_hold = "false";
@@ -5962,7 +5639,7 @@ cycloneive_io_obuf \b_mux_res[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[15]~output_o ),
+	.o(b_mux_res[15]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[15]~output .bus_hold = "false";
@@ -5974,7 +5651,7 @@ cycloneive_io_obuf \b_mux_res[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[14]~output_o ),
+	.o(b_mux_res[14]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[14]~output .bus_hold = "false";
@@ -5986,7 +5663,7 @@ cycloneive_io_obuf \b_mux_res[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[13]~output_o ),
+	.o(b_mux_res[13]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[13]~output .bus_hold = "false";
@@ -5998,7 +5675,7 @@ cycloneive_io_obuf \b_mux_res[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[12]~output_o ),
+	.o(b_mux_res[12]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[12]~output .bus_hold = "false";
@@ -6010,7 +5687,7 @@ cycloneive_io_obuf \b_mux_res[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[11]~output_o ),
+	.o(b_mux_res[11]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[11]~output .bus_hold = "false";
@@ -6022,7 +5699,7 @@ cycloneive_io_obuf \b_mux_res[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[10]~output_o ),
+	.o(b_mux_res[10]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[10]~output .bus_hold = "false";
@@ -6034,7 +5711,7 @@ cycloneive_io_obuf \b_mux_res[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[9]~output_o ),
+	.o(b_mux_res[9]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[9]~output .bus_hold = "false";
@@ -6046,7 +5723,7 @@ cycloneive_io_obuf \b_mux_res[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[8]~output_o ),
+	.o(b_mux_res[8]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[8]~output .bus_hold = "false";
@@ -6058,7 +5735,7 @@ cycloneive_io_obuf \b_mux_res[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[7]~output_o ),
+	.o(b_mux_res[7]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[7]~output .bus_hold = "false";
@@ -6070,7 +5747,7 @@ cycloneive_io_obuf \b_mux_res[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[6]~output_o ),
+	.o(b_mux_res[6]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[6]~output .bus_hold = "false";
@@ -6082,7 +5759,7 @@ cycloneive_io_obuf \b_mux_res[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[5]~output_o ),
+	.o(b_mux_res[5]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[5]~output .bus_hold = "false";
@@ -6094,7 +5771,7 @@ cycloneive_io_obuf \b_mux_res[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[4]~output_o ),
+	.o(b_mux_res[4]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[4]~output .bus_hold = "false";
@@ -6106,7 +5783,7 @@ cycloneive_io_obuf \b_mux_res[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[3]~output_o ),
+	.o(b_mux_res[3]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[3]~output .bus_hold = "false";
@@ -6118,7 +5795,7 @@ cycloneive_io_obuf \b_mux_res[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[2]~output_o ),
+	.o(b_mux_res[2]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[2]~output .bus_hold = "false";
@@ -6130,7 +5807,7 @@ cycloneive_io_obuf \b_mux_res[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[1]~output_o ),
+	.o(b_mux_res[1]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[1]~output .bus_hold = "false";
@@ -6142,7 +5819,7 @@ cycloneive_io_obuf \b_mux_res[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\b_mux_res[0]~output_o ),
+	.o(b_mux_res[0]),
 	.obar());
 // synopsys translate_off
 defparam \b_mux_res[0]~output .bus_hold = "false";
@@ -6154,7 +5831,7 @@ cycloneive_io_obuf \br_pcc[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\br_pcc[7]~output_o ),
+	.o(br_pcc[7]),
 	.obar());
 // synopsys translate_off
 defparam \br_pcc[7]~output .bus_hold = "false";
@@ -6166,7 +5843,7 @@ cycloneive_io_obuf \br_pcc[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\br_pcc[6]~output_o ),
+	.o(br_pcc[6]),
 	.obar());
 // synopsys translate_off
 defparam \br_pcc[6]~output .bus_hold = "false";
@@ -6178,7 +5855,7 @@ cycloneive_io_obuf \br_pcc[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\br_pcc[5]~output_o ),
+	.o(br_pcc[5]),
 	.obar());
 // synopsys translate_off
 defparam \br_pcc[5]~output .bus_hold = "false";
@@ -6190,7 +5867,7 @@ cycloneive_io_obuf \br_pcc[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\br_pcc[4]~output_o ),
+	.o(br_pcc[4]),
 	.obar());
 // synopsys translate_off
 defparam \br_pcc[4]~output .bus_hold = "false";
@@ -6202,7 +5879,7 @@ cycloneive_io_obuf \br_pcc[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\br_pcc[3]~output_o ),
+	.o(br_pcc[3]),
 	.obar());
 // synopsys translate_off
 defparam \br_pcc[3]~output .bus_hold = "false";
@@ -6214,7 +5891,7 @@ cycloneive_io_obuf \br_pcc[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\br_pcc[2]~output_o ),
+	.o(br_pcc[2]),
 	.obar());
 // synopsys translate_off
 defparam \br_pcc[2]~output .bus_hold = "false";
@@ -6226,7 +5903,7 @@ cycloneive_io_obuf \br_pcc[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\br_pcc[1]~output_o ),
+	.o(br_pcc[1]),
 	.obar());
 // synopsys translate_off
 defparam \br_pcc[1]~output .bus_hold = "false";
@@ -6238,7 +5915,7 @@ cycloneive_io_obuf \br_pcc[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\br_pcc[0]~output_o ),
+	.o(br_pcc[0]),
 	.obar());
 // synopsys translate_off
 defparam \br_pcc[0]~output .bus_hold = "false";
@@ -6250,7 +5927,7 @@ cycloneive_io_obuf \data_write_debug[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[31]~output_o ),
+	.o(data_write_debug[31]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[31]~output .bus_hold = "false";
@@ -6262,7 +5939,7 @@ cycloneive_io_obuf \data_write_debug[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[30]~output_o ),
+	.o(data_write_debug[30]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[30]~output .bus_hold = "false";
@@ -6274,7 +5951,7 @@ cycloneive_io_obuf \data_write_debug[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[29]~output_o ),
+	.o(data_write_debug[29]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[29]~output .bus_hold = "false";
@@ -6286,7 +5963,7 @@ cycloneive_io_obuf \data_write_debug[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[28]~output_o ),
+	.o(data_write_debug[28]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[28]~output .bus_hold = "false";
@@ -6298,7 +5975,7 @@ cycloneive_io_obuf \data_write_debug[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[27]~output_o ),
+	.o(data_write_debug[27]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[27]~output .bus_hold = "false";
@@ -6310,7 +5987,7 @@ cycloneive_io_obuf \data_write_debug[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[26]~output_o ),
+	.o(data_write_debug[26]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[26]~output .bus_hold = "false";
@@ -6322,7 +5999,7 @@ cycloneive_io_obuf \data_write_debug[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[25]~output_o ),
+	.o(data_write_debug[25]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[25]~output .bus_hold = "false";
@@ -6334,7 +6011,7 @@ cycloneive_io_obuf \data_write_debug[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[24]~output_o ),
+	.o(data_write_debug[24]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[24]~output .bus_hold = "false";
@@ -6346,7 +6023,7 @@ cycloneive_io_obuf \data_write_debug[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[23]~output_o ),
+	.o(data_write_debug[23]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[23]~output .bus_hold = "false";
@@ -6358,7 +6035,7 @@ cycloneive_io_obuf \data_write_debug[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[22]~output_o ),
+	.o(data_write_debug[22]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[22]~output .bus_hold = "false";
@@ -6370,7 +6047,7 @@ cycloneive_io_obuf \data_write_debug[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[21]~output_o ),
+	.o(data_write_debug[21]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[21]~output .bus_hold = "false";
@@ -6382,7 +6059,7 @@ cycloneive_io_obuf \data_write_debug[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[20]~output_o ),
+	.o(data_write_debug[20]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[20]~output .bus_hold = "false";
@@ -6394,7 +6071,7 @@ cycloneive_io_obuf \data_write_debug[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[19]~output_o ),
+	.o(data_write_debug[19]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[19]~output .bus_hold = "false";
@@ -6406,7 +6083,7 @@ cycloneive_io_obuf \data_write_debug[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[18]~output_o ),
+	.o(data_write_debug[18]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[18]~output .bus_hold = "false";
@@ -6418,7 +6095,7 @@ cycloneive_io_obuf \data_write_debug[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[17]~output_o ),
+	.o(data_write_debug[17]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[17]~output .bus_hold = "false";
@@ -6430,7 +6107,7 @@ cycloneive_io_obuf \data_write_debug[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[16]~output_o ),
+	.o(data_write_debug[16]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[16]~output .bus_hold = "false";
@@ -6442,7 +6119,7 @@ cycloneive_io_obuf \data_write_debug[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[15]~output_o ),
+	.o(data_write_debug[15]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[15]~output .bus_hold = "false";
@@ -6454,7 +6131,7 @@ cycloneive_io_obuf \data_write_debug[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[14]~output_o ),
+	.o(data_write_debug[14]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[14]~output .bus_hold = "false";
@@ -6466,7 +6143,7 @@ cycloneive_io_obuf \data_write_debug[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[13]~output_o ),
+	.o(data_write_debug[13]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[13]~output .bus_hold = "false";
@@ -6478,7 +6155,7 @@ cycloneive_io_obuf \data_write_debug[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[12]~output_o ),
+	.o(data_write_debug[12]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[12]~output .bus_hold = "false";
@@ -6490,7 +6167,7 @@ cycloneive_io_obuf \data_write_debug[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[11]~output_o ),
+	.o(data_write_debug[11]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[11]~output .bus_hold = "false";
@@ -6502,7 +6179,7 @@ cycloneive_io_obuf \data_write_debug[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[10]~output_o ),
+	.o(data_write_debug[10]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[10]~output .bus_hold = "false";
@@ -6514,7 +6191,7 @@ cycloneive_io_obuf \data_write_debug[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[9]~output_o ),
+	.o(data_write_debug[9]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[9]~output .bus_hold = "false";
@@ -6526,7 +6203,7 @@ cycloneive_io_obuf \data_write_debug[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[8]~output_o ),
+	.o(data_write_debug[8]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[8]~output .bus_hold = "false";
@@ -6538,7 +6215,7 @@ cycloneive_io_obuf \data_write_debug[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[7]~output_o ),
+	.o(data_write_debug[7]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[7]~output .bus_hold = "false";
@@ -6550,7 +6227,7 @@ cycloneive_io_obuf \data_write_debug[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[6]~output_o ),
+	.o(data_write_debug[6]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[6]~output .bus_hold = "false";
@@ -6562,7 +6239,7 @@ cycloneive_io_obuf \data_write_debug[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[5]~output_o ),
+	.o(data_write_debug[5]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[5]~output .bus_hold = "false";
@@ -6574,7 +6251,7 @@ cycloneive_io_obuf \data_write_debug[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[4]~output_o ),
+	.o(data_write_debug[4]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[4]~output .bus_hold = "false";
@@ -6586,7 +6263,7 @@ cycloneive_io_obuf \data_write_debug[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[3]~output_o ),
+	.o(data_write_debug[3]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[3]~output .bus_hold = "false";
@@ -6598,7 +6275,7 @@ cycloneive_io_obuf \data_write_debug[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[2]~output_o ),
+	.o(data_write_debug[2]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[2]~output .bus_hold = "false";
@@ -6610,7 +6287,7 @@ cycloneive_io_obuf \data_write_debug[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[1]~output_o ),
+	.o(data_write_debug[1]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[1]~output .bus_hold = "false";
@@ -6622,7 +6299,7 @@ cycloneive_io_obuf \data_write_debug[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\data_write_debug[0]~output_o ),
+	.o(data_write_debug[0]),
 	.obar());
 // synopsys translate_off
 defparam \data_write_debug[0]~output .bus_hold = "false";
@@ -6634,7 +6311,7 @@ cycloneive_io_obuf \DEBUG_NEXTPC_C[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\DEBUG_NEXTPC_C[7]~output_o ),
+	.o(DEBUG_NEXTPC_C[7]),
 	.obar());
 // synopsys translate_off
 defparam \DEBUG_NEXTPC_C[7]~output .bus_hold = "false";
@@ -6646,7 +6323,7 @@ cycloneive_io_obuf \DEBUG_NEXTPC_C[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\DEBUG_NEXTPC_C[6]~output_o ),
+	.o(DEBUG_NEXTPC_C[6]),
 	.obar());
 // synopsys translate_off
 defparam \DEBUG_NEXTPC_C[6]~output .bus_hold = "false";
@@ -6658,7 +6335,7 @@ cycloneive_io_obuf \DEBUG_NEXTPC_C[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\DEBUG_NEXTPC_C[5]~output_o ),
+	.o(DEBUG_NEXTPC_C[5]),
 	.obar());
 // synopsys translate_off
 defparam \DEBUG_NEXTPC_C[5]~output .bus_hold = "false";
@@ -6670,7 +6347,7 @@ cycloneive_io_obuf \DEBUG_NEXTPC_C[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\DEBUG_NEXTPC_C[4]~output_o ),
+	.o(DEBUG_NEXTPC_C[4]),
 	.obar());
 // synopsys translate_off
 defparam \DEBUG_NEXTPC_C[4]~output .bus_hold = "false";
@@ -6682,7 +6359,7 @@ cycloneive_io_obuf \DEBUG_NEXTPC_C[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\DEBUG_NEXTPC_C[3]~output_o ),
+	.o(DEBUG_NEXTPC_C[3]),
 	.obar());
 // synopsys translate_off
 defparam \DEBUG_NEXTPC_C[3]~output .bus_hold = "false";
@@ -6694,7 +6371,7 @@ cycloneive_io_obuf \DEBUG_NEXTPC_C[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\DEBUG_NEXTPC_C[2]~output_o ),
+	.o(DEBUG_NEXTPC_C[2]),
 	.obar());
 // synopsys translate_off
 defparam \DEBUG_NEXTPC_C[2]~output .bus_hold = "false";
@@ -6706,7 +6383,7 @@ cycloneive_io_obuf \DEBUG_NEXTPC_C[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\DEBUG_NEXTPC_C[1]~output_o ),
+	.o(DEBUG_NEXTPC_C[1]),
 	.obar());
 // synopsys translate_off
 defparam \DEBUG_NEXTPC_C[1]~output .bus_hold = "false";
@@ -6718,7 +6395,7 @@ cycloneive_io_obuf \DEBUG_NEXTPC_C[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\DEBUG_NEXTPC_C[0]~output_o ),
+	.o(DEBUG_NEXTPC_C[0]),
 	.obar());
 // synopsys translate_off
 defparam \DEBUG_NEXTPC_C[0]~output .bus_hold = "false";
@@ -6730,7 +6407,7 @@ cycloneive_io_obuf \fw_A[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\fw_A[1]~output_o ),
+	.o(fw_A[1]),
 	.obar());
 // synopsys translate_off
 defparam \fw_A[1]~output .bus_hold = "false";
@@ -6742,7 +6419,7 @@ cycloneive_io_obuf \fw_A[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\fw_A[0]~output_o ),
+	.o(fw_A[0]),
 	.obar());
 // synopsys translate_off
 defparam \fw_A[0]~output .bus_hold = "false";
@@ -6754,7 +6431,7 @@ cycloneive_io_obuf \fw_b[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\fw_b[1]~output_o ),
+	.o(fw_b[1]),
 	.obar());
 // synopsys translate_off
 defparam \fw_b[1]~output .bus_hold = "false";
@@ -6766,7 +6443,7 @@ cycloneive_io_obuf \fw_b[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\fw_b[0]~output_o ),
+	.o(fw_b[0]),
 	.obar());
 // synopsys translate_off
 defparam \fw_b[0]~output .bus_hold = "false";
@@ -6778,7 +6455,7 @@ cycloneive_io_obuf \inst_debug[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[31]~output_o ),
+	.o(inst_debug[31]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[31]~output .bus_hold = "false";
@@ -6790,7 +6467,7 @@ cycloneive_io_obuf \inst_debug[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[30]~output_o ),
+	.o(inst_debug[30]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[30]~output .bus_hold = "false";
@@ -6802,7 +6479,7 @@ cycloneive_io_obuf \inst_debug[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[29]~output_o ),
+	.o(inst_debug[29]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[29]~output .bus_hold = "false";
@@ -6814,7 +6491,7 @@ cycloneive_io_obuf \inst_debug[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[28]~output_o ),
+	.o(inst_debug[28]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[28]~output .bus_hold = "false";
@@ -6826,7 +6503,7 @@ cycloneive_io_obuf \inst_debug[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[27]~output_o ),
+	.o(inst_debug[27]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[27]~output .bus_hold = "false";
@@ -6838,7 +6515,7 @@ cycloneive_io_obuf \inst_debug[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[26]~output_o ),
+	.o(inst_debug[26]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[26]~output .bus_hold = "false";
@@ -6850,7 +6527,7 @@ cycloneive_io_obuf \inst_debug[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[25]~output_o ),
+	.o(inst_debug[25]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[25]~output .bus_hold = "false";
@@ -6862,7 +6539,7 @@ cycloneive_io_obuf \inst_debug[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[24]~output_o ),
+	.o(inst_debug[24]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[24]~output .bus_hold = "false";
@@ -6874,7 +6551,7 @@ cycloneive_io_obuf \inst_debug[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[23]~output_o ),
+	.o(inst_debug[23]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[23]~output .bus_hold = "false";
@@ -6886,7 +6563,7 @@ cycloneive_io_obuf \inst_debug[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[22]~output_o ),
+	.o(inst_debug[22]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[22]~output .bus_hold = "false";
@@ -6898,7 +6575,7 @@ cycloneive_io_obuf \inst_debug[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[21]~output_o ),
+	.o(inst_debug[21]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[21]~output .bus_hold = "false";
@@ -6910,7 +6587,7 @@ cycloneive_io_obuf \inst_debug[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[20]~output_o ),
+	.o(inst_debug[20]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[20]~output .bus_hold = "false";
@@ -6922,7 +6599,7 @@ cycloneive_io_obuf \inst_debug[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[19]~output_o ),
+	.o(inst_debug[19]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[19]~output .bus_hold = "false";
@@ -6934,7 +6611,7 @@ cycloneive_io_obuf \inst_debug[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[18]~output_o ),
+	.o(inst_debug[18]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[18]~output .bus_hold = "false";
@@ -6946,7 +6623,7 @@ cycloneive_io_obuf \inst_debug[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[17]~output_o ),
+	.o(inst_debug[17]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[17]~output .bus_hold = "false";
@@ -6958,7 +6635,7 @@ cycloneive_io_obuf \inst_debug[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[16]~output_o ),
+	.o(inst_debug[16]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[16]~output .bus_hold = "false";
@@ -6970,7 +6647,7 @@ cycloneive_io_obuf \inst_debug[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[15]~output_o ),
+	.o(inst_debug[15]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[15]~output .bus_hold = "false";
@@ -6982,7 +6659,7 @@ cycloneive_io_obuf \inst_debug[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[14]~output_o ),
+	.o(inst_debug[14]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[14]~output .bus_hold = "false";
@@ -6994,7 +6671,7 @@ cycloneive_io_obuf \inst_debug[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[13]~output_o ),
+	.o(inst_debug[13]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[13]~output .bus_hold = "false";
@@ -7006,7 +6683,7 @@ cycloneive_io_obuf \inst_debug[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[12]~output_o ),
+	.o(inst_debug[12]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[12]~output .bus_hold = "false";
@@ -7018,7 +6695,7 @@ cycloneive_io_obuf \inst_debug[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[11]~output_o ),
+	.o(inst_debug[11]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[11]~output .bus_hold = "false";
@@ -7030,7 +6707,7 @@ cycloneive_io_obuf \inst_debug[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[10]~output_o ),
+	.o(inst_debug[10]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[10]~output .bus_hold = "false";
@@ -7042,7 +6719,7 @@ cycloneive_io_obuf \inst_debug[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[9]~output_o ),
+	.o(inst_debug[9]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[9]~output .bus_hold = "false";
@@ -7054,7 +6731,7 @@ cycloneive_io_obuf \inst_debug[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[8]~output_o ),
+	.o(inst_debug[8]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[8]~output .bus_hold = "false";
@@ -7066,7 +6743,7 @@ cycloneive_io_obuf \inst_debug[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[7]~output_o ),
+	.o(inst_debug[7]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[7]~output .bus_hold = "false";
@@ -7078,7 +6755,7 @@ cycloneive_io_obuf \inst_debug[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[6]~output_o ),
+	.o(inst_debug[6]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[6]~output .bus_hold = "false";
@@ -7090,7 +6767,7 @@ cycloneive_io_obuf \inst_debug[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[5]~output_o ),
+	.o(inst_debug[5]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[5]~output .bus_hold = "false";
@@ -7102,7 +6779,7 @@ cycloneive_io_obuf \inst_debug[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[4]~output_o ),
+	.o(inst_debug[4]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[4]~output .bus_hold = "false";
@@ -7114,7 +6791,7 @@ cycloneive_io_obuf \inst_debug[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[3]~output_o ),
+	.o(inst_debug[3]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[3]~output .bus_hold = "false";
@@ -7126,7 +6803,7 @@ cycloneive_io_obuf \inst_debug[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[2]~output_o ),
+	.o(inst_debug[2]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[2]~output .bus_hold = "false";
@@ -7138,7 +6815,7 @@ cycloneive_io_obuf \inst_debug[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[1]~output_o ),
+	.o(inst_debug[1]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[1]~output .bus_hold = "false";
@@ -7150,7 +6827,7 @@ cycloneive_io_obuf \inst_debug[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\inst_debug[0]~output_o ),
+	.o(inst_debug[0]),
 	.obar());
 // synopsys translate_off
 defparam \inst_debug[0]~output .bus_hold = "false";
@@ -7162,7 +6839,7 @@ cycloneive_io_obuf \pc_debugg[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_debugg[7]~output_o ),
+	.o(pc_debugg[7]),
 	.obar());
 // synopsys translate_off
 defparam \pc_debugg[7]~output .bus_hold = "false";
@@ -7174,7 +6851,7 @@ cycloneive_io_obuf \pc_debugg[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_debugg[6]~output_o ),
+	.o(pc_debugg[6]),
 	.obar());
 // synopsys translate_off
 defparam \pc_debugg[6]~output .bus_hold = "false";
@@ -7186,7 +6863,7 @@ cycloneive_io_obuf \pc_debugg[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_debugg[5]~output_o ),
+	.o(pc_debugg[5]),
 	.obar());
 // synopsys translate_off
 defparam \pc_debugg[5]~output .bus_hold = "false";
@@ -7198,7 +6875,7 @@ cycloneive_io_obuf \pc_debugg[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_debugg[4]~output_o ),
+	.o(pc_debugg[4]),
 	.obar());
 // synopsys translate_off
 defparam \pc_debugg[4]~output .bus_hold = "false";
@@ -7210,7 +6887,7 @@ cycloneive_io_obuf \pc_debugg[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_debugg[3]~output_o ),
+	.o(pc_debugg[3]),
 	.obar());
 // synopsys translate_off
 defparam \pc_debugg[3]~output .bus_hold = "false";
@@ -7222,7 +6899,7 @@ cycloneive_io_obuf \pc_debugg[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_debugg[2]~output_o ),
+	.o(pc_debugg[2]),
 	.obar());
 // synopsys translate_off
 defparam \pc_debugg[2]~output .bus_hold = "false";
@@ -7234,7 +6911,7 @@ cycloneive_io_obuf \pc_debugg[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_debugg[1]~output_o ),
+	.o(pc_debugg[1]),
 	.obar());
 // synopsys translate_off
 defparam \pc_debugg[1]~output .bus_hold = "false";
@@ -7246,7 +6923,7 @@ cycloneive_io_obuf \pc_debugg[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_debugg[0]~output_o ),
+	.o(pc_debugg[0]),
 	.obar());
 // synopsys translate_off
 defparam \pc_debugg[0]~output .bus_hold = "false";
@@ -7258,7 +6935,7 @@ cycloneive_io_obuf \pc_four_debug[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_four_debug[7]~output_o ),
+	.o(pc_four_debug[7]),
 	.obar());
 // synopsys translate_off
 defparam \pc_four_debug[7]~output .bus_hold = "false";
@@ -7270,7 +6947,7 @@ cycloneive_io_obuf \pc_four_debug[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_four_debug[6]~output_o ),
+	.o(pc_four_debug[6]),
 	.obar());
 // synopsys translate_off
 defparam \pc_four_debug[6]~output .bus_hold = "false";
@@ -7282,7 +6959,7 @@ cycloneive_io_obuf \pc_four_debug[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_four_debug[5]~output_o ),
+	.o(pc_four_debug[5]),
 	.obar());
 // synopsys translate_off
 defparam \pc_four_debug[5]~output .bus_hold = "false";
@@ -7294,7 +6971,7 @@ cycloneive_io_obuf \pc_four_debug[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_four_debug[4]~output_o ),
+	.o(pc_four_debug[4]),
 	.obar());
 // synopsys translate_off
 defparam \pc_four_debug[4]~output .bus_hold = "false";
@@ -7306,7 +6983,7 @@ cycloneive_io_obuf \pc_four_debug[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_four_debug[3]~output_o ),
+	.o(pc_four_debug[3]),
 	.obar());
 // synopsys translate_off
 defparam \pc_four_debug[3]~output .bus_hold = "false";
@@ -7318,7 +6995,7 @@ cycloneive_io_obuf \pc_four_debug[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_four_debug[2]~output_o ),
+	.o(pc_four_debug[2]),
 	.obar());
 // synopsys translate_off
 defparam \pc_four_debug[2]~output .bus_hold = "false";
@@ -7330,7 +7007,7 @@ cycloneive_io_obuf \pc_four_debug[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_four_debug[1]~output_o ),
+	.o(pc_four_debug[1]),
 	.obar());
 // synopsys translate_off
 defparam \pc_four_debug[1]~output .bus_hold = "false";
@@ -7342,7 +7019,7 @@ cycloneive_io_obuf \pc_four_debug[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\pc_four_debug[0]~output_o ),
+	.o(pc_four_debug[0]),
 	.obar());
 // synopsys translate_off
 defparam \pc_four_debug[0]~output .bus_hold = "false";
@@ -7354,7 +7031,7 @@ cycloneive_io_obuf \ram_add[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[8]~output_o ),
+	.o(ram_add[8]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[8]~output .bus_hold = "false";
@@ -7366,7 +7043,7 @@ cycloneive_io_obuf \ram_add[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[7]~output_o ),
+	.o(ram_add[7]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[7]~output .bus_hold = "false";
@@ -7378,7 +7055,7 @@ cycloneive_io_obuf \ram_add[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[6]~output_o ),
+	.o(ram_add[6]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[6]~output .bus_hold = "false";
@@ -7390,7 +7067,7 @@ cycloneive_io_obuf \ram_add[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[5]~output_o ),
+	.o(ram_add[5]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[5]~output .bus_hold = "false";
@@ -7402,7 +7079,7 @@ cycloneive_io_obuf \ram_add[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[4]~output_o ),
+	.o(ram_add[4]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[4]~output .bus_hold = "false";
@@ -7414,7 +7091,7 @@ cycloneive_io_obuf \ram_add[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[3]~output_o ),
+	.o(ram_add[3]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[3]~output .bus_hold = "false";
@@ -7426,7 +7103,7 @@ cycloneive_io_obuf \ram_add[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[2]~output_o ),
+	.o(ram_add[2]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[2]~output .bus_hold = "false";
@@ -7438,7 +7115,7 @@ cycloneive_io_obuf \ram_add[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[1]~output_o ),
+	.o(ram_add[1]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[1]~output .bus_hold = "false";
@@ -7450,7 +7127,7 @@ cycloneive_io_obuf \ram_add[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\ram_add[0]~output_o ),
+	.o(ram_add[0]),
 	.obar());
 // synopsys translate_off
 defparam \ram_add[0]~output .bus_hold = "false";
@@ -7462,7 +7139,7 @@ cycloneive_io_obuf \rd1_deb[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[31]~output_o ),
+	.o(rd1_deb[31]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[31]~output .bus_hold = "false";
@@ -7474,7 +7151,7 @@ cycloneive_io_obuf \rd1_deb[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[30]~output_o ),
+	.o(rd1_deb[30]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[30]~output .bus_hold = "false";
@@ -7486,7 +7163,7 @@ cycloneive_io_obuf \rd1_deb[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[29]~output_o ),
+	.o(rd1_deb[29]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[29]~output .bus_hold = "false";
@@ -7498,7 +7175,7 @@ cycloneive_io_obuf \rd1_deb[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[28]~output_o ),
+	.o(rd1_deb[28]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[28]~output .bus_hold = "false";
@@ -7510,7 +7187,7 @@ cycloneive_io_obuf \rd1_deb[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[27]~output_o ),
+	.o(rd1_deb[27]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[27]~output .bus_hold = "false";
@@ -7522,7 +7199,7 @@ cycloneive_io_obuf \rd1_deb[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[26]~output_o ),
+	.o(rd1_deb[26]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[26]~output .bus_hold = "false";
@@ -7534,7 +7211,7 @@ cycloneive_io_obuf \rd1_deb[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[25]~output_o ),
+	.o(rd1_deb[25]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[25]~output .bus_hold = "false";
@@ -7546,7 +7223,7 @@ cycloneive_io_obuf \rd1_deb[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[24]~output_o ),
+	.o(rd1_deb[24]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[24]~output .bus_hold = "false";
@@ -7558,7 +7235,7 @@ cycloneive_io_obuf \rd1_deb[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[23]~output_o ),
+	.o(rd1_deb[23]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[23]~output .bus_hold = "false";
@@ -7570,7 +7247,7 @@ cycloneive_io_obuf \rd1_deb[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[22]~output_o ),
+	.o(rd1_deb[22]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[22]~output .bus_hold = "false";
@@ -7582,7 +7259,7 @@ cycloneive_io_obuf \rd1_deb[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[21]~output_o ),
+	.o(rd1_deb[21]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[21]~output .bus_hold = "false";
@@ -7594,7 +7271,7 @@ cycloneive_io_obuf \rd1_deb[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[20]~output_o ),
+	.o(rd1_deb[20]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[20]~output .bus_hold = "false";
@@ -7606,7 +7283,7 @@ cycloneive_io_obuf \rd1_deb[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[19]~output_o ),
+	.o(rd1_deb[19]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[19]~output .bus_hold = "false";
@@ -7618,7 +7295,7 @@ cycloneive_io_obuf \rd1_deb[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[18]~output_o ),
+	.o(rd1_deb[18]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[18]~output .bus_hold = "false";
@@ -7630,7 +7307,7 @@ cycloneive_io_obuf \rd1_deb[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[17]~output_o ),
+	.o(rd1_deb[17]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[17]~output .bus_hold = "false";
@@ -7642,7 +7319,7 @@ cycloneive_io_obuf \rd1_deb[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[16]~output_o ),
+	.o(rd1_deb[16]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[16]~output .bus_hold = "false";
@@ -7654,7 +7331,7 @@ cycloneive_io_obuf \rd1_deb[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[15]~output_o ),
+	.o(rd1_deb[15]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[15]~output .bus_hold = "false";
@@ -7666,7 +7343,7 @@ cycloneive_io_obuf \rd1_deb[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[14]~output_o ),
+	.o(rd1_deb[14]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[14]~output .bus_hold = "false";
@@ -7678,7 +7355,7 @@ cycloneive_io_obuf \rd1_deb[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[13]~output_o ),
+	.o(rd1_deb[13]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[13]~output .bus_hold = "false";
@@ -7690,7 +7367,7 @@ cycloneive_io_obuf \rd1_deb[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[12]~output_o ),
+	.o(rd1_deb[12]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[12]~output .bus_hold = "false";
@@ -7702,7 +7379,7 @@ cycloneive_io_obuf \rd1_deb[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[11]~output_o ),
+	.o(rd1_deb[11]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[11]~output .bus_hold = "false";
@@ -7714,7 +7391,7 @@ cycloneive_io_obuf \rd1_deb[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[10]~output_o ),
+	.o(rd1_deb[10]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[10]~output .bus_hold = "false";
@@ -7726,7 +7403,7 @@ cycloneive_io_obuf \rd1_deb[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[9]~output_o ),
+	.o(rd1_deb[9]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[9]~output .bus_hold = "false";
@@ -7738,7 +7415,7 @@ cycloneive_io_obuf \rd1_deb[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[8]~output_o ),
+	.o(rd1_deb[8]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[8]~output .bus_hold = "false";
@@ -7750,7 +7427,7 @@ cycloneive_io_obuf \rd1_deb[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[7]~output_o ),
+	.o(rd1_deb[7]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[7]~output .bus_hold = "false";
@@ -7762,7 +7439,7 @@ cycloneive_io_obuf \rd1_deb[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[6]~output_o ),
+	.o(rd1_deb[6]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[6]~output .bus_hold = "false";
@@ -7774,7 +7451,7 @@ cycloneive_io_obuf \rd1_deb[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[5]~output_o ),
+	.o(rd1_deb[5]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[5]~output .bus_hold = "false";
@@ -7786,7 +7463,7 @@ cycloneive_io_obuf \rd1_deb[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[4]~output_o ),
+	.o(rd1_deb[4]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[4]~output .bus_hold = "false";
@@ -7798,7 +7475,7 @@ cycloneive_io_obuf \rd1_deb[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[3]~output_o ),
+	.o(rd1_deb[3]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[3]~output .bus_hold = "false";
@@ -7810,7 +7487,7 @@ cycloneive_io_obuf \rd1_deb[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[2]~output_o ),
+	.o(rd1_deb[2]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[2]~output .bus_hold = "false";
@@ -7822,7 +7499,7 @@ cycloneive_io_obuf \rd1_deb[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[1]~output_o ),
+	.o(rd1_deb[1]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[1]~output .bus_hold = "false";
@@ -7834,7 +7511,7 @@ cycloneive_io_obuf \rd1_deb[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd1_deb[0]~output_o ),
+	.o(rd1_deb[0]),
 	.obar());
 // synopsys translate_off
 defparam \rd1_deb[0]~output .bus_hold = "false";
@@ -7846,7 +7523,7 @@ cycloneive_io_obuf \rd2_deb[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[31]~output_o ),
+	.o(rd2_deb[31]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[31]~output .bus_hold = "false";
@@ -7858,7 +7535,7 @@ cycloneive_io_obuf \rd2_deb[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[30]~output_o ),
+	.o(rd2_deb[30]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[30]~output .bus_hold = "false";
@@ -7870,7 +7547,7 @@ cycloneive_io_obuf \rd2_deb[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[29]~output_o ),
+	.o(rd2_deb[29]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[29]~output .bus_hold = "false";
@@ -7882,7 +7559,7 @@ cycloneive_io_obuf \rd2_deb[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[28]~output_o ),
+	.o(rd2_deb[28]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[28]~output .bus_hold = "false";
@@ -7894,7 +7571,7 @@ cycloneive_io_obuf \rd2_deb[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[27]~output_o ),
+	.o(rd2_deb[27]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[27]~output .bus_hold = "false";
@@ -7906,7 +7583,7 @@ cycloneive_io_obuf \rd2_deb[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[26]~output_o ),
+	.o(rd2_deb[26]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[26]~output .bus_hold = "false";
@@ -7918,7 +7595,7 @@ cycloneive_io_obuf \rd2_deb[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[25]~output_o ),
+	.o(rd2_deb[25]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[25]~output .bus_hold = "false";
@@ -7930,7 +7607,7 @@ cycloneive_io_obuf \rd2_deb[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[24]~output_o ),
+	.o(rd2_deb[24]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[24]~output .bus_hold = "false";
@@ -7942,7 +7619,7 @@ cycloneive_io_obuf \rd2_deb[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[23]~output_o ),
+	.o(rd2_deb[23]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[23]~output .bus_hold = "false";
@@ -7954,7 +7631,7 @@ cycloneive_io_obuf \rd2_deb[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[22]~output_o ),
+	.o(rd2_deb[22]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[22]~output .bus_hold = "false";
@@ -7966,7 +7643,7 @@ cycloneive_io_obuf \rd2_deb[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[21]~output_o ),
+	.o(rd2_deb[21]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[21]~output .bus_hold = "false";
@@ -7978,7 +7655,7 @@ cycloneive_io_obuf \rd2_deb[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[20]~output_o ),
+	.o(rd2_deb[20]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[20]~output .bus_hold = "false";
@@ -7990,7 +7667,7 @@ cycloneive_io_obuf \rd2_deb[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[19]~output_o ),
+	.o(rd2_deb[19]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[19]~output .bus_hold = "false";
@@ -8002,7 +7679,7 @@ cycloneive_io_obuf \rd2_deb[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[18]~output_o ),
+	.o(rd2_deb[18]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[18]~output .bus_hold = "false";
@@ -8014,7 +7691,7 @@ cycloneive_io_obuf \rd2_deb[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[17]~output_o ),
+	.o(rd2_deb[17]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[17]~output .bus_hold = "false";
@@ -8026,7 +7703,7 @@ cycloneive_io_obuf \rd2_deb[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[16]~output_o ),
+	.o(rd2_deb[16]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[16]~output .bus_hold = "false";
@@ -8038,7 +7715,7 @@ cycloneive_io_obuf \rd2_deb[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[15]~output_o ),
+	.o(rd2_deb[15]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[15]~output .bus_hold = "false";
@@ -8050,7 +7727,7 @@ cycloneive_io_obuf \rd2_deb[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[14]~output_o ),
+	.o(rd2_deb[14]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[14]~output .bus_hold = "false";
@@ -8062,7 +7739,7 @@ cycloneive_io_obuf \rd2_deb[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[13]~output_o ),
+	.o(rd2_deb[13]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[13]~output .bus_hold = "false";
@@ -8074,7 +7751,7 @@ cycloneive_io_obuf \rd2_deb[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[12]~output_o ),
+	.o(rd2_deb[12]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[12]~output .bus_hold = "false";
@@ -8086,7 +7763,7 @@ cycloneive_io_obuf \rd2_deb[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[11]~output_o ),
+	.o(rd2_deb[11]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[11]~output .bus_hold = "false";
@@ -8098,7 +7775,7 @@ cycloneive_io_obuf \rd2_deb[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[10]~output_o ),
+	.o(rd2_deb[10]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[10]~output .bus_hold = "false";
@@ -8110,7 +7787,7 @@ cycloneive_io_obuf \rd2_deb[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[9]~output_o ),
+	.o(rd2_deb[9]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[9]~output .bus_hold = "false";
@@ -8122,7 +7799,7 @@ cycloneive_io_obuf \rd2_deb[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[8]~output_o ),
+	.o(rd2_deb[8]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[8]~output .bus_hold = "false";
@@ -8134,7 +7811,7 @@ cycloneive_io_obuf \rd2_deb[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[7]~output_o ),
+	.o(rd2_deb[7]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[7]~output .bus_hold = "false";
@@ -8146,7 +7823,7 @@ cycloneive_io_obuf \rd2_deb[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[6]~output_o ),
+	.o(rd2_deb[6]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[6]~output .bus_hold = "false";
@@ -8158,7 +7835,7 @@ cycloneive_io_obuf \rd2_deb[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[5]~output_o ),
+	.o(rd2_deb[5]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[5]~output .bus_hold = "false";
@@ -8170,7 +7847,7 @@ cycloneive_io_obuf \rd2_deb[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[4]~output_o ),
+	.o(rd2_deb[4]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[4]~output .bus_hold = "false";
@@ -8182,7 +7859,7 @@ cycloneive_io_obuf \rd2_deb[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[3]~output_o ),
+	.o(rd2_deb[3]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[3]~output .bus_hold = "false";
@@ -8194,7 +7871,7 @@ cycloneive_io_obuf \rd2_deb[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[2]~output_o ),
+	.o(rd2_deb[2]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[2]~output .bus_hold = "false";
@@ -8206,7 +7883,7 @@ cycloneive_io_obuf \rd2_deb[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[1]~output_o ),
+	.o(rd2_deb[1]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[1]~output .bus_hold = "false";
@@ -8218,7 +7895,7 @@ cycloneive_io_obuf \rd2_deb[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\rd2_deb[0]~output_o ),
+	.o(rd2_deb[0]),
 	.obar());
 // synopsys translate_off
 defparam \rd2_deb[0]~output .bus_hold = "false";
@@ -8230,7 +7907,7 @@ cycloneive_io_obuf \wbdata_deb[31]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[31]~output_o ),
+	.o(wbdata_deb[31]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[31]~output .bus_hold = "false";
@@ -8242,7 +7919,7 @@ cycloneive_io_obuf \wbdata_deb[30]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[30]~output_o ),
+	.o(wbdata_deb[30]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[30]~output .bus_hold = "false";
@@ -8254,7 +7931,7 @@ cycloneive_io_obuf \wbdata_deb[29]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[29]~output_o ),
+	.o(wbdata_deb[29]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[29]~output .bus_hold = "false";
@@ -8266,7 +7943,7 @@ cycloneive_io_obuf \wbdata_deb[28]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[28]~output_o ),
+	.o(wbdata_deb[28]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[28]~output .bus_hold = "false";
@@ -8278,7 +7955,7 @@ cycloneive_io_obuf \wbdata_deb[27]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[27]~output_o ),
+	.o(wbdata_deb[27]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[27]~output .bus_hold = "false";
@@ -8290,7 +7967,7 @@ cycloneive_io_obuf \wbdata_deb[26]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[26]~output_o ),
+	.o(wbdata_deb[26]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[26]~output .bus_hold = "false";
@@ -8302,7 +7979,7 @@ cycloneive_io_obuf \wbdata_deb[25]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[25]~output_o ),
+	.o(wbdata_deb[25]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[25]~output .bus_hold = "false";
@@ -8314,7 +7991,7 @@ cycloneive_io_obuf \wbdata_deb[24]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[24]~output_o ),
+	.o(wbdata_deb[24]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[24]~output .bus_hold = "false";
@@ -8326,7 +8003,7 @@ cycloneive_io_obuf \wbdata_deb[23]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[23]~output_o ),
+	.o(wbdata_deb[23]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[23]~output .bus_hold = "false";
@@ -8338,7 +8015,7 @@ cycloneive_io_obuf \wbdata_deb[22]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[22]~output_o ),
+	.o(wbdata_deb[22]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[22]~output .bus_hold = "false";
@@ -8350,7 +8027,7 @@ cycloneive_io_obuf \wbdata_deb[21]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[21]~output_o ),
+	.o(wbdata_deb[21]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[21]~output .bus_hold = "false";
@@ -8362,7 +8039,7 @@ cycloneive_io_obuf \wbdata_deb[20]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[20]~output_o ),
+	.o(wbdata_deb[20]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[20]~output .bus_hold = "false";
@@ -8374,7 +8051,7 @@ cycloneive_io_obuf \wbdata_deb[19]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[19]~output_o ),
+	.o(wbdata_deb[19]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[19]~output .bus_hold = "false";
@@ -8386,7 +8063,7 @@ cycloneive_io_obuf \wbdata_deb[18]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[18]~output_o ),
+	.o(wbdata_deb[18]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[18]~output .bus_hold = "false";
@@ -8398,7 +8075,7 @@ cycloneive_io_obuf \wbdata_deb[17]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[17]~output_o ),
+	.o(wbdata_deb[17]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[17]~output .bus_hold = "false";
@@ -8410,7 +8087,7 @@ cycloneive_io_obuf \wbdata_deb[16]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[16]~output_o ),
+	.o(wbdata_deb[16]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[16]~output .bus_hold = "false";
@@ -8422,7 +8099,7 @@ cycloneive_io_obuf \wbdata_deb[15]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[15]~output_o ),
+	.o(wbdata_deb[15]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[15]~output .bus_hold = "false";
@@ -8434,7 +8111,7 @@ cycloneive_io_obuf \wbdata_deb[14]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[14]~output_o ),
+	.o(wbdata_deb[14]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[14]~output .bus_hold = "false";
@@ -8446,7 +8123,7 @@ cycloneive_io_obuf \wbdata_deb[13]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[13]~output_o ),
+	.o(wbdata_deb[13]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[13]~output .bus_hold = "false";
@@ -8458,7 +8135,7 @@ cycloneive_io_obuf \wbdata_deb[12]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[12]~output_o ),
+	.o(wbdata_deb[12]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[12]~output .bus_hold = "false";
@@ -8470,7 +8147,7 @@ cycloneive_io_obuf \wbdata_deb[11]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[11]~output_o ),
+	.o(wbdata_deb[11]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[11]~output .bus_hold = "false";
@@ -8482,7 +8159,7 @@ cycloneive_io_obuf \wbdata_deb[10]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[10]~output_o ),
+	.o(wbdata_deb[10]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[10]~output .bus_hold = "false";
@@ -8494,7 +8171,7 @@ cycloneive_io_obuf \wbdata_deb[9]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[9]~output_o ),
+	.o(wbdata_deb[9]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[9]~output .bus_hold = "false";
@@ -8506,7 +8183,7 @@ cycloneive_io_obuf \wbdata_deb[8]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[8]~output_o ),
+	.o(wbdata_deb[8]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[8]~output .bus_hold = "false";
@@ -8518,7 +8195,7 @@ cycloneive_io_obuf \wbdata_deb[7]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[7]~output_o ),
+	.o(wbdata_deb[7]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[7]~output .bus_hold = "false";
@@ -8530,7 +8207,7 @@ cycloneive_io_obuf \wbdata_deb[6]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[6]~output_o ),
+	.o(wbdata_deb[6]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[6]~output .bus_hold = "false";
@@ -8542,7 +8219,7 @@ cycloneive_io_obuf \wbdata_deb[5]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[5]~output_o ),
+	.o(wbdata_deb[5]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[5]~output .bus_hold = "false";
@@ -8554,7 +8231,7 @@ cycloneive_io_obuf \wbdata_deb[4]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[4]~output_o ),
+	.o(wbdata_deb[4]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[4]~output .bus_hold = "false";
@@ -8566,7 +8243,7 @@ cycloneive_io_obuf \wbdata_deb[3]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[3]~output_o ),
+	.o(wbdata_deb[3]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[3]~output .bus_hold = "false";
@@ -8578,7 +8255,7 @@ cycloneive_io_obuf \wbdata_deb[2]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[2]~output_o ),
+	.o(wbdata_deb[2]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[2]~output .bus_hold = "false";
@@ -8590,7 +8267,7 @@ cycloneive_io_obuf \wbdata_deb[1]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[1]~output_o ),
+	.o(wbdata_deb[1]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[1]~output .bus_hold = "false";
@@ -8602,7 +8279,7 @@ cycloneive_io_obuf \wbdata_deb[0]~output (
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\wbdata_deb[0]~output_o ),
+	.o(wbdata_deb[0]),
 	.obar());
 // synopsys translate_off
 defparam \wbdata_deb[0]~output .bus_hold = "false";
@@ -8793,7 +8470,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a5 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a5 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a5 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a5 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a5 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000025250;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a5 .mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000000000E;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~11 (
@@ -8894,7 +8571,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a4 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a4 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a4 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a4 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a4 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000006041;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a4 .mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000000000F;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~12 (
@@ -9029,7 +8706,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a7 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a7 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a7 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a7 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a7 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000101;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a7 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000005;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~27 (
@@ -9148,7 +8825,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a8 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a8 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a8 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a8 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a8 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a8 .mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000000000E;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~31 (
@@ -9267,7 +8944,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a16 .port_
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a16 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a16 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a16 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a16 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a16 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000006;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~0 (
@@ -9453,7 +9130,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a9 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a9 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a9 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a9 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a9 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a9 .mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000000000E;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~30 (
@@ -9776,7 +9453,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a17 .port_
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a17 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a17 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a17 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a17 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a17 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000006;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~3 (
@@ -10182,7 +9859,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a20 .port_
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a20 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a20 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a20 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a20 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a20 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000006;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~6 (
@@ -10283,7 +9960,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a23 .port_
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a23 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a23 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a23 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a23 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a23 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000001;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~7 (
@@ -10936,7 +10613,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a13 .port_
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a13 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a13 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a13 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a13 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a13 .mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000000000C;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~25 (
@@ -11021,7 +10698,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a12 .port_
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a12 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a12 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a12 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a12 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a12 .mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000000000C;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~26 (
@@ -11106,7 +10783,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a14 .port_
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a14 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a14 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a14 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a14 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a14 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000004;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~24 (
@@ -11563,7 +11240,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a30 .port_
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a30 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a30 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a30 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a30 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a30 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000002;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~18 (
@@ -77169,7 +76846,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a1 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a1 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a1 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a1 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a1 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000011113;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a1 .mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000000000F;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~14 (
@@ -78894,7 +78571,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a2 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a2 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a2 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a2 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a2 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000020200;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a2 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000008;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~16 (
@@ -79111,7 +78788,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a0 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000013133;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 256'h000000000000000000000000000000000000000000000000000000000000000F;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~13 (
@@ -83956,7 +83633,7 @@ defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a6 .port_a
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a6 .port_b_address_width = 8;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a6 .port_b_data_width = 1;
 defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a6 .ram_block_type = "M9K";
-defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a6 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000004040;
+defparam \instagg|inst2|altsyncram_component|auto_generated|ram_block1a6 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst2|next_inst~10 (
@@ -85016,678 +84693,19 @@ defparam \afsdhajs|next_pc[0] .is_wysiwyg = "true";
 defparam \afsdhajs|next_pc[0] .power_up = "low";
 // synopsys translate_on
 
-assign wr_en_debug = \wr_en_debug~output_o ;
-
-assign pc_Sel_debu = \pc_Sel_debu~output_o ;
-
-assign stop_debu = \stop_debu~output_o ;
-
-assign rd_en_debug = \rd_en_debug~output_o ;
-
-assign a_mux_res[31] = \a_mux_res[31]~output_o ;
-
-assign a_mux_res[30] = \a_mux_res[30]~output_o ;
-
-assign a_mux_res[29] = \a_mux_res[29]~output_o ;
-
-assign a_mux_res[28] = \a_mux_res[28]~output_o ;
-
-assign a_mux_res[27] = \a_mux_res[27]~output_o ;
-
-assign a_mux_res[26] = \a_mux_res[26]~output_o ;
-
-assign a_mux_res[25] = \a_mux_res[25]~output_o ;
-
-assign a_mux_res[24] = \a_mux_res[24]~output_o ;
-
-assign a_mux_res[23] = \a_mux_res[23]~output_o ;
-
-assign a_mux_res[22] = \a_mux_res[22]~output_o ;
-
-assign a_mux_res[21] = \a_mux_res[21]~output_o ;
-
-assign a_mux_res[20] = \a_mux_res[20]~output_o ;
-
-assign a_mux_res[19] = \a_mux_res[19]~output_o ;
-
-assign a_mux_res[18] = \a_mux_res[18]~output_o ;
-
-assign a_mux_res[17] = \a_mux_res[17]~output_o ;
-
-assign a_mux_res[16] = \a_mux_res[16]~output_o ;
-
-assign a_mux_res[15] = \a_mux_res[15]~output_o ;
-
-assign a_mux_res[14] = \a_mux_res[14]~output_o ;
-
-assign a_mux_res[13] = \a_mux_res[13]~output_o ;
-
-assign a_mux_res[12] = \a_mux_res[12]~output_o ;
-
-assign a_mux_res[11] = \a_mux_res[11]~output_o ;
-
-assign a_mux_res[10] = \a_mux_res[10]~output_o ;
-
-assign a_mux_res[9] = \a_mux_res[9]~output_o ;
-
-assign a_mux_res[8] = \a_mux_res[8]~output_o ;
-
-assign a_mux_res[7] = \a_mux_res[7]~output_o ;
-
-assign a_mux_res[6] = \a_mux_res[6]~output_o ;
-
-assign a_mux_res[5] = \a_mux_res[5]~output_o ;
-
-assign a_mux_res[4] = \a_mux_res[4]~output_o ;
-
-assign a_mux_res[3] = \a_mux_res[3]~output_o ;
-
-assign a_mux_res[2] = \a_mux_res[2]~output_o ;
-
-assign a_mux_res[1] = \a_mux_res[1]~output_o ;
-
-assign a_mux_res[0] = \a_mux_res[0]~output_o ;
-
-assign alu_Res_debug[31] = \alu_Res_debug[31]~output_o ;
-
-assign alu_Res_debug[30] = \alu_Res_debug[30]~output_o ;
-
-assign alu_Res_debug[29] = \alu_Res_debug[29]~output_o ;
-
-assign alu_Res_debug[28] = \alu_Res_debug[28]~output_o ;
-
-assign alu_Res_debug[27] = \alu_Res_debug[27]~output_o ;
-
-assign alu_Res_debug[26] = \alu_Res_debug[26]~output_o ;
-
-assign alu_Res_debug[25] = \alu_Res_debug[25]~output_o ;
-
-assign alu_Res_debug[24] = \alu_Res_debug[24]~output_o ;
-
-assign alu_Res_debug[23] = \alu_Res_debug[23]~output_o ;
-
-assign alu_Res_debug[22] = \alu_Res_debug[22]~output_o ;
-
-assign alu_Res_debug[21] = \alu_Res_debug[21]~output_o ;
-
-assign alu_Res_debug[20] = \alu_Res_debug[20]~output_o ;
-
-assign alu_Res_debug[19] = \alu_Res_debug[19]~output_o ;
-
-assign alu_Res_debug[18] = \alu_Res_debug[18]~output_o ;
-
-assign alu_Res_debug[17] = \alu_Res_debug[17]~output_o ;
-
-assign alu_Res_debug[16] = \alu_Res_debug[16]~output_o ;
-
-assign alu_Res_debug[15] = \alu_Res_debug[15]~output_o ;
-
-assign alu_Res_debug[14] = \alu_Res_debug[14]~output_o ;
-
-assign alu_Res_debug[13] = \alu_Res_debug[13]~output_o ;
-
-assign alu_Res_debug[12] = \alu_Res_debug[12]~output_o ;
-
-assign alu_Res_debug[11] = \alu_Res_debug[11]~output_o ;
-
-assign alu_Res_debug[10] = \alu_Res_debug[10]~output_o ;
-
-assign alu_Res_debug[9] = \alu_Res_debug[9]~output_o ;
-
-assign alu_Res_debug[8] = \alu_Res_debug[8]~output_o ;
-
-assign alu_Res_debug[7] = \alu_Res_debug[7]~output_o ;
-
-assign alu_Res_debug[6] = \alu_Res_debug[6]~output_o ;
-
-assign alu_Res_debug[5] = \alu_Res_debug[5]~output_o ;
-
-assign alu_Res_debug[4] = \alu_Res_debug[4]~output_o ;
-
-assign alu_Res_debug[3] = \alu_Res_debug[3]~output_o ;
-
-assign alu_Res_debug[2] = \alu_Res_debug[2]~output_o ;
-
-assign alu_Res_debug[1] = \alu_Res_debug[1]~output_o ;
-
-assign alu_Res_debug[0] = \alu_Res_debug[0]~output_o ;
-
-assign alures[31] = \alures[31]~output_o ;
-
-assign alures[30] = \alures[30]~output_o ;
-
-assign alures[29] = \alures[29]~output_o ;
-
-assign alures[28] = \alures[28]~output_o ;
-
-assign alures[27] = \alures[27]~output_o ;
-
-assign alures[26] = \alures[26]~output_o ;
-
-assign alures[25] = \alures[25]~output_o ;
-
-assign alures[24] = \alures[24]~output_o ;
-
-assign alures[23] = \alures[23]~output_o ;
-
-assign alures[22] = \alures[22]~output_o ;
-
-assign alures[21] = \alures[21]~output_o ;
-
-assign alures[20] = \alures[20]~output_o ;
-
-assign alures[19] = \alures[19]~output_o ;
-
-assign alures[18] = \alures[18]~output_o ;
-
-assign alures[17] = \alures[17]~output_o ;
-
-assign alures[16] = \alures[16]~output_o ;
-
-assign alures[15] = \alures[15]~output_o ;
-
-assign alures[14] = \alures[14]~output_o ;
-
-assign alures[13] = \alures[13]~output_o ;
-
-assign alures[12] = \alures[12]~output_o ;
-
-assign alures[11] = \alures[11]~output_o ;
-
-assign alures[10] = \alures[10]~output_o ;
-
-assign alures[9] = \alures[9]~output_o ;
-
-assign alures[8] = \alures[8]~output_o ;
-
-assign alures[7] = \alures[7]~output_o ;
-
-assign alures[6] = \alures[6]~output_o ;
-
-assign alures[5] = \alures[5]~output_o ;
-
-assign alures[4] = \alures[4]~output_o ;
-
-assign alures[3] = \alures[3]~output_o ;
-
-assign alures[2] = \alures[2]~output_o ;
-
-assign alures[1] = \alures[1]~output_o ;
-
-assign alures[0] = \alures[0]~output_o ;
-
-assign b_mux_res[31] = \b_mux_res[31]~output_o ;
-
-assign b_mux_res[30] = \b_mux_res[30]~output_o ;
-
-assign b_mux_res[29] = \b_mux_res[29]~output_o ;
-
-assign b_mux_res[28] = \b_mux_res[28]~output_o ;
-
-assign b_mux_res[27] = \b_mux_res[27]~output_o ;
-
-assign b_mux_res[26] = \b_mux_res[26]~output_o ;
-
-assign b_mux_res[25] = \b_mux_res[25]~output_o ;
-
-assign b_mux_res[24] = \b_mux_res[24]~output_o ;
-
-assign b_mux_res[23] = \b_mux_res[23]~output_o ;
-
-assign b_mux_res[22] = \b_mux_res[22]~output_o ;
-
-assign b_mux_res[21] = \b_mux_res[21]~output_o ;
-
-assign b_mux_res[20] = \b_mux_res[20]~output_o ;
-
-assign b_mux_res[19] = \b_mux_res[19]~output_o ;
-
-assign b_mux_res[18] = \b_mux_res[18]~output_o ;
-
-assign b_mux_res[17] = \b_mux_res[17]~output_o ;
-
-assign b_mux_res[16] = \b_mux_res[16]~output_o ;
-
-assign b_mux_res[15] = \b_mux_res[15]~output_o ;
-
-assign b_mux_res[14] = \b_mux_res[14]~output_o ;
-
-assign b_mux_res[13] = \b_mux_res[13]~output_o ;
-
-assign b_mux_res[12] = \b_mux_res[12]~output_o ;
-
-assign b_mux_res[11] = \b_mux_res[11]~output_o ;
-
-assign b_mux_res[10] = \b_mux_res[10]~output_o ;
-
-assign b_mux_res[9] = \b_mux_res[9]~output_o ;
-
-assign b_mux_res[8] = \b_mux_res[8]~output_o ;
-
-assign b_mux_res[7] = \b_mux_res[7]~output_o ;
-
-assign b_mux_res[6] = \b_mux_res[6]~output_o ;
-
-assign b_mux_res[5] = \b_mux_res[5]~output_o ;
-
-assign b_mux_res[4] = \b_mux_res[4]~output_o ;
-
-assign b_mux_res[3] = \b_mux_res[3]~output_o ;
-
-assign b_mux_res[2] = \b_mux_res[2]~output_o ;
-
-assign b_mux_res[1] = \b_mux_res[1]~output_o ;
-
-assign b_mux_res[0] = \b_mux_res[0]~output_o ;
-
-assign br_pcc[7] = \br_pcc[7]~output_o ;
-
-assign br_pcc[6] = \br_pcc[6]~output_o ;
-
-assign br_pcc[5] = \br_pcc[5]~output_o ;
-
-assign br_pcc[4] = \br_pcc[4]~output_o ;
-
-assign br_pcc[3] = \br_pcc[3]~output_o ;
-
-assign br_pcc[2] = \br_pcc[2]~output_o ;
-
-assign br_pcc[1] = \br_pcc[1]~output_o ;
-
-assign br_pcc[0] = \br_pcc[0]~output_o ;
-
-assign data_write_debug[31] = \data_write_debug[31]~output_o ;
-
-assign data_write_debug[30] = \data_write_debug[30]~output_o ;
-
-assign data_write_debug[29] = \data_write_debug[29]~output_o ;
-
-assign data_write_debug[28] = \data_write_debug[28]~output_o ;
-
-assign data_write_debug[27] = \data_write_debug[27]~output_o ;
-
-assign data_write_debug[26] = \data_write_debug[26]~output_o ;
-
-assign data_write_debug[25] = \data_write_debug[25]~output_o ;
-
-assign data_write_debug[24] = \data_write_debug[24]~output_o ;
-
-assign data_write_debug[23] = \data_write_debug[23]~output_o ;
-
-assign data_write_debug[22] = \data_write_debug[22]~output_o ;
-
-assign data_write_debug[21] = \data_write_debug[21]~output_o ;
-
-assign data_write_debug[20] = \data_write_debug[20]~output_o ;
-
-assign data_write_debug[19] = \data_write_debug[19]~output_o ;
-
-assign data_write_debug[18] = \data_write_debug[18]~output_o ;
-
-assign data_write_debug[17] = \data_write_debug[17]~output_o ;
-
-assign data_write_debug[16] = \data_write_debug[16]~output_o ;
-
-assign data_write_debug[15] = \data_write_debug[15]~output_o ;
-
-assign data_write_debug[14] = \data_write_debug[14]~output_o ;
-
-assign data_write_debug[13] = \data_write_debug[13]~output_o ;
-
-assign data_write_debug[12] = \data_write_debug[12]~output_o ;
-
-assign data_write_debug[11] = \data_write_debug[11]~output_o ;
-
-assign data_write_debug[10] = \data_write_debug[10]~output_o ;
-
-assign data_write_debug[9] = \data_write_debug[9]~output_o ;
-
-assign data_write_debug[8] = \data_write_debug[8]~output_o ;
-
-assign data_write_debug[7] = \data_write_debug[7]~output_o ;
-
-assign data_write_debug[6] = \data_write_debug[6]~output_o ;
-
-assign data_write_debug[5] = \data_write_debug[5]~output_o ;
-
-assign data_write_debug[4] = \data_write_debug[4]~output_o ;
-
-assign data_write_debug[3] = \data_write_debug[3]~output_o ;
-
-assign data_write_debug[2] = \data_write_debug[2]~output_o ;
-
-assign data_write_debug[1] = \data_write_debug[1]~output_o ;
-
-assign data_write_debug[0] = \data_write_debug[0]~output_o ;
-
-assign DEBUG_NEXTPC_C[7] = \DEBUG_NEXTPC_C[7]~output_o ;
-
-assign DEBUG_NEXTPC_C[6] = \DEBUG_NEXTPC_C[6]~output_o ;
-
-assign DEBUG_NEXTPC_C[5] = \DEBUG_NEXTPC_C[5]~output_o ;
-
-assign DEBUG_NEXTPC_C[4] = \DEBUG_NEXTPC_C[4]~output_o ;
-
-assign DEBUG_NEXTPC_C[3] = \DEBUG_NEXTPC_C[3]~output_o ;
-
-assign DEBUG_NEXTPC_C[2] = \DEBUG_NEXTPC_C[2]~output_o ;
-
-assign DEBUG_NEXTPC_C[1] = \DEBUG_NEXTPC_C[1]~output_o ;
-
-assign DEBUG_NEXTPC_C[0] = \DEBUG_NEXTPC_C[0]~output_o ;
-
-assign fw_A[1] = \fw_A[1]~output_o ;
-
-assign fw_A[0] = \fw_A[0]~output_o ;
-
-assign fw_b[1] = \fw_b[1]~output_o ;
-
-assign fw_b[0] = \fw_b[0]~output_o ;
-
-assign inst_debug[31] = \inst_debug[31]~output_o ;
-
-assign inst_debug[30] = \inst_debug[30]~output_o ;
-
-assign inst_debug[29] = \inst_debug[29]~output_o ;
-
-assign inst_debug[28] = \inst_debug[28]~output_o ;
-
-assign inst_debug[27] = \inst_debug[27]~output_o ;
-
-assign inst_debug[26] = \inst_debug[26]~output_o ;
-
-assign inst_debug[25] = \inst_debug[25]~output_o ;
-
-assign inst_debug[24] = \inst_debug[24]~output_o ;
-
-assign inst_debug[23] = \inst_debug[23]~output_o ;
-
-assign inst_debug[22] = \inst_debug[22]~output_o ;
-
-assign inst_debug[21] = \inst_debug[21]~output_o ;
-
-assign inst_debug[20] = \inst_debug[20]~output_o ;
-
-assign inst_debug[19] = \inst_debug[19]~output_o ;
-
-assign inst_debug[18] = \inst_debug[18]~output_o ;
-
-assign inst_debug[17] = \inst_debug[17]~output_o ;
-
-assign inst_debug[16] = \inst_debug[16]~output_o ;
-
-assign inst_debug[15] = \inst_debug[15]~output_o ;
-
-assign inst_debug[14] = \inst_debug[14]~output_o ;
-
-assign inst_debug[13] = \inst_debug[13]~output_o ;
-
-assign inst_debug[12] = \inst_debug[12]~output_o ;
-
-assign inst_debug[11] = \inst_debug[11]~output_o ;
-
-assign inst_debug[10] = \inst_debug[10]~output_o ;
-
-assign inst_debug[9] = \inst_debug[9]~output_o ;
-
-assign inst_debug[8] = \inst_debug[8]~output_o ;
-
-assign inst_debug[7] = \inst_debug[7]~output_o ;
-
-assign inst_debug[6] = \inst_debug[6]~output_o ;
-
-assign inst_debug[5] = \inst_debug[5]~output_o ;
-
-assign inst_debug[4] = \inst_debug[4]~output_o ;
-
-assign inst_debug[3] = \inst_debug[3]~output_o ;
-
-assign inst_debug[2] = \inst_debug[2]~output_o ;
-
-assign inst_debug[1] = \inst_debug[1]~output_o ;
-
-assign inst_debug[0] = \inst_debug[0]~output_o ;
-
-assign pc_debugg[7] = \pc_debugg[7]~output_o ;
-
-assign pc_debugg[6] = \pc_debugg[6]~output_o ;
-
-assign pc_debugg[5] = \pc_debugg[5]~output_o ;
-
-assign pc_debugg[4] = \pc_debugg[4]~output_o ;
-
-assign pc_debugg[3] = \pc_debugg[3]~output_o ;
-
-assign pc_debugg[2] = \pc_debugg[2]~output_o ;
-
-assign pc_debugg[1] = \pc_debugg[1]~output_o ;
-
-assign pc_debugg[0] = \pc_debugg[0]~output_o ;
-
-assign pc_four_debug[7] = \pc_four_debug[7]~output_o ;
-
-assign pc_four_debug[6] = \pc_four_debug[6]~output_o ;
-
-assign pc_four_debug[5] = \pc_four_debug[5]~output_o ;
-
-assign pc_four_debug[4] = \pc_four_debug[4]~output_o ;
-
-assign pc_four_debug[3] = \pc_four_debug[3]~output_o ;
-
-assign pc_four_debug[2] = \pc_four_debug[2]~output_o ;
-
-assign pc_four_debug[1] = \pc_four_debug[1]~output_o ;
-
-assign pc_four_debug[0] = \pc_four_debug[0]~output_o ;
-
-assign ram_add[8] = \ram_add[8]~output_o ;
-
-assign ram_add[7] = \ram_add[7]~output_o ;
-
-assign ram_add[6] = \ram_add[6]~output_o ;
-
-assign ram_add[5] = \ram_add[5]~output_o ;
-
-assign ram_add[4] = \ram_add[4]~output_o ;
-
-assign ram_add[3] = \ram_add[3]~output_o ;
-
-assign ram_add[2] = \ram_add[2]~output_o ;
-
-assign ram_add[1] = \ram_add[1]~output_o ;
-
-assign ram_add[0] = \ram_add[0]~output_o ;
-
-assign rd1_deb[31] = \rd1_deb[31]~output_o ;
-
-assign rd1_deb[30] = \rd1_deb[30]~output_o ;
-
-assign rd1_deb[29] = \rd1_deb[29]~output_o ;
-
-assign rd1_deb[28] = \rd1_deb[28]~output_o ;
-
-assign rd1_deb[27] = \rd1_deb[27]~output_o ;
-
-assign rd1_deb[26] = \rd1_deb[26]~output_o ;
-
-assign rd1_deb[25] = \rd1_deb[25]~output_o ;
-
-assign rd1_deb[24] = \rd1_deb[24]~output_o ;
-
-assign rd1_deb[23] = \rd1_deb[23]~output_o ;
-
-assign rd1_deb[22] = \rd1_deb[22]~output_o ;
-
-assign rd1_deb[21] = \rd1_deb[21]~output_o ;
-
-assign rd1_deb[20] = \rd1_deb[20]~output_o ;
-
-assign rd1_deb[19] = \rd1_deb[19]~output_o ;
-
-assign rd1_deb[18] = \rd1_deb[18]~output_o ;
-
-assign rd1_deb[17] = \rd1_deb[17]~output_o ;
-
-assign rd1_deb[16] = \rd1_deb[16]~output_o ;
-
-assign rd1_deb[15] = \rd1_deb[15]~output_o ;
-
-assign rd1_deb[14] = \rd1_deb[14]~output_o ;
-
-assign rd1_deb[13] = \rd1_deb[13]~output_o ;
-
-assign rd1_deb[12] = \rd1_deb[12]~output_o ;
-
-assign rd1_deb[11] = \rd1_deb[11]~output_o ;
-
-assign rd1_deb[10] = \rd1_deb[10]~output_o ;
-
-assign rd1_deb[9] = \rd1_deb[9]~output_o ;
-
-assign rd1_deb[8] = \rd1_deb[8]~output_o ;
-
-assign rd1_deb[7] = \rd1_deb[7]~output_o ;
-
-assign rd1_deb[6] = \rd1_deb[6]~output_o ;
-
-assign rd1_deb[5] = \rd1_deb[5]~output_o ;
-
-assign rd1_deb[4] = \rd1_deb[4]~output_o ;
-
-assign rd1_deb[3] = \rd1_deb[3]~output_o ;
-
-assign rd1_deb[2] = \rd1_deb[2]~output_o ;
-
-assign rd1_deb[1] = \rd1_deb[1]~output_o ;
-
-assign rd1_deb[0] = \rd1_deb[0]~output_o ;
-
-assign rd2_deb[31] = \rd2_deb[31]~output_o ;
-
-assign rd2_deb[30] = \rd2_deb[30]~output_o ;
-
-assign rd2_deb[29] = \rd2_deb[29]~output_o ;
-
-assign rd2_deb[28] = \rd2_deb[28]~output_o ;
-
-assign rd2_deb[27] = \rd2_deb[27]~output_o ;
-
-assign rd2_deb[26] = \rd2_deb[26]~output_o ;
-
-assign rd2_deb[25] = \rd2_deb[25]~output_o ;
-
-assign rd2_deb[24] = \rd2_deb[24]~output_o ;
-
-assign rd2_deb[23] = \rd2_deb[23]~output_o ;
-
-assign rd2_deb[22] = \rd2_deb[22]~output_o ;
-
-assign rd2_deb[21] = \rd2_deb[21]~output_o ;
-
-assign rd2_deb[20] = \rd2_deb[20]~output_o ;
-
-assign rd2_deb[19] = \rd2_deb[19]~output_o ;
-
-assign rd2_deb[18] = \rd2_deb[18]~output_o ;
-
-assign rd2_deb[17] = \rd2_deb[17]~output_o ;
-
-assign rd2_deb[16] = \rd2_deb[16]~output_o ;
-
-assign rd2_deb[15] = \rd2_deb[15]~output_o ;
-
-assign rd2_deb[14] = \rd2_deb[14]~output_o ;
-
-assign rd2_deb[13] = \rd2_deb[13]~output_o ;
-
-assign rd2_deb[12] = \rd2_deb[12]~output_o ;
-
-assign rd2_deb[11] = \rd2_deb[11]~output_o ;
-
-assign rd2_deb[10] = \rd2_deb[10]~output_o ;
-
-assign rd2_deb[9] = \rd2_deb[9]~output_o ;
-
-assign rd2_deb[8] = \rd2_deb[8]~output_o ;
-
-assign rd2_deb[7] = \rd2_deb[7]~output_o ;
-
-assign rd2_deb[6] = \rd2_deb[6]~output_o ;
-
-assign rd2_deb[5] = \rd2_deb[5]~output_o ;
-
-assign rd2_deb[4] = \rd2_deb[4]~output_o ;
-
-assign rd2_deb[3] = \rd2_deb[3]~output_o ;
-
-assign rd2_deb[2] = \rd2_deb[2]~output_o ;
-
-assign rd2_deb[1] = \rd2_deb[1]~output_o ;
-
-assign rd2_deb[0] = \rd2_deb[0]~output_o ;
-
-assign wbdata_deb[31] = \wbdata_deb[31]~output_o ;
-
-assign wbdata_deb[30] = \wbdata_deb[30]~output_o ;
-
-assign wbdata_deb[29] = \wbdata_deb[29]~output_o ;
-
-assign wbdata_deb[28] = \wbdata_deb[28]~output_o ;
-
-assign wbdata_deb[27] = \wbdata_deb[27]~output_o ;
-
-assign wbdata_deb[26] = \wbdata_deb[26]~output_o ;
-
-assign wbdata_deb[25] = \wbdata_deb[25]~output_o ;
-
-assign wbdata_deb[24] = \wbdata_deb[24]~output_o ;
-
-assign wbdata_deb[23] = \wbdata_deb[23]~output_o ;
-
-assign wbdata_deb[22] = \wbdata_deb[22]~output_o ;
-
-assign wbdata_deb[21] = \wbdata_deb[21]~output_o ;
-
-assign wbdata_deb[20] = \wbdata_deb[20]~output_o ;
-
-assign wbdata_deb[19] = \wbdata_deb[19]~output_o ;
-
-assign wbdata_deb[18] = \wbdata_deb[18]~output_o ;
-
-assign wbdata_deb[17] = \wbdata_deb[17]~output_o ;
-
-assign wbdata_deb[16] = \wbdata_deb[16]~output_o ;
-
-assign wbdata_deb[15] = \wbdata_deb[15]~output_o ;
-
-assign wbdata_deb[14] = \wbdata_deb[14]~output_o ;
-
-assign wbdata_deb[13] = \wbdata_deb[13]~output_o ;
-
-assign wbdata_deb[12] = \wbdata_deb[12]~output_o ;
-
-assign wbdata_deb[11] = \wbdata_deb[11]~output_o ;
-
-assign wbdata_deb[10] = \wbdata_deb[10]~output_o ;
-
-assign wbdata_deb[9] = \wbdata_deb[9]~output_o ;
-
-assign wbdata_deb[8] = \wbdata_deb[8]~output_o ;
-
-assign wbdata_deb[7] = \wbdata_deb[7]~output_o ;
-
-assign wbdata_deb[6] = \wbdata_deb[6]~output_o ;
-
-assign wbdata_deb[5] = \wbdata_deb[5]~output_o ;
-
-assign wbdata_deb[4] = \wbdata_deb[4]~output_o ;
-
-assign wbdata_deb[3] = \wbdata_deb[3]~output_o ;
-
-assign wbdata_deb[2] = \wbdata_deb[2]~output_o ;
-
-assign wbdata_deb[1] = \wbdata_deb[1]~output_o ;
-
-assign wbdata_deb[0] = \wbdata_deb[0]~output_o ;
+cycloneive_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.cout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 16'h0000;
+defparam \~QUARTUS_CREATED_GND~I .sum_lutc_input = "datac";
+// synopsys translate_on
 
 endmodule

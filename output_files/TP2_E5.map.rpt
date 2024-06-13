@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TP2_E5
-Thu Jun  6 17:30:25 2024
+Mon Jun 10 14:19:06 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun  6 17:30:25 2024          ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 10 14:19:06 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; TP2_E5                                         ;
 ; Top-level Entity Name              ; TP2_E5                                         ;
@@ -753,7 +753,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:11     ;
 +----------------+--------------+
 
 
@@ -763,7 +763,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Thu Jun  6 17:30:04 2024
+    Info: Processing started: Mon Jun 10 14:18:32 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TP2_E5 -c TP2_E5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -886,10 +886,8 @@ Info (12133): Instantiated megafunction "fetch_unit:instagg|romA:inst2|altsyncra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3s91.tdf
     Info (12023): Found entity 1: altsyncram_3s91 File: C:/Users/sebas/Documents/GitHub/TP2-E5/db/altsyncram_3s91.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_3s91" for hierarchy "fetch_unit:instagg|romA:inst2|altsyncram:altsyncram_component|altsyncram_3s91:auto_generated" File: c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113016): Width of data items in "Fibo10.mif" is smaller than the memory width. Padding data items with 0 on MSB to fit in memory.  File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 5
-Warning (113028): 492 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 1
-    Warning (113027): Addresses ranging from 20 to 511 are not initialized File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 1
-Critical Warning (127004): Memory depth (256) in the design file differs from memory depth (512) in the Memory Initialization File "C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif" -- truncated remaining initial content value to fit RAM File: C:/Users/sebas/Documents/GitHub/TP2-E5/romA.v Line: 82
+Warning (113028): 252 out of 256 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 1
+    Warning (113027): Addresses ranging from 4 to 255 are not initialized File: C:/Users/sebas/Documents/GitHub/TP2-E5/Fibo10.mif Line: 1
 Info (12128): Elaborating entity "decode" for hierarchy "decode:asjjgjfdskfajdsJA"
 Info (12128): Elaborating entity "Control" for hierarchy "decode:asjjgjfdskfajdsJA|Control:inst5"
 Info (12128): Elaborating entity "imm_gen" for hierarchy "decode:asjjgjfdskfajdsJA|imm_gen:inst4"
@@ -902,10 +900,10 @@ Info (21057): Implemented 4376 device resources after synthesis - the final reso
     Info (21059): Implemented 337 output pins
     Info (21061): Implemented 3973 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Thu Jun  6 17:30:25 2024
-    Info: Elapsed time: 00:00:21
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Mon Jun 10 14:19:06 2024
+    Info: Elapsed time: 00:00:34
     Info: Total CPU time (on all processors): 00:00:35
 
 
